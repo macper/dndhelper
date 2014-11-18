@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.GeneralPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" Background="White">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Margin="15" HorizontalAlignment="Center">
+            <StackPanel HorizontalAlignment="Center">
+                <TextBlock FontSize="16">Aktualny czas: <TextBlock FontWeight="Bold" Foreground="DarkBlue" Text="{Binding Path=CurrentTime}"></TextBlock> </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Template="{StaticResource buttonInfo}" Content="+Dzień" Command="{Binding Path=AddDay}" Margin="2"></Button>
+                <Button Template="{StaticResource buttonInfo}" Content="+Godzina" Command="{Binding Path=AddHour}" Margin="2"></Button>
+                <Button Template="{StaticResource buttonInfo}" Content="+Minuta" Command="{Binding Path=AddMinute}" Margin="2"></Button>
+                <Button Template="{StaticResource buttonInfo}" Content="+Tura" Command="{Binding Path=AddTurn}" Margin="2"></Button>
+                <Button Template="{StaticResource buttonInfo}" Content="-Dzień" Command="{Binding Path=SubtractDay}" Margin="2"></Button>
+                <Button Template="{StaticResource buttonInfo}" Content="-Godzina" Command="{Binding Path=SubtractHour}" Margin="2"></Button>
+                <Button Template="{StaticResource buttonInfo}" Content="-Minuta" Command="{Binding Path=SubtractMinute}" Margin="2"></Button>
+            </StackPanel>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <TextBox HorizontalAlignment="Left" Text="{Binding Path=Notes}" AcceptsReturn="True" Width="482"></TextBox>
+            <GroupBox Header="Doświadczenie" Margin="497,19,10,10">
+                <Grid>
+                <ListView HorizontalAlignment="Left" Height="319" Margin="0,10,-2,0" VerticalAlignment="Top" Width="283" ItemsSource="{Binding Experiences}" SelectedItem="{Binding SelectedExperience}">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Nazwa" Width="180" DisplayMemberBinding="{Binding Name}"/>
+                            <GridViewColumn Header="PD" Width="100" DisplayMemberBinding="{Binding Amount}" />
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                    <Label Content="{Binding ExperienceSum}" HorizontalAlignment="Left" Margin="223,334,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+                    <Button Content="Usuń" Command="{Binding RemoveExperience}" HorizontalAlignment="Left" Margin="7,334,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+                    <Button Content="Czyść" Command="{Binding RemoveAllExperiences}" HorizontalAlignment="Left" Margin="7,365,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+
+    </Grid>
+</UserControl>

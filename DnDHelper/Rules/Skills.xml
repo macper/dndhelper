@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Skills>
+	<Skill Name="Przeszukiwanie">
+		<Description>Używane przy znajdowaniu pułapek, ukrytych drzwi</Description>
+		<BonusProperty>Inteligence</BonusProperty>
+	</Skill>
+	<Skill Name="Ciche poruszanie się">
+		<Description>Wiadomo.</Description>
+		<BonusProperty>Dexterity</BonusProperty>
+	</Skill>
+	<Skill Name="Dyplomacja">
+		<Description>Wiadomo.</Description>
+		<BonusProperty>Charisma</BonusProperty>
+	</Skill>
+	<Skill Name="Koncentracja">
+		<Description>ST = 10 + zadane obrażenia</Description>
+		<BonusProperty>Constitution</BonusProperty>
+	</Skill>
+	<Skill Name="Nasłuchiwanie">
+		<Description>Test sporny z Cichym poruszaniem się. ST = 5 (Osoba w zbroi), ST = 10 (bez zbroi)</Description>
+		<BonusProperty>Wisdom</BonusProperty>
+	</Skill>
+	<Skill Name="Otwieranie zamków">
+		<Description>ST zamków: 20 - prosty, 30 - niezły, 40 - świetny</Description>
+		<BonusProperty>Dexterity</BonusProperty>
+	</Skill>
+	<Skill Name="Leczenie">
+		<Description>ST: 15 + poziom (pierwsza pomoc)</Description>
+		<BonusProperty>Wisdom</BonusProperty>
+	</Skill>
+	<Skill Name="Pływanie">
+		<Description>Spokojna woda(10), Wzburzona woda(15), Sztorm(20)</Description>
+		<BonusProperty>Strength</BonusProperty>
+	</Skill>
+	<Skill Name="Skakanie">
+		<Description>5 / 1,5 m</Description>
+		<BonusProperty>Strength</BonusProperty>
+	</Skill>
+	<Skill Name="Spostrzegawczość">
+		<Description>Test sporny z Ukrywaniem</Description>
+		<BonusProperty>Wisdom</BonusProperty>
+	</Skill>
+	<Skill Name="Szacowanie">
+		<Description>Znane przedmioty: ST:15</Description>
+		<BonusProperty>Inteligence</BonusProperty>
+	</Skill>
+	<Skill Name="Ukrywanie się">
+		<Description>Gdy niewidzialny premia +20</Description>
+		<BonusProperty>Dexterity</BonusProperty>
+	</Skill>
+	<Skill Name="Unieszkodliwanie mechanizmów">
+		<Description>Proste ST:10</Description>
+		<BonusProperty>Inteligence</BonusProperty>
+	</Skill>
+	<Skill Name="Używanie liny">
+		<Description>Wiadomo</Description>
+		<BonusProperty>Dexterity</BonusProperty>
+	</Skill>
+	<Skill Name="Wspinaczka">
+		<Description>ST: 5 (z liną), ST: 10 (nierówna ściana), ST:15 (tylko ręce)</Description>
+		<BonusProperty>Strength</BonusProperty>
+	</Skill>
+	<Skill Name="Postępowanie ze zwięrzętami">
+		<Description>ST:10 + KW zwierzaka</Description>
+		<BonusProperty>Charisma</BonusProperty>
+	</Skill>
+	<Skill Name="Stosowanie mag. urządzeń">
+		<Description></Description>
+		<BonusProperty>Inteligence</BonusProperty>
+	</Skill>
+	<Skill Name="Sztuka przetrwania">
+		<Description></Description>
+		<BonusProperty>Wisdom</BonusProperty>
+	</Skill>
+	<Skill Name="Zastraszanie">
+		<Description></Description>
+		<BonusProperty>Charisma</BonusProperty>
+	</Skill>
+</Skills>

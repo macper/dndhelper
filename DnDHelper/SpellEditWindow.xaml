@@ -1,0 +1,63 @@
+﻿<Window x:Class="DnDHelper.WPF.SpellEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SpellEditWindow" Height="503" Width="856">
+    <Grid Width="845" x:Name="ContentGrid" Height="476">
+        <ListView Height="390" HorizontalAlignment="Left" Margin="12,32,0,0" Name="listView1" VerticalAlignment="Top" Width="240" SelectionChanged="listView1_SelectionChanged" KeyDown="listView1_KeyDown">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="120" DisplayMemberBinding="{Binding Path=Name}">
+                        <GridViewColumnHeader Content="Nazwa" Tag="Name">  
+                            </GridViewColumnHeader>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Typ" Width="50" DisplayMemberBinding="{Binding Path=Type}" />
+                    <GridViewColumn Header="Poziom" Width="50" DisplayMemberBinding="{Binding Path=Level}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="Typ:" Height="28" HorizontalAlignment="Left" Margin="12,6,0,0" Name="label1" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="50,6,0,0" Name="comboBox1" VerticalAlignment="Top" Width="82" SelectionChanged="comboBox1_SelectionChanged" SelectedIndex="0" />
+        <Label Content="Poz." Height="28" HorizontalAlignment="Left" Margin="132,6,0,0" Name="label2" VerticalAlignment="Top" />
+        <Button Content="Nowy" Height="23" HorizontalAlignment="Left" Margin="177,428,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+        <Button Content="Usuń" Height="23" HorizontalAlignment="Left" Margin="99,428,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
+        <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="257,31,0,0" Name="label3" VerticalAlignment="Top" />
+        <TextBox Text="{Binding Path=Name, Mode=OneWay}" Height="23" HorizontalAlignment="Left" Margin="309,33,0,0" Name="textBox2" VerticalAlignment="Top" Width="247" TabIndex="1" />
+        <Label Content="Poziom:" Height="28" HorizontalAlignment="Left" Margin="257,53,0,0" Name="label4" VerticalAlignment="Top" />
+        <TextBox Text="{Binding Path=Level, Mode=OneWay}" Height="23" HorizontalAlignment="Right" Margin="0,56,483,0" Name="textBox3" VerticalAlignment="Top" Width="53" TabIndex="2" />
+        <Label Content="Szkoła:" Height="28" HorizontalAlignment="Left" Margin="253,178,0,0" Name="label6" VerticalAlignment="Top" />
+        <Label Content="Opis:" Height="28" HorizontalAlignment="Left" Margin="253,248,0,0" Name="label7" VerticalAlignment="Top" />
+        <TextBox Text="{Binding Path=Description, Mode=OneWay}" Height="150" HorizontalAlignment="Left" Margin="258,272,0,0" Name="textBox5" VerticalAlignment="Top" Width="308" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap" TabIndex="5" />
+        <Button Content="Zapisz" Height="23" HorizontalAlignment="Left" Margin="499,428,0,0" Name="button3" VerticalAlignment="Top" Width="67" Click="button3_Click" />
+        <Button Content="Wybierz" Height="23" HorizontalAlignment="Left" Margin="599,428,0,0" Name="button4" VerticalAlignment="Top" Width="63" Click="button4_Click" />
+        <ListView Height="391" HorizontalAlignment="Left" Margin="572,31,0,0" Name="listView2" VerticalAlignment="Top" Width="252">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}" Header="Nazwa" Width="100" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Types}" Header="Typ" Width="80" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Level}" Header="Poziom" Width="50" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Usuń" Height="23" HorizontalAlignment="Left" Margin="668,428,0,0" Name="button5" VerticalAlignment="Top" Width="75" Click="button5_Click" />
+        <Button Content="OK" Height="23" HorizontalAlignment="Left" Margin="749,428,0,0" Name="button6" VerticalAlignment="Top" Width="75" Click="button6_Click" />
+        <Label Content="Wybrane:" Height="27" HorizontalAlignment="Left" Margin="572,6,0,0" Name="label8" VerticalAlignment="Top" />
+        <Button Content="Filtruj" Height="23" HorizontalAlignment="Right" Margin="0,6,512,0" Name="button7" VerticalAlignment="Top" Width="75" Click="button7_Click" />
+        <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,6,593,0" Name="comboBox2" VerticalAlignment="Top" Width="84" SelectionChanged="comboBox2_SelectionChanged" SelectedIndex="0"></ComboBox>
+        <GroupBox Header="Typy" Height="95" HorizontalAlignment="Left" Margin="260,79,0,0" Name="groupBox1" VerticalAlignment="Top" Width="296">
+            <Grid Name="checkGrid">
+                <CheckBox Content="Mag" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="checkBox1" VerticalAlignment="Top" />
+                <CheckBox Content="Bard" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="checkBox2" VerticalAlignment="Top" />
+                <CheckBox Content="Kapłan" Height="16" HorizontalAlignment="Left" Margin="6,50,0,0" Name="checkBox3" VerticalAlignment="Top" />
+                <CheckBox Content="Druid" Height="16" HorizontalAlignment="Left" Margin="127,6,0,0" Name="checkBox4" VerticalAlignment="Top" />
+                <CheckBox Content="Tropiciel" Height="16" HorizontalAlignment="Left" Margin="127,28,0,0" Name="checkBox5" VerticalAlignment="Top" />
+                <CheckBox Content="Paladyn" Height="16" HorizontalAlignment="Left" Margin="127,50,0,0" Name="checkBox6" VerticalAlignment="Top" />
+            </Grid>
+        </GroupBox>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="333,178,0,0" Name="comboBox3" VerticalAlignment="Top" Width="223"/>
+        <Label Content="Zasięg:" Height="28" HorizontalAlignment="Left" Margin="254,202,0,0" Name="label5" VerticalAlignment="Top"  />
+        <Label Content="Czas trwania:" Height="28" HorizontalAlignment="Left" Margin="254,226,0,0" Name="label9" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="333,207,0,0" Name="comboBox4" VerticalAlignment="Top" Width="223" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="335,231,0,0" Name="textBox1" VerticalAlignment="Top" Width="221" Text="{Binding Path=Duration}" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="12,428,0,0" Name="textBox4" VerticalAlignment="Top" Width="81" TextChanged="textBox4_TextChanged" />
+    </Grid>
+</Window>

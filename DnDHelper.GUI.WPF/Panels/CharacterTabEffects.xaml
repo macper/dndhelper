@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.CharacterTabEffects"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="620" d:DesignWidth="800" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Controls" Background="White">
+    <Grid Width="800" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Aktywne efekty:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <ListView Height="530" HorizontalAlignment="Left" Margin="12,46,0,0" VerticalAlignment="Top" Width="378" ItemsSource="{Binding Effects}" SelectedValue="{Binding SelectedEffect}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Height="30">
+                        <TextBlock Width="200" FontSize="14" FontWeight="Bold" VerticalAlignment="Center" Text="{Binding InstanceName}"></TextBlock>
+                        <TextBlock Width="100" FontSize="14" VerticalAlignment="Center">Pozostały czas:</TextBlock>
+                        <TextBlock Width="50" FontSize="14" FontWeight="Bold" VerticalAlignment="Center" Text="{Binding Duration, Converter={StaticResource DurationConverter}}"></TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Command="{Binding AddEffect}" Content="Dodaj" Height="26" HorizontalAlignment="Left" Margin="315,582,0,0" Name="button1" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Button Command="{Binding RemoveEffect}" Content="Usuń" Height="26" HorizontalAlignment="Left" Margin="234,582,0,0" Name="button2" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Label Content="Nazwa:" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="10,12,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="135,16,0,0" VerticalAlignment="Top" Width="253" Text="{Binding SelectedEffect.InstanceName}" IsReadOnly="True" />
+        <Label Content="Opis:" Height="28" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Grid.Column="1" />
+        <TextBox Grid.Column="1" Height="95" HorizontalAlignment="Left" Margin="135,50,0,0" VerticalAlignment="Top" Width="253" Text="{Binding SelectedEffect.Definition.Description}" IsReadOnly="True" />
+        <Label Content="Czas trwania:" Height="28" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Grid.Column="1" />
+        <my:AdditiveControl OnChange="{Binding EffectChange}" Grid.Column="1" HorizontalAlignment="Left" Margin="95,158,0,0" VerticalAlignment="Top" Width="120" Value="{Binding EffectModel.Duration, Mode=TwoWay}" />
+        <Label Content="Licznik:" Height="28" HorizontalAlignment="Left" Margin="229,158,0,0"  VerticalAlignment="Top" Grid.Column="1" />
+        <my:AdditiveControl OnChange="{Binding EffectChange}" Grid.Column="1" HorizontalAlignment="Left" Margin="283,160,0,0"  VerticalAlignment="Top" Width="105" Value="{Binding EffectModel.Counter, Mode=TwoWay}" />
+        <my:BonusEditor Grid.Column="1" HorizontalAlignment="Left" Margin="12,269,0,0"  VerticalAlignment="Top" Width="376" Height="160" DataContext="{Binding EffectModel.Bonuses}" />
+        <GroupBox Grid.Column="1" Header="Kustomowe skrypty" Height="173" HorizontalAlignment="Left" Margin="12,435,0,0" Name="groupBox1" VerticalAlignment="Top" Width="376">
+            <Grid>
+                <ListBox Height="144" HorizontalAlignment="Left" Margin="6,6,0,0" ItemsSource="{Binding Scripts}" DisplayMemberPath="Name" SelectedValue="{Binding SelectedScript}" VerticalAlignment="Top" Width="241" />
+                <StackPanel Height="144" HorizontalAlignment="Left" Margin="253,6,0,0" Name="stackPanel1" VerticalAlignment="Stretch" Width="105">
+                    <Button Command="{Binding ExecuteScript}" Content="Wykonaj" Height="26" Name="button3" Width="75" Margin="5,10,5,5" Template="{StaticResource buttonInfo}" />
+                    <Button Command="{Binding EditScript}" Content="Edytuj" Height="26" Name="button4" Width="75" Margin="0,0,0,5" Template="{StaticResource buttonInfo}" />
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+        <TextBox Grid.Column="1" Height="74" HorizontalAlignment="Left" Margin="135,189,0,0" Text="{Binding SelectedEffect.CustomText}" VerticalAlignment="Top" Width="253" AcceptsReturn="True" />
+        <Label Content="Dodatkowe info:" Height="28" HorizontalAlignment="Left" Margin="12,209,0,0" VerticalAlignment="Top" Grid.Column="1" />
+    </Grid>
+</UserControl>

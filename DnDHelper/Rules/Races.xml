@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<ArrayOfRace xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Race>
+    <Name>Człowiek</Name>
+    <Bonuses />
+  </Race>
+  <Race>
+    <Name>Elf</Name>
+    <Bonuses>
+      <RaceBonus Attribute="Dexterity" Value="2" />
+      <RaceBonus Attribute="Constitution" Value="-2" />
+    </Bonuses>
+  </Race>
+  <Race>
+    <Name>Półelf</Name>
+    <Bonuses />
+  </Race>
+  <Race>
+    <Name>Gnom</Name>
+    <Bonuses>
+      <RaceBonus Attribute="Strength" Value="-2" />
+      <RaceBonus Attribute="Constitution" Value="2" />
+    </Bonuses>
+  </Race>
+  <Race>
+    <Name>Krasnolud</Name>
+    <Bonuses>
+      <RaceBonus Attribute="Charisma" Value="-2" />
+      <RaceBonus Attribute="Constitution" Value="2" />
+    </Bonuses>
+  </Race>
+  <Race>
+    <Name>Półork</Name>
+    <Bonuses>
+      <RaceBonus Attribute="Strength" Value="2" />
+      <RaceBonus Attribute="Charisma" Value="-2" />
+      <RaceBonus Attribute="Inteligence" Value="-2" />
+    </Bonuses>
+  </Race>
+  <Race>
+    <Name>Niziołek</Name>
+    <Bonuses>
+      <RaceBonus Attribute="Strength" Value="-2" />
+      <RaceBonus Attribute="Dexterity" Value="2" />
+    </Bonuses>
+  </Race>
+</ArrayOfRace>

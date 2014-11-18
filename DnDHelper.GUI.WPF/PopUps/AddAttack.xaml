@@ -1,0 +1,11 @@
+﻿<Window x:Class="DnDHelper.GUI.WPF.PopUps.AddAttack"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edycja ataku" Height="283" Width="390" WindowStartupLocation="CenterScreen" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Controls">
+    <Grid>
+        <my:BonusEditor HorizontalAlignment="Left" Margin="0,48,0,0" DataContext="{Binding BonusModel}" VerticalAlignment="Top" Width="368" Height="195" />
+        <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Text="{Binding Name}" Height="26" HorizontalAlignment="Left" Margin="68,14,0,0" Name="textBox1" VerticalAlignment="Top" Width="204" Template="{StaticResource textBox}" />
+        <Button Command="{Binding Commit}" Content="OK" Height="26" HorizontalAlignment="Left" Margin="281,14,0,0" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+    </Grid>
+</Window>

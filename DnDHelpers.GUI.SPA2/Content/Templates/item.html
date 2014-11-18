@@ -1,0 +1,134 @@
+﻿<div class="nav-bar" title="Przedmiot" returnurl="/items"></div>
+<div style="margin-top: 30px">
+    <div ng-show="showMessage" ng-class="alertClass">{{message}}</div>
+    <div ng-show="viewMode">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <td>Nazwa</td>
+                <td>{{item.Name}}</td>
+            </tr>
+            <tr>
+                <td>Typ bazowy</td>
+                <td>{{item.Type.Description}}</td>
+            </tr>
+            <tr ng-hide="item.IsPrototype">
+                <td>Prototyp:</td>
+                <td>{{item.Prototype.Name}}</td>
+            </tr>
+            <tr ng-show="item.IsPrototype">
+                <td colspan="2">Jest prototypem</td>
+            </tr>
+            <tr>
+                <td>Cena</td>
+                <td>{{item.Price}}</td>
+            </tr>
+            <tr>
+                <td>Inne:</td>
+                <td>{{item.OtherInfo}}</td>
+            </tr>
+            <tr>
+                <td>Bonusy:</td>
+                <td>
+                    <ul>
+                        <li ng-repeat="bonus in item.Bonuses">
+                            <b>{{bonus.Prototype.Name}}</b> {{bonus.Prototype.Description}}
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <button class="btn btn-default" ng-click="edit()">Edytuj</button></p>
+    </div>
+    <div ng-hide="viewMode">
+        <form class="form-horizontal" role="form">
+            <div class="alert alert-danger" ng-show="showError">{{errorMessage}}</div>
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Nazwa</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" ng-model="item.Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="type" class="col-sm-2 control-label">Typ</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="type" ng-options="c.Description for c in itemTypes" ng-model="item.Type"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="prototype" class="col-sm-2 control-label">Prototyp</label>
+                <div class="col-sm-1">
+                    <input class="form-control" type="checkbox" ng-model="item.IsPrototype" />
+                </div>
+                <div class="col-sm-3" ng-hide="item.IsPrototype">
+                    <select class="form-control" id="prototype" ng-options="item.Name for item in itemPrototypes" ng-model="item.Prototype"></select>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label for="price" class="col-sm-2 control-label">Cena</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="price" ng-model="item.Price">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="others" class="col-sm-2 control-label">Inne</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="others" ng-model="item.OtherInfo"></textarea>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Bonusy
+                </div>
+                <div class="panel-body">
+                    <p class="text-center">
+                        <button class="btn btn-primary" ng-click="addBonus()">Dodaj nowy</button>
+                    </p>
+                    <ul ng-repeat="bonus in item.Bonuses">
+                        <li>
+                            <button class="btn btn-default" ng-click="editBonus(bonus)">{{bonus.Prototype.Name}} {{bonus.Prototype.Description}}</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-danger" ng-click="delete()">Usuń</button>
+                    <button class="btn btn-primary" ng-click="submit()">Zapisz</button>
+                    <button class="btn btn-primary" ng-click="copy()">Kopiuj</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal fade" id="bonusModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Edycja bonusu</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-sm-5 control-label">
+                            Typ bonusu
+                        </label>
+                        <div class="col-sm-5">
+                            <select class="form-control" ng-options="b.Prototype.Name for b in bonusTypes" ng-model="selectedBonus" ng-change="bonusChanged()"></select>
+                        </div>
+                    </div>
+                    <div class="panel panel-default col-sm-12">
+                        <div class="panel-body">
+                            <div ng-include="selectedBonus.template"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" ng-click="saveBonus()">Zapisz</button>
+                <button type="button" class="btn btn-danger" ng-click="deleteBonus()">Usuń</button>
+            </div>
+        </div>
+    </div>
+</div>

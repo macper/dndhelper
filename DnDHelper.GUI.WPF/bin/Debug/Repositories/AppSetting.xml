@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfAppSetting xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Elements>
+    <AppSetting Name="Time">
+      <Id>c9e6bf6b-2bba-46da-8af9-da8d7d7a4885</Id>
+      <Value>1300-01-01 00:00:00</Value>
+    </AppSetting>
+    <AppSetting Name="Notes">
+      <Id>ef705f38-d631-4c50-b032-f5e6bf7f4af9</Id>
+      <Value>Pierścień leczenia - 01-06-1301 13:01 x2
+
+400
+
+gdf dfg
+
+
+
+
+
+
+
+</Value>
+    </AppSetting>
+  </Elements>
+</RepositoryOfAppSetting>

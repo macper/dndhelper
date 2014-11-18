@@ -1,0 +1,47 @@
+2014-10-31 09:36:13,207 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-10-31 09:36:13,406 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-10-31 09:36:13,575 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-10-31 09:36:13,775 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-10-31 09:36:13,943 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-10-31 09:36:14,097 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-10-31 09:36:14,256 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-10-31 09:36:14,454 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-10-31 09:36:14,589 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-10-31 09:36:14,922 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Character
+2014-10-31 09:36:14,926 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Experience
+2014-10-31 09:36:15,077 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Script
+2014-10-31 09:36:15,082 INFO  AppFacade - Rejestracja typów
+2014-10-31 09:36:15,087 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-10-31 09:36:15,090 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-10-31 09:36:15,094 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-10-31 09:36:15,102 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-10-31 09:36:15,144 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-10-31 09:36:15,159 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-10-31 09:36:15,166 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-10-31 09:36:15,169 INFO  AppFacade - Typy zarejestrowano
+2014-10-31 09:36:15,175 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-10-31 09:36:15,185 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-10-31 09:36:15,216 ERROR MainWindow - Items with the same name: Bombardowanie : Bombardowanie
+2014-10-31 09:36:15,220 ERROR MainWindow - Items with the same name: Bombardowanie : Bombardowanie
+2014-10-31 09:36:15,239 INFO  ChangeTracker - All changes saved
+2014-10-31 09:36:15,487 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-10-31 09:36:21,615 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Si³a Premia do ataku : +5 (Cecha g³ówna - Si³a)
+2014-10-31 09:36:21,654 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Si³a Premia do obra¿eñ : 5[Fizyczne] (Cecha g³ówna - Si³a)
+2014-10-31 09:36:21,658 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Si³a Premia do umiejêtnoœci: Wspinaczka : +5 (Cecha g³ówna - Si³a)
+2014-10-31 09:36:21,661 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Si³a Premia do umiejêtnoœci: P³ywanie : +5 (Cecha g³ówna - Si³a)
+2014-10-31 09:36:21,665 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Si³a Premia do umiejêtnoœci: Skakanie : +5 (Cecha g³ówna - Si³a)
+2014-10-31 09:36:21,668 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Zrêcznoœæ Premia do ataku : +3 (Cecha g³ówna - Zrêcznoœæ)
+2014-10-31 09:36:21,672 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Zrêcznoœæ Premia do KP : +3 (Zrêcznoœæ) (Cecha g³ówna - Zrêcznoœæ)
+2014-10-31 09:36:21,676 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Zrêcznoœæ Premia do rzutów obronnych : Wytr. 0, Ref. 3, Wola 0 (Cecha g³ówna - Zrêcznoœæ)
+2014-10-31 09:36:21,680 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Zrêcznoœæ Premia do inicjatywy : +3 (Cecha g³ówna - Zrêcznoœæ)
+2014-10-31 09:36:21,683 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - Kondycja Premia do rzutów obronnych : Wytr. 5, Ref. 0, Wola 0 (Cecha g³ówna - Kondycja)
+2014-10-31 09:36:21,687 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - M¹droœæ Premia do rzutów obronnych : Wytr. 0, Ref. 0, Wola 1 (Cecha g³ówna - M¹droœæ)
+2014-10-31 09:36:21,691 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - M¹droœæ Premia do umiejêtnoœci: Nas³uchiwanie : +1 (Cecha g³ówna - M¹droœæ)
+2014-10-31 09:36:21,694 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - M¹droœæ Premia do umiejêtnoœci: Spostrzegawczoœæ : +1 (Cecha g³ówna - M¹droœæ)
+2014-10-31 09:36:21,698 DEBUG CharacterController - Helios: Dodano Bonus - Cecha g³ówna - M¹droœæ Premia do umiejêtnoœci: Sztuka przetrwania : +1 (Cecha g³ówna - M¹droœæ)
+2014-10-31 09:36:21,717 DEBUG CharacterController - Helios: Zwiêkszono wartoœæ skilla Wspinaczka o 5
+2014-10-31 09:36:21,720 DEBUG CharacterController - Helios: Zwiêkszono wartoœæ skilla P³ywanie o 5
+2014-10-31 09:36:21,723 DEBUG CharacterController - Helios: Zwiêkszono wartoœæ skilla Skakanie o 5
+2014-10-31 09:36:21,729 DEBUG CharacterController - Helios: Zwiêkszono wartoœæ skilla Nas³uchiwanie o 1
+2014-10-31 09:36:21,732 DEBUG CharacterController - Helios: Zwiêkszono wartoœæ skilla Spostrzegawczoœæ o 1
+2014-10-31 09:36:21,736 DEBUG CharacterController - Helios: Zwiêkszono wartoœæ skilla Sztuka przetrwania o 1

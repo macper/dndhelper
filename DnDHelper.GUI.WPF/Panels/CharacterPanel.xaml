@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.CharacterPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Border BorderThickness="1" BorderBrush="#E6000000" Margin="5">
+        <!--<Grid Visibility="{Binding Path=IsVisible, Converter={StaticResource BooleanToVisibilityConverter}}">-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+            
+            <ScrollViewer VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <ContentControl Content="{Binding ActiveTab, Converter={StaticResource CharacterTabModelToControlConverter}}">
+                </ContentControl>
+            </ScrollViewer>
+
+            <StackPanel Grid.Column="1" Background="#FF1F721F">
+                    <Button Width="60" Height="60" Command="{Binding Path=ChangeTab}" CommandParameter="Stats">ST</Button>
+                    <Button Width="60" Height="60" Command="{Binding Path=ChangeTab}" CommandParameter="Items">IT</Button>
+                    <Button Width="60" Height="60" Command="{Binding Path=ChangeTab}" CommandParameter="Spells">CZ</Button>
+                    <Button Width="60" Height="60" Command="{Binding Path=ChangeTab}" CommandParameter="Effects">EFF</Button>
+                    <Button Width="60" Height="60" Command="{Binding Path=ChangeTab}" CommandParameter="Skills">SKILLS</Button>
+                    <Button Width="60" Height="60" Command="{Binding Path=ChangeTab}" CommandParameter="Bonuses">BONUS</Button>
+                    <Button Width="60" Height="60" Command="{Binding Path=ChangeTab}" CommandParameter="Others">OTHERS</Button>
+            </StackPanel>
+            
+        </Grid>
+    </Border>
+
+</UserControl>

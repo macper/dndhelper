@@ -1,0 +1,905 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfAtutDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>121</Version>
+  <Scripts>
+    <Script>
+      <Name>Skupienie na broni</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    rightWeapon = character.GetItemByPosition(ItemPosition.RightHand)
+    leftWeapon = character.GetItemByPosition(ItemPosition.LeftHand)
+    ApplyForWeapon(character, rightWeapon, atut)
+    ApplyForWeapon(character, leftWeapon, atut)
+    return
+
+def ApplyForWeapon(character, item, atut):
+    if (item == None):
+        return
+
+    if (item.Definition.PrototypeName != atut.AdditionalInfo and item.Name != atut.AdditionalInfo):
+        return
+
+    bonus = BonusFactory.GetByName("AttackBonus", "Atut: Skupienie na broni")
+    bonus.Value = 1;
+    weaponBonus = BonusFactory.GetByName("WeaponBonus", "Atut: Skupienie na broni")
+    weaponBonus.Item = item
+    weaponBonus.Bonus = bonus
+    character.Controller.AddBonus(weaponBonus)
+    return
+</Content>
+    </Script>
+    <Script>
+      <Name>Defensywna walka dwiem bronmi</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    rightWeapon = character.GetItemByPosition(ItemPosition.RightHand)
+    leftWeapon = character.GetItemByPosition(ItemPosition.LeftHand)
+    if (rightWeapon != None and leftWeapon != None):
+        bonus = BonusFactory.GetByName("ACBonus", "Atut: Defensywna walka dwiema broniami")
+        bonus.Value = 1;
+        bonus.ACType = "Zbroja"
+        character.Controller.AddBonus(bonus)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Premia do KP (mnich)</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    level = character.Level
+    armor = character.GetItemByPosition(ItemPosition.Torso)
+    if (armor == None):
+        bonus = BonusFactory.GetByName("ACBonus", "Atut: Premia do KP (mnich)")
+        bonus.ACType = "Naturalny pancerz"
+        bonusFromWisdom = Rules.GetStandardBonus(character.CurrentStats.Wisdom)
+        if (bonusFromWisdom &gt; 0):
+            bonus.Value = bonusFromWisdom
+        bonus.Value += level / 5
+        character.Controller.AddBonus(bonus)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Grad ciosów (mnich)</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    level = character.Level
+    armor = character.GetItemByPosition(ItemPosition.Torso)
+    if (armor == None):
+        character.CustomAttacks.RemoveAll(lambda a:a.Name == "Atak (pięść)")
+        customAttack = CustomAttack()
+        customAttack.Name = "Atak (pięść)"
+        bonus = BonusFactory.GetByName("DamageBonus")
+        damage = Damage()
+        if (level &lt;= 3):
+            damage.Elements.Add(DamageBone(8,1))
+        if (level &gt; 3 and level &lt;= 7):
+            damage.Elements.Add(DamageBone(6,2))
+        if (level &gt; 7 and level &lt;= 11):
+            damage.Elements.Add(DamageBone(8,2))
+        if (level &gt; 11 and level &lt;= 15):
+            damage.Elements.Add(DamageBone(6,3))
+        if (level &gt; 15):
+            damage.Elements.Add(DamageBone(8,4))           
+        bonus.Amount = damage
+        customAttack.Bonuses.Add(bonus)
+        character.CustomAttacks.Add(customAttack)
+
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Boska łaska (Paladyn)</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    at = BonusFactory.GetByName("ThrowBonus", "Paladyn - boska łaska")
+    charismaBonus = Rules.GetStandardBonus(character.CurrentStats.Charisma)
+    at.BonusType.WillThrow += charismaBonus
+    at.BonusType.ReflexThrow += charismaBonus
+    at.BonusType.EnduranceThrow += charismaBonus
+    character.Controller.AddBonus(at)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Atletyka</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    bonus = BonusFactory.GetByName("SecondarySkillBonus", "Atut: Atletyka")
+    bonus.SkillName = "Wspinaczka"
+    bonus.Value = 2
+    character.Controller.AddBonus(bonus)
+    bonus = BonusFactory.GetByName("SecondarySkillBonus", "Atut: Atletyka")
+    bonus.SkillName = "Pływanie"
+    bonus.Value = 2
+    character.Controller.AddBonus(bonus)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Błyskawiczny refleks</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    at = BonusFactory.GetByName("ThrowBonus", "Atut - błyskawiczny refleks")
+    at.BonusType.ReflexThrow += 2
+    character.Controller.AddBonus(at)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Czujność</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    bonus = BonusFactory.GetByName("SecondarySkillBonus", "Atut: Atletyka")
+    bonus.SkillName = "Nasłuchiwanie"
+    bonus.Value = 2
+    character.Controller.AddBonus(bonus)
+    bonus = BonusFactory.GetByName("SecondarySkillBonus", "Atut: Atletyka")
+    bonus.SkillName = "Spostrzegawczość"
+    bonus.Value = 2
+    character.Controller.AddBonus(bonus)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Specjalizacja</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    rightWeapon = character.GetItemByPosition(ItemPosition.RightHand)
+    leftWeapon = character.GetItemByPosition(ItemPosition.LeftHand)
+    ApplyForWeapon2(character, rightWeapon, atut)
+    ApplyForWeapon2(character, leftWeapon, atut)
+    return
+
+def ApplyForWeapon2(character, item, atut):
+    if (item == None):
+        return
+
+    if (item.Definition.PrototypeName != atut.AdditionalInfo and item.Name != atut.AdditionalInfo):
+        return
+
+    bonus = BonusFactory.GetByName("DamageBonus", "Atut: Specjalizacja")
+    bonus.Amount.AddElement(DamageBone(1, 2))
+    weaponBonus = BonusFactory.GetByName("WeaponBonus", "Atut: Specjalizacja")
+    weaponBonus.Item = item
+    weaponBonus.Bonus = bonus
+    character.Controller.AddBonus(weaponBonus)
+    return
+</Content>
+    </Script>
+    <Script>
+      <Name>Skupienie na umiejętności</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    bonus = BonusFactory.GetByName("SecondarySkillBonus", "Atut: Skupienie na umiejętności")
+    bonus.SkillName = atut.AdditionalInfo
+    bonus.Value = 3
+    character.Controller.AddBonus(bonus)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Twardość</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    bonus = BonusFactory.GetByName("HPBonus", "Atut: Twardość")
+    bonus.Value = 3
+    character.Controller.AddBonus(bonus)
+    return</Content>
+    </Script>
+    <Script>
+      <Name>Inicjatywa</Name>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    bonus = BonusFactory.GetByName("InitiativeBonus", "Atut: Doskonalsza inicjatywa")
+    bonus.Value = 4
+    character.Controller.AddBonus(bonus)
+    return</Content>
+    </Script>
+  </Scripts>
+  <Elements>
+    <AtutDefinition Name="Akrobatyka">
+      <Id>c609a840-5ddb-47fc-991e-a36ef5cff072</Id>
+      <Description>+2 do skakania i zwinności</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Atak w przelocie">
+      <Id>18bae384-6a9d-4043-8802-1ab2a2db3ee1</Id>
+      <Description>Wyprowadzając szarżę na wierzochowcu, możesz wykonać ruch i atak
+    a następnie znów się poruszyć (w linii ataku). Nie prowokujesz ataków
+  okazyjnych</Description>
+      <Requirements>Jeździectwo, walka z wierzchowca</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Atak z doskoku">
+      <Id>91cf1a63-bd22-4e37-9bba-30fb864a7141</Id>
+      <Description>Możesz ruszyć się zarówno przed jak i po ataku (ale pokonany dystans nie może przekorczyć maksymalnego dla postaci w rundzie)</Description>
+      <Requirements>Zr 13, Ruchliwość, Uniki, Atak+4</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Bezpośredni strzał">
+      <Id>1a94f7ea-f047-4c6a-b531-3c0cedf3c54c</Id>
+      <Description>+1 do ataku i obrażeń bronią dystansową gdy odl. mniejszą niż 9 m</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Biegłość w broni egzotycznej">
+      <Id>89eaa661-9c99-4ff3-a18e-84cb888a6bde</Id>
+      <Description>Brak kar</Description>
+      <Requirements>Atak +1</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Chwytanie strzał">
+      <Id>74bf81c6-515c-46db-9a60-1feca5a861cd</Id>
+      <Description>Możesz chwytać nadlatujące pociski i włocznie i odrzucić w stronę wroga (wymagana jedna ręka wolna)</Description>
+      <Requirements>Zr 15, doskonalsze uderzenie bez broni, odbijanie strzał</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Czar natury">
+      <Id>cba4bba6-2ef9-4d1e-a673-aacafd1ef1ec</Id>
+      <Description>Moższe używać komponentów werbalnych i materialnych w postaci zwierzęcia</Description>
+      <Requirements>Rzt 13, kształty natury</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Daleki strzał">
+      <Id>420c6fab-0d88-4286-8cc1-ee0356fb38b1</Id>
+      <Description>Zasięg broni x 1.5 (włocznie x2)</Description>
+      <Requirements>Bezpośredni strzał</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Defensywna walka dwoma orężami">
+      <Id>dcbe3d9f-00be-4dd9-800f-7e748364a9f9</Id>
+      <Description>+1 do KP gdy walczysz dwiema broniami</Description>
+      <Requirements>Zr 15, walka dwiema broniami</Requirements>
+      <Script>Defensywna walka dwiem bronmi</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Dodatkowe odpędzanie">
+      <Id>26a97e51-ba16-40f2-b43e-67c7c5cef2d7</Id>
+      <Description>Można brać wielokrotnie, za każdym razem zwiększa liczbę odpędzeń o 4</Description>
+      <Requirements>zdolność odpędzania</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsza finta">
+      <Id>097ccf34-02ef-4780-9d9c-da9a689b9e0e</Id>
+      <Description>Finta akcją ruchu</Description>
+      <Requirements>Int 13, wyszkolenie w walce</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsza szarża byka">
+      <Id>908ee4a3-dcde-487c-8902-124e905fbeeb</Id>
+      <Description>brak ataków okazyjnych, +4 do testów siły</Description>
+      <Requirements>SI 13, Potężny atak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsza walka dwoma orężami">
+      <Id>caf5b7a5-9ba8-4871-baf4-9b5ac356cc4b</Id>
+      <Description>Drugi atak bronią drugorzędną (-5 kara)</Description>
+      <Requirements>Zr 17, walka dwiema broniami, Atak+6</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsza walka w zwarciu">
+      <Id>349aef5a-a181-4bd1-a962-d4c7d6ec560e</Id>
+      <Description>Brak ataków okazyjnych w zwarciu, premia +4 do testów zwarcia</Description>
+      <Requirements>Zr 13, doskonalsze uderzenie bez broni</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze kontrczarowanie">
+      <Id>326b0c72-20c7-4f14-8641-9011e0543292</Id>
+      <Description>Możesz kontrczarować używając zaklęcia tej samej szkoły o jeden poziom wyższego</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze obalanie">
+      <Id>b0b8a8ff-a724-4742-bd11-887fa77543b4</Id>
+      <Description>Ofiara nie może uniknąć obalania, +4 do testu siły</Description>
+      <Requirements>SI 13, Potężny atak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze przewracanie">
+      <Id>0bba3e10-8332-4ac2-9fd6-72709c190d0e</Id>
+      <Description>Brak ataków okazyjnych, premia +4 do testu siły, możliwość wyprowadzenia od razu ataku</Description>
+      <Requirements>Int 13, Wyszkolenie w walce</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze rozbrajanie">
+      <Id>f647c3e0-56c4-433f-ba86-67d6ee38f330</Id>
+      <Description>Brak ataków okazyjnych, +4 do spornego testu</Description>
+      <Requirements>Int 13, Wyszkolenie w walce</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze roztrzaskiwanie">
+      <Id>8d4d6ff6-15f0-4bb7-8a00-20446c29252b</Id>
+      <Description>Brak ataków okazyjnych</Description>
+      <Requirements>SI 13, potężny atak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze trafienie krytyczne">
+      <Id>865197ae-4091-4490-b9ce-85daf41486d8</Id>
+      <Description>Podwojenie zagrożenia trafieniem kryt. (np. z 19-20 do 17-20)</Description>
+      <Requirements>Atak+8</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze uderzenie bez broni">
+      <Id>76462f23-43a2-45de-b8cb-0b5f197da15e</Id>
+      <Description>Uznaje cię za uzbrojnego nawet bez broni, możesz zadawać zarówno obrażenia jak i stłuczenia</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze uderzenie tarczą">
+      <Id>b056920a-07a3-4c9e-bd74-3a554ef44ef1</Id>
+      <Description>Nie tracisz premii z KP po uderzeniu tarczą</Description>
+      <Requirements>biegłość w tarczy</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalszy precyzyjny strzał">
+      <Id>c03793ec-4b7c-44fa-bd9d-ee7e7a89851e</Id>
+      <Description>Ignorujesz premię do KP zapewniane przez osłonę inną niż całkowita. Automatycznie trafiasz w przeciwników w zwarciu</Description>
+      <Requirements>Zr 19, bezpośredni strzał, precyzyjny strzał</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Finezja w broni">
+      <Id>30b59e36-637f-455c-a6f3-f5876ff7efba</Id>
+      <Description>Gdy walczysz bronią lekką/rapierem stosujesz premię ze zręczności a nie siły</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Krzepa">
+      <Id>fb0af27a-6365-4ddf-99c8-9f90dc9eeb65</Id>
+      <Description>Premie do pływania, forsownego marszu, brak zmęczenia skutek spania w pancerzu</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Meta]Maksymalizacja czaru">
+      <Id>dd26a1d7-9875-418f-a62d-176f2a74f970</Id>
+      <Description>Maksymalne obrażenia/leczenie, zajmuje komórkę o 3 poziomy wyższą niż rzeczywisty czar</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Odbijanie strzał">
+      <Id>a96e56f8-734a-44f4-8c92-5b3dc54ec108</Id>
+      <Description>Raz w rundzie moższe odbić wymierzony w ciebie atak dystansowy, wymaga jednej ręki wolnej</Description>
+      <Requirements>Zr 13, Doskonalsze uderzenie bez broni</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Oszałamiająca pięść">
+      <Id>c2bbb55d-b642-4502-b1f2-e24320879b5f</Id>
+      <Description>Raz w rundzie możesz wyprowadzić atak bez broni, który poza normalnymi obrażeniami zmusza przeciwnika do rzutu na Wytrwałość (ST: 10 +1/2 poziomu + premia z Rzt). Nieudany oznacza oszołomienie na 1 rundę. Oszołomiona postać traci premię z KP za zręczność i dostaje -2 do KP. Zdolności tej można użyc raz na 4 poziomy.</Description>
+      <Requirements>Zr 13, Rzt 13, Doskonalsze uderzenie bez broni</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Meta]Podbicie czaru">
+      <Id>15b7e0a1-ca6d-42d8-bcbb-59979bca21a0</Id>
+      <Description>Podbite zaklęcie ma wyższy poziom czaru niż normalnie ale zajmuje też wyższą komórkę</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Porywająca szarża">
+      <Id>62c0b27a-b53e-4dd1-83fa-549d6d50f1c4</Id>
+      <Description>Kiedy szarżujesz z wierzchowca zadajesz bronią do walki wręcz podwójne orażenia (kopią potrójne)</Description>
+      <Requirements>Jeździectwo, Atak w przelocie, walka z wierzchowca</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Meta]Poszerzenie czaru">
+      <Id>082f9d31-4674-44e3-aae3-dea432fd8ffd</Id>
+      <Description>Zwiększa obszar działani czaru o 100%. Zajmuje komórkę o 3 poziomy wyższą</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Potężniejsza specjalizacja w broni">
+      <Id>8f20769a-f771-4adc-bfd3-e0091559fc72</Id>
+      <Description>+2 do testów obrażeń</Description>
+      <Requirements>Biegłość w orężu, Potęzniejsze skupienie na broni, specjalizacja</Requirements>
+      <Script>Specjalizacja</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Potężniejsza walka dwiema broniami">
+      <Id>f64d0d8f-4512-49a2-90b6-bb38747ca0a0</Id>
+      <Description>Możesz wyprowadzić trzeci atak bronią drugorzędną (kara -10)</Description>
+      <Requirements>Zr 19, doskonalsza walka dwiema broniami, Atak+11</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Potężniejsze przenikanie czarem">
+      <Id>0d3704a1-c23e-4be3-8578-9529af20a4c5</Id>
+      <Description>+2 do poziomu czarującego w celu pokonania odporności na czary wroga</Description>
+      <Requirements>przenikanie czarem</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Potężniejsze skupienie na broni">
+      <Id>2679d603-62f5-44be-bf21-15fede5a58ab</Id>
+      <Description>+1 do testów ataku daną bronią</Description>
+      <Requirements>Skupienie na broni</Requirements>
+      <Script>Skupienie na broni</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Potężniejsze skupienie na czarze">
+      <Id>452273a1-6993-47b5-ad44-dd2750bb441f</Id>
+      <Description>Zwiększa ST o 1 dla czarów wybranej szkoły</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Potężny atak">
+      <Id>19c3c4fe-8188-472a-93fd-4d6079b6e0ab</Id>
+      <Description>Dla wszystkich ataków w rundzie, możesz zwiększyć obrażenia zmniejszając atak
+Dla broni dwuręcznej modyfikator obrażeń x2 </Description>
+      <Requirements>SI 13</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Meta]Powiększenie czaru">
+      <Id>0bd01d66-40ee-4ada-9d66-c9fd9d63421d</Id>
+      <Description>Zwiększa dystans czaru o 100%, zajmuje komórkę o poziom wyższą</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Precyzyjny strzał">
+      <Id>9cd63020-a3d5-4a1e-86a5-a68b034734a5</Id>
+      <Description>Nie ma kary -4 do ataku w walczącego wręcz wroga</Description>
+      <Requirements>Bezpośredni strzał</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Meta]Przedłużenie czaru">
+      <Id>60010f8d-c252-432a-afa8-343af08e48ee</Id>
+      <Description>Czar działa dwa razy dłużej, zajmuje komórkę o poziom wyższą</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Przenikanie czarem">
+      <Id>1eea146b-bc67-45ef-a357-edb3745e7f40</Id>
+      <Description>Przenikanie czarem</Description>
+      <Requirements>+2 do testów pokonywanie odpornośći na czary</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Meta]Przyspieszenie czaru">
+      <Id>1b06225b-55ae-4189-bce7-f135d23c3359</Id>
+      <Description>Rzucenie czaru to akcja darmowa, zajmuje komórkę o 4 poz. wyższą. W rundzie można rzucić tylko jeden taki czar.</Description>
+      <Requirements>Brak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Rozszczepienie">
+      <Id>b5193529-fe45-4036-8a54-f21dfa73fe65</Id>
+      <Description>Po obaleniu wroga, możesz wyprowadzić atak w następnego</Description>
+      <Requirements>S 13, potężny atak</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Ruchliwość">
+      <Id>351f8b11-80b4-48be-a505-8f865da93d60</Id>
+      <Description>Premia +4 do KP w przypadku ataków okazyjnych</Description>
+      <Requirements>Zr 13, Uniki</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Skupienie na broni">
+      <Id>2ef49be5-2659-4c50-9a56-80f1475e8d2b</Id>
+      <Description>+1 do testów ataku daną bronią</Description>
+      <Requirements>Brak</Requirements>
+      <Script>Skupienie na broni</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Skuteczniejsze przyzywanie">
+      <Id>f313ac50-9fcb-4187-8e10-a0dc6e6b8655</Id>
+      <Description>Przywołana istota dostaje +4 SI, +4 BD</Description>
+      <Requirements>Skupienie na czarze (przywoływanie)</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Skuteczniejsze rozszczepienie">
+      <Id>dd31b145-e6ac-40c3-803a-1d31a8d2a605</Id>
+      <Description>Działa jak roszczepienie ale można użyć dowolną ilość w rundzie</Description>
+      <Requirements>S 13, potężny atak, rozszczepienie</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Strzał w biegu">
+      <Id>c0040919-e167-45d3-aec9-fe51e668fb4b</Id>
+      <Description>Możesz ruszyć się zarówno przed jak i po strzale</Description>
+      <Requirements>Zr 13, bezpośredni strzał, ruchliwość, uniki</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Strzelanie z wierzchowca">
+      <Id>ca180174-aba7-4e0b-956a-fae251b89297</Id>
+      <Description>Kara -2 zamiast -4, -4 zamiast -8 gdy koń biegnie</Description>
+      <Requirements>Jeżdziectwo, walka z wierzchowca</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Stworzenie berła">
+      <Id>2f217221-c770-43b1-b76a-35af51d25066</Id>
+      <Description>1 dzień na każde 1000 sz wartości</Description>
+      <Requirements>9 poz. czarującego</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Stworzenie cudownego przedmiotu">
+      <Id>cb1d4566-84e2-4d2a-bdf6-01c164b99ba7</Id>
+      <Description />
+      <Requirements>3 poz. czarującego</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Skupienie na czarze">
+      <Id>6ee3fbc6-a01d-4fb5-98c6-ca8159102330</Id>
+      <Description />
+      <Requirements>+1 do ST przeciwko czarom danej szkoły</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Stworzenie laski">
+      <Id>c06f677f-f8f3-4ffb-bee3-a9eb1889ed25</Id>
+      <Description />
+      <Requirements>12 poz. czarującego</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Stworzenie magicznej broni i pancerza">
+      <Id>1daa6520-cc1c-4082-9208-920c41f6d382</Id>
+      <Description />
+      <Requirements>5 poz. czarującego</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Stworzenie różdżki">
+      <Id>4e5d1e3c-b93d-430b-bd8d-5c4982cf5a6a</Id>
+      <Description>ST: poziom 10 + poziom różdzki
+K20 + modyfikator (INT)
+1 poz - mag. pociski
+5 poz - błyskawice
+8 poz - ogień/ lód</Description>
+      <Requirements>5 poz. czarującego</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Szybki strzał">
+      <Id>bf0c3115-9ac5-4cb9-aeeb-1a892f4363d4</Id>
+      <Description>Jeden dodatkowy atak bronią dystansową, ale wszystkie ataki -2 do ataku</Description>
+      <Requirements>Zr 13, Bezpośredni strzał</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Szybkie dobywanie broni">
+      <Id>f4f7ab2f-7d36-4054-bc6f-be50ec391c9e</Id>
+      <Description>Dobywasz broni w akcji darmowej</Description>
+      <Requirements>Atak+1</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Szybkie naciąganie kuszy">
+      <Id>8b5daf10-020f-415c-99a1-4037e8799be2</Id>
+      <Description>Naciąganie kuszy akcją darmową (lekka) lub ruchu (ciężka)</Description>
+      <Requirements />
+    </AtutDefinition>
+    <AtutDefinition Name="Talent do magii">
+      <Id>6d740623-96b5-4f8f-b6d0-815a393ebc32</Id>
+      <Description>+2 do testów czarostwa i używania mag. urządzeń</Description>
+      <Requirements />
+    </AtutDefinition>
+    <AtutDefinition Name="Tropienie">
+      <Id>2af4260f-35b7-44a4-a4dc-651aa3b140b1</Id>
+      <Description>ST: 5 (bardzo miękkie podłoże) do 20 (bardzo twarde)</Description>
+      <Requirements />
+    </AtutDefinition>
+    <AtutDefinition Name="Twardość">
+      <Id>0998a73b-0211-4b4e-8ac9-c3b01a868c14</Id>
+      <Description>+3 PŻ</Description>
+      <Requirements />
+      <Script>Twardość</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Uniki">
+      <Id>749298e6-5ec2-4f60-9d9e-e85cd98767a8</Id>
+      <Description>+1 do KP względem wybranego wroga</Description>
+      <Requirements>Zr 13</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Walka dwoma orężami">
+      <Id>18122a91-faf2-44d8-9b28-e03db652b442</Id>
+      <Description>Zmniejsza kary: główna broń o 2 a drugorzędnej o 6 </Description>
+      <Requirements>Zr 15</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Walka na ślepo">
+      <Id>59e5be5c-acc7-4f88-a4e7-e5195c7f8d67</Id>
+      <Description>Możesz powtórzyć atak gdy chybiłeś ukrytego przeciwnika</Description>
+      <Requirements>Zr 13</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Walka z wierzchowca">
+      <Id>bf35ff03-41f3-4267-90b3-914c5638afe8</Id>
+      <Description>Raz w rundzie, po udanym teście jeździectwa możesz zanegować obrażenia zadane wierzchowcowi</Description>
+      <Requirements>Jeżdziectwo</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Warzenie eliksirów">
+      <Id>345e312e-7ea9-4699-8a54-1c19056f2760</Id>
+      <Description>Potrafisz warzyć mikstury</Description>
+      <Requirements>Poz. 3 czarującego</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Wielostrzał">
+      <Id>600aee3b-14b4-4e86-b34c-a93bb703a5bd</Id>
+      <Description>Możesz wystrzelić dwie strzały do przeciwnika znajdującego się nie dalej niż 9m, z karą -4</Description>
+      <Requirements>Zr 17, bezpośredni strzał, szybki strzał</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Wirujący atak">
+      <Id>45adb9b7-c65f-40dc-a548-bd81eb12bb77</Id>
+      <Description>Poświęcając akcję całkowitego ataku możesz zaatakować wszystkich przeciwników naokoło</Description>
+      <Requirements>Zr 13, Int 13, Atak z doskoku, ruchliwość</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Wykucie pierścienia">
+      <Id>23ecaf89-7127-4f1e-928d-6662d975c472</Id>
+      <Description>Potrafisz wykuć pierścień</Description>
+      <Requirements>12 poz.</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Wyszkolenie w walce">
+      <Id>37681043-73c5-410f-976d-acc6a011e277</Id>
+      <Description>Gdy atakujesz, możesz zdecydować się na karę -5 do testów ataku a tę premię użyć do KP</Description>
+      <Requirements>Int 13</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Meta]Wzmocnienie czaru">
+      <Id>bcc20b02-3e9a-40d7-898e-dd97102b24cc</Id>
+      <Description>Liczbowe efekty czaru ulegają zwiększeniu o połowę. Zajmuje komórkę o 2 poz. wyższą</Description>
+      <Requirements />
+    </AtutDefinition>
+    <AtutDefinition Name="[Tp]Zapisanie zwoju">
+      <Id>25b4e649-d849-4b37-9424-9cd50de85253</Id>
+      <Description>Tworzysz zwój. Koszt: 25 sz. x poz. zaklęcia</Description>
+      <Requirements>1 poz.</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Zawziętość">
+      <Id>cb3cbb76-b100-4ef4-a52f-66361664bbce</Id>
+      <Description>Gdy PŻ pomiędzy -1 a -9 automatycznie się stabilizujesz. Możesz działać jako osoba poraniona (1 akcja w rundzie).</Description>
+      <Requirements>Krzepa</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Zmysł walki">
+      <Id>f0ae68e8-0c5e-40a8-9dcb-426f207235ee</Id>
+      <Description>Możesz wyprowadzić dodatkowe ataki okazyjne w ilości równej premii ze zręczności</Description>
+      <Requirements />
+    </AtutDefinition>
+    <AtutDefinition Name="Potężna krzepa">
+      <Id>4de3c4d0-5377-4095-8870-3e0040e15677</Id>
+      <Description>OMG WTF ?</Description>
+      <Requirements>Siła, siła, dużo siły</Requirements>
+      <Script>BD_Script</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Szał">
+      <Id>2bf72171-08a1-416c-9fac-8b35c9321cae</Id>
+      <Description>Zapewnia +4 Siły i + 4 Kondycji
+Trwa 3 r + modyfikator z kondycji (już zwiększony)</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Nieświadomy unik">
+      <Id>3a173b53-f41e-4e62-9180-397da7c64d4e</Id>
+      <Description>Zachowuje premię do KP ze zręczności nawet jeśli zaskoczony.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Wyczucie pułapek">
+      <Id>487c40a5-1599-4375-9c8a-00f145762852</Id>
+      <Description>+1 do rzutów na REF przeciwko pułapkom</Description>
+      <Requirements />
+    </AtutDefinition>
+    <AtutDefinition Name="Redukcja obrażeń">
+      <Id>fc935b5f-b07b-4b7d-8433-3334209ab655</Id>
+      <Description>Zmniejsza obrażenia fizyczne</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Potężniejszy szał">
+      <Id>804f4ebe-be99-42e8-ba7a-7c394129d6bb</Id>
+      <Description>+6 SI, +6 KON, +3 Wola</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Niezłomna wola">
+      <Id>c153c84a-e70b-4d98-b5dc-f44ffeeb084f</Id>
+      <Description>+4 do rzutów na wolę przeciwko czarom oczarowań gdy na szale</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Widzenie w ciemnościach">
+      <Id>f66a1223-4750-46b3-a93f-0902ba8106c0</Id>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Muzyka barda">
+      <Id>fc948c48-f42a-45a7-a43e-9da079754fbd</Id>
+      <Description>Może użyć 1 raz/dziennie/poziom
+Akcja standardowa i koncentracja na podtrzymanie efektu</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Fascynacja">
+      <Id>78cf519c-5268-433a-8d45-7cbade46471a</Id>
+      <Description>Fascynuje 1 istote na 3 pozomy, max. odl 27m, istota siedzi i słucha pieśni dopóki bard nie przestanie grać.
+ST na Wolę = test Występów</Description>
+      <Requirements>3 rangi w Występach</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Inspirowanie odwagi">
+      <Id>5c240576-8668-47d2-9f65-c36d5edee4f1</Id>
+      <Description>Chroni przed strachem. +1 do rzutów na zauroczenia, +1 do ataku i obrażeń. Twa jeszcze 5 min po tym jak bard skończy grać.
+Premia rośnie +2 na 8 poz., +3 ma 14, +4 na 20.</Description>
+      <Requirements>3 rangi w Występach</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Kontrpieśń">
+      <Id>c5480bbc-7fa8-4225-8bc3-f7709e57092c</Id>
+      <Description>Potrafi kontrować czary i efekty oparte na dźwięku</Description>
+      <Requirements>3 rangi w Występach</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Inspirowanie biegłości">
+      <Id>cce0535e-a4d4-42a9-93c2-3622f14b6a44</Id>
+      <Description>+2 do testu umiejętności towarzysza. </Description>
+      <Requirements>6 rang w Występach</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Sugestia">
+      <Id>5edce067-5213-4cb9-9274-952975b720d6</Id>
+      <Description>Moża zasugerować coś zafasyconowanej istocie.
+ST (Wola) = 10 + 1/2 poz. barda</Description>
+      <Requirements>9 rang w Występach</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Pieśn wolności">
+      <Id>0c49e12c-5f0d-4965-a1bd-289751f996d8</Id>
+      <Description>Efekt taki jak "Złamanie zaklęcia", zasięg 9m</Description>
+      <Requirements>12 poz, 15 rang w Występach</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Bard] Inspirowanie heroizmu">
+      <Id>1fb6c8f8-681b-4e09-8735-2c78aa485795</Id>
+      <Description>Premia +4 do rzutów i +4 do KP dla sprzymierzeńca. Trwa jeszcze po 5 rund po tym jak skończy śpiewać.</Description>
+      <Requirements>15 poz., 18 rang w Występach</Requirements>
+    </AtutDefinition>
+    <AtutDefinition Name="Więź z dziczą">
+      <Id>60ffe9b8-9d9d-4375-bde6-3c9af3599f30</Id>
+      <Description>Druid potrafi zmienić nastawienie zwięrzęcia. Działa jak test Dyplomacji:
+rzut: K20+poziom+mod. z Charyzmy</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Druid] Leśny krok">
+      <Id>240a2642-79db-434b-8318-3b53866a566f</Id>
+      <Description>Druid potrafi poruszać się przez każde poszycie leśne z normalną prędkością.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Druid] Wędrówka bez śladów">
+      <Id>91176ad4-8dce-485f-bccc-9fd882583077</Id>
+      <Description>Druid nie zostawia śladów w lesie, chyba że zechce to zrobić</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Druid] Kształty natury">
+      <Id>3963cc56-f45e-45ff-a757-665e65d4bb97</Id>
+      <Description>Możliwość przemiany w zwierzę rozmiaru średniego lub małego (drud musi znać to zwierzę). Efekt utrzymuje się godzinę na poziom druida. Zamiana to akcja standardowa. Za każdym zdolności druid odzyskuje punkty wytrzymałosci (do pełnych). 
+Od 8 poz. może zmieniać się w zwierzęta Duże a od 15 Wielkie ale KW zwierzęcia nie może przekraczać poziomu druida.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Druid] Przemiana w żywiołaka">
+      <Id>845cea7c-38ed-4a1d-8163-c6f5251d76cf</Id>
+      <Description>Rozmiaru: średniego, małego lub dużego</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Druid] Niepodatność na jad">
+      <Id>9ec34508-0ae7-4a1a-a72f-8504116a4fe5</Id>
+      <Description>Niewrażliwość na trucizny</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Podstępny atak">
+      <Id>d3da14b1-5bf2-4688-9969-95d141522db1</Id>
+      <Description>Dodatkowe obrażenia, zadawane w przypadku gdy przeciwnik nie ma KP ze zręczności. Nie działa na istoty nie mające punktów wrażliwych (np. nieumarłych)</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Uchylanie">
+      <Id>d4ac74d4-ec4a-4d25-a0fb-730361cc06bc</Id>
+      <Description>Gdy uda się rzut obronny na Ref powodujący zmniejszenie obrażń o połowę, to postać posiadająca ten atut nie otrzymuje ich wcale.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze uchylanie">
+      <Id>5a39744c-b027-4ccb-872e-780b760b070f</Id>
+      <Description>Tak jak uchylanie. ale w przypadku nieudanego rzutu na Ref otrzymujesz połowę obrażeń</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Mistrzostwo w umiejętnościach">
+      <Id>e83737d5-579d-4233-8a2b-59d5d1e58103</Id>
+      <Description>Możesz brać 10, nawet gdy zestresowany</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Sprzyjający moment">
+      <Id>d0a391dc-f577-4dfc-9608-193e3d250bf5</Id>
+      <Description>Raz w rundzie możesz wykonać dodatkowy atak okazdyjny w przypadku kiedy twój towarzysz trafił wroga.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Wyniszczający atak">
+      <Id>154f3b80-2817-4ecb-8db4-038f066c54d5</Id>
+      <Description>Wróg zaatakowany w wyniku podstępnego ataku traci również 2 punkty Siły. Regenerują się one w tempie 1/dziennie.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Premia do KP">
+      <Id>ab2dc4c4-1a6c-4eb4-80b4-bdd8b080d5e7</Id>
+      <Description>Dodaje do KP premię z Mąrdości, dodatkowo otrzymuje +1 KP na każde 5 poziomów. Ale tylko wtedy kiedy nie nosi zbroi.</Description>
+      <Script>Premia do KP (mnich)</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Grad ciosów">
+      <Id>4d5c02ae-d1af-4155-91e9-6d5cb2a35bf8</Id>
+      <Script>Grad ciosów (mnich)</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Powolny upadek">
+      <Id>630e0993-0a8b-4d5e-a4ce-fafcd47db230</Id>
+      <Description>Jeśli tylko mnich dosięgnie ściany może zmniejszyć obrażenia jakie odnosi</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Czystość ciała">
+      <Id>97f75b5d-96e4-4aaf-a537-bfe8aa11f910</Id>
+      <Description>Odporność na choroby</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Jedność ciała">
+      <Id>0ef7684a-63d4-4b85-8143-e3b5f35d0b05</Id>
+      <Description>Każdego dnia potrafi uleczyć sobie tyle ran ile wynosi jego poziom x 2</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Diamentowe ciało">
+      <Id>c048fca4-1963-4849-a1d2-2093b38f9ae5</Id>
+      <Description>Odporność na trucizny</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich[ Daleki krok">
+      <Id>8d3a916d-9be8-471f-9c5a-6d836a992c48</Id>
+      <Description>Raz dziennie może przemieścić się w dowolne miejsce (jak za pomocą "Drzwi przez wymiary" -&gt; poziom czarującego  = poziom / 2) </Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Diamentowa dusza">
+      <Id>5014b760-d590-4032-a6a8-5345c9566267</Id>
+      <Description>Uzyskuje odporność na czary OC = poziom + 10
+Aby czar zadziałał to poz. czarującego + K20 &gt; OC</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Drżąca pięść">
+      <Id>a7d5e5da-b8c3-4232-8b85-5275b7299377</Id>
+      <Description>Można użyc raz na tydzień.
+Po trafieniu w przeciwnika (gracz musi zadeklarować że uzywa tej zdolności), może sobie zażyczyć śmieci żywej istoty. Musi ona wykonać rzut na Wytr. o ST = 10 + 1/2 poz + Mądr albo ginie</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Puste ciało">
+      <Id>1ac89a1e-2b7d-4ba9-9bda-c0b594688d40</Id>
+      <Description>Możliwość przechodzenia w wymiar eteryczny, na tyle rund ile ma poziom.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Mnich] Idealne ja">
+      <Id>13df9e0b-830c-49e6-bc4b-42ad5171d07f</Id>
+      <Description>Mnicha traktuje się jako przybysza a nie humanoida. Zyskuje redukcję obrażeń 10/magia (redukuje obrażenia od zwykłej broni i nat. oręża)</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Paladyn] Ugodzenie zła">
+      <Id>eb24024e-18f3-477e-88fb-09e02d8e9526</Id>
+      <Description>W ataku przeciwko złym istotom Paladyn może dodać premię z Charyzmy do testu ataku i swój poziom do zadanych obrażeń.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Paladyn] Wykrycie zła">
+      <Id>67bb5c02-7607-46da-a466-2159a7510319</Id>
+      <Description>Działa analogicznie jak zaklęcie o tej nazwie. Akcja darmowa</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Paladyn] Nakładanie rąk">
+      <Id>07bb791e-cc28-48bd-9a19-04e426157bfd</Id>
+      <Description>Może uleczyć ilość PZ równą: poziom x premia z charyzmy. Akcja standardowa. Można użyc raz dziennie ale rozdzelić punkty.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Paladyn] Aura odwagi">
+      <Id>007ad937-cbbd-4667-bf43-f5150bbcbc01</Id>
+      <Description>Niepodatność na strach. Wszyscy w promieniu 3m otrzymują +4 na rzuty na strach,</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Paladyn] Boskie zdrowie">
+      <Id>9132a5f5-b1da-4724-b7ac-86de3c7e4516</Id>
+      <Description>Niewrażliwość na choroby</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Odpędzanie nieumarłych">
+      <Id>a0de1ccf-dbc4-4662-a988-fcfe7f909277</Id>
+      <Description>TODO - opisać jak to działa</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Paladyn] Przełamanie choroby">
+      <Id>11191764-3c18-4306-b918-d540a31784dc</Id>
+      <Description>Analogicznie jak czar o tej nazwie</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Paladyn] Boska łaska">
+      <Id>50fdd6fb-3cba-43fc-bd66-247b606d80c6</Id>
+      <Description>Premia do rzutów równa premii z charyzmy</Description>
+      <Script>Boska łaska (Paladyn)</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Tropiciel] Preferowany wróg">
+      <Id>ec289366-d42a-4ee6-afc0-15ebaf8055b5</Id>
+      <Description>Co 5 poziomów można wybrać kolejnego. Postać otrzymuje + 2 obrażeń i testów związnych z danym stworzeniem. co 5 poziomów ta premia wzrasta o +2</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Klasa/Tropciel] Kamuflaż">
+      <Id>cd7acc10-d401-458e-b590-0c3ad5bf1ae2</Id>
+      <Description>Tropiciel może ukrywać się na otwartym terenie</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Atletyka">
+      <Id>9ad10e40-c7ce-4fcd-9898-b5ea853ea36c</Id>
+      <Description>+2 do pływania i wspinaczki</Description>
+      <Script>Atletyka</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Błyskawiczny refleks">
+      <Id>7b7ce2c5-32ed-465f-be39-81136c026a6b</Id>
+      <Description>+2 do rzutów na Ref</Description>
+      <Script>Błyskawiczny refleks</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Czarowanie w walce">
+      <Id>603702e8-6ebe-4d52-bc48-0dee486747e7</Id>
+      <Description>+4 do testów koncetracji podczas walki</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="Czujność">
+      <Id>d0325d30-0d55-40be-a6ee-f01c112a31a7</Id>
+      <Description>+2 do testów nasłuchiwania i spostrzegawczości</Description>
+      <Script>Czujność</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Specjalizacja w broni">
+      <Id>8a3488e6-594d-4e4f-914b-a5010d05cdf3</Id>
+      <Description>+2 do obrażeń daną bronią</Description>
+      <Script>Specjalizacja</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Skupienie na umiejętności">
+      <Id>69aa1f1a-3dbe-46a5-9e80-402ec6eeaad2</Id>
+      <Description>+3 do testów danej umiejętności</Description>
+      <Script>Skupienie na umiejętności</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsza inicjatywa">
+      <Id>159e050a-50d2-4980-b2b8-e506be7b1b55</Id>
+      <Description>+4 do testów inicjatywy</Description>
+      <Script>Inicjatywa</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="Odporność na zauroczenia">
+      <Id>8fec5036-cc18-447d-80b7-ad86527a6c14</Id>
+    </AtutDefinition>
+    <AtutDefinition Name="Doskonalsze skupienie na broni">
+      <Id>4d94e11c-1f37-4d90-aaf4-1c33961e5c3f</Id>
+      <Script>Skupienie na broni</Script>
+    </AtutDefinition>
+    <AtutDefinition Name="[Rasa/Dugear] Niewidzialność">
+      <Id>78575792-df17-410a-9269-21545dfffec8</Id>
+      <Description>Wrodzona umiejętność niewidzialności, może używać co 10 rund.</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Siewca śmierci] Większe rozpraszanie">
+      <Id>9de30f46-0d59-497d-a0ff-950e39a58f6e</Id>
+      <Description>Tak jak 20. mag</Description>
+    </AtutDefinition>
+    <AtutDefinition Name="[Siewca śmierci] Negatywny rozprysk">
+      <Id>0f8504f1-5ed1-42b9-8e30-5171dd11bac9</Id>
+      <Description>Wybuch energii negatywnej o promieniu 6 m zadający K8+10 obrażeń. Można użyć co 3 rundy.</Description>
+    </AtutDefinition>
+  </Elements>
+</RepositoryOfAtutDefinition>

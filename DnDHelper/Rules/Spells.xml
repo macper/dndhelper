@@ -1,0 +1,4120 @@
+<?xml version="1.0"?>
+<ArrayOfSpellDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpellDefinition>
+    <Name>Magiczny pocisk</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>1</Level>
+    <Description>K4+1 nigdy za dużo, można wybrać cele dla oddzielnych pocisków</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Tarcza</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>1</Level>
+    <Description>+4 KP, blokuje Magiczne Pociski</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Leczenie lekkich ran</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>1</Level>
+    <Description>Leczy K8+1/poz (max 5)</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Niewidzialność</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>2</Level>
+    <Description>Można słyszeć niewidzialne istoty.</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Dotyk chłodu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>1</Level>
+    <Description>Zadaje K6 obrażeń.
+Rzut na wytrwałość albo obniżenie Siły o 1</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Promień osłabienia</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>1</Level>
+    <Description>Obniża siłę o K6+1 na dwa poziomy</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wywołanie strachu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>1</Level>
+    <Description>K4+1 rund strachu lub 1 runda gdy rzut 
+na Wolę się powiedzie. Działa na istoty o 5 lub mniej KW</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Identyfikacja</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>1</Level>
+    <Description>Wyjawia właściwości</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wykrycie nieumarłych</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>1</Level>
+    <Description>W promieniu 18 m
+1 r. - brak lub obecność nieumarłych
+2 r. - Liczba aur oraz siła najpotężniejszej
+3 r. - Siła i położenie każdej z aur
+KW/Aura:
+1 Słaba
+2-4 Umiarkowana
+5-10 Silna
+11&gt; Przytłaczająca</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wykrycie sekretnych drzwi</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>1</Level>
+    <Description>Stożek o zas. 18m, wymaga koncetracji. Wykrywa magicznie ukryte drzwi/przejścia
+</Description>
+    <Duration>1 min/ poziom</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Płonące dłonie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>1</Level>
+    <Description>1k4 obrażen od ognia/poziom (max. 5K4), stożek o zas. 4,5m</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Porażający uścick</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>1</Level>
+    <Description>K6 /poz od elektryczności (max. 5K6) - 
+na dotyk</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Lustrzane odbicie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>2</Level>
+    <Description>2+1 na 3 poz. odbić (max. 8)
+KP ułudy: 10 + premia ze zręczności
+</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Płomienny promień</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Atak dystandowy dotykowy zadający 
+4k6 obrażeń (+1 promień na każde 4 poz)</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Płomienie Agannazara</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Promień o zas. 12 m zadający 2K8 obrażeń
+od ognia. Promień utrzymuje się 2 rundy.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kołatka</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Otwiera zamki/drzwi</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Siła Byka</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Zwiększa SI o 4</Description>
+    <Duration>1 min/poz</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Błogosławieństwo</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>1</Level>
+    <Description>Zwiększa atak, rzuty i obrażenia o 1
+Zasięg: 15m</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Rozkaz</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>1</Level>
+    <Description>1 rozkaz (Wola neguje):
+1. Podejdź
+2. Upuść
+3. Padnij
+4. Uciekaj
+5. Stój
+Trwa 1 rundę</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Tarcza wiary</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>1</Level>
+    <Description>KP: +2 / + 1 na 6 poz. (max. +5)</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Leczenie średnich ran</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>2</Level>
+    <Description>2K8 + 4 P.Ż</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Unieruchomienie osoby</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>2</Level>
+    <Description>Paraliż na 1 runde/poziom.Wola neguje. Ofiara w każdej rundzie może wykonać nowy rzut obronny (akcja całorundowa)</Description>
+    <Duration>1 r.poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 3</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>3</Level>
+    <Description>Przyzywa następujące potwory:
+1. Zły: Piekielny ogar</Description>
+    <Duration>1 r/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Rozproszenie magii</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Zaklęcie potrafi rozpraszać czary i zdolnośći czaropodobne. Czar można użyć na 3 sposoby:
+1. Kierunkowe rozproszenie magii - celem zaklęcia pada jedna istota lub przedmiot. Wykonujesz test rozpraszania (K20 + twój poziom (max.10) przeciw zaklęciu lub każdemu z efektów czarów. ST wynosi 11 + poziom rzucająćego to zaklęcie. Można za jego pomocą odesłać przywołanego potwora/istotę.
+W przypadku rzucenia na przedmiot magiczny jego moc zostaje stłumiona na K4 r. 
+2. Obszarowe rozproszenie magii - wpływa na wszystkie istoty w promieniu 6m. Wpływa tylko na czar/efekt najwyższego poziomu, ale jak nie uda się rozproszyć jest sprawdzany kolejny czar/efekt. Czar neguje też efekt obszarowych czarów (tylko w obszarze działania). Za pomocą tego czaru można odwołać sprowadzone istoty znajdujące się w obszarze działania.
+3. Kontrczarowanie - możesz sprobować skontrować dowolny czar rzucany przez przeciwnika, po udanym wykonaniu testu rozpraszania.
+</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kwasowa strzała</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>K6 + (k4+3 od kwasu) co rundę k4+2
+przez 3 rundy.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ognista kula</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Zadaje K6 obrażeń od ognia/poz</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Alarm</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Uruchamiają je stworzenia malutkie lub większe.
+Zasięg działania: 18m
+Można rzucić na obszar odległy o max. 200 m.</Description>
+    <Duration>2 godz/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Bezpieczne schronienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Tworzy chatkę z materiałów dostępnych nieopodal. Czas rzucania:10 min, trwa 2 godz/poz.</Description>
+    <Duration>2 godz/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Bluźnierstwo</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Czas rzucania: 1 runda
+Zasięg: Fala o promieniu 12 m od rzucającego 
+Brak rzutu obronnego, nie działa na złe istoty
+W zależności od KW wzgledem rzucającego:
+0: Otumanienie
+-1: Wycieńczenie, Otumanienie
+-5: Sparaliżowanie, Otumanienie, Wycieńczenie
+-10: Śmierć
+Otumanienie - trwa 1 rundę
+Wycieńczenie - utrata 2K6 SI na 2K4 rund
+Sparaliżowanie - 10 min paraliżu</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Błogosławione jagody</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Zmienia 2K4 normalnych jagód w magiczne, każda z nich syci na jeden dzień dowolną osobę, dodatkowo leczy 1 PW.</Description>
+    <Duration>jeden dzień/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Błyskawica</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Zadaje K6 obrażeń od elektryczności na poziom (do 10K6), ma zasięg 36 m.</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Boska moc</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Premia do ataku (bazowa) = poziom postaci
++6 SI
++1 PW/poz</Description>
+    <Duration>1 r/poz</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Celny cios</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>1</Level>
+    <Description>Do następnego ataku premia +20 (tylko na siebie)</Description>
+    <Duration />
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Chmura mgły</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>2</Level>
+    <Description>Tworzy chmurę mgły, w promieniu 6m i wys. 6m. Widoczność do 1,5 m wewnątrz.
+Rozwiewa wiatr</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Chmura kwasu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>Tworzy chmurę mgły, w promieniu 6m i wys. 6m. Zadaje 2K6 obrażeń od kwasu każdej istocie i przedmiotowi</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Chodzenie po wodzie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Na dotyk, trwa 10 min/poz.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ciało w kamień</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>6</Level>
+    <Description>rzut obronny na Wytrwałość, wpływa tylko na istoty cielesne</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ciemność</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Promień 6m,. Wszystkie istoty korzystają z ukrycia (20%). Celem czaru jest przedmiot.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Cierniste kamienie</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>4</Level>
+    <Description>Z Kamiennego podłoża wyrastają kolce, zadające K8 obrażeń przechodzącym istotom i zmniejszającym ich prędkość o 1/2.
+Obszar: kwadrat o boku 3m/poz.
+Wykrycie: ST:25</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Cisza</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>2</Level>
+    <Description>Rzut na Wolę neguje,
+Promień: 6m.</Description>
+    <Duration>1 min./poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Deszcz ze śniegiem</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>3</Level>
+    <Description>walec o promienu 12m i wysokość 6m. Ogranicza pole widzenia, zmniejsza szybkość o 1/2, co rundę ST:10 zachowanie równowagi albo upadek.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Dezorientacja</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>4</Level>
+    <Description>Trwa 1 rundę/poz, Wola neguje. Efekty:
+01-10 - atak na osobę która rzuciła ten czar
+11-20 - nic
+21-50 - bełkotanie bez sensu
+51-70 - ucieczka od istoty która rzuciła ten czar
+71-100 - atak najbliżej istoty</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Dotyk wampira</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>3</Level>
+    <Description>Atak dotykowy zadający K6 obrażeń na 2 poz. (max.10K6), odebrane P.Z dodawane są do aktualnych PZ na okres 1 godz.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Drzewny krok</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Możesz przenośic się z wnętrza jednego drzewa do drugiego (tego samego gatunku).
+Zasięg:
+Dąb, jesion,cis - 900m
+Wiąz, Lipa - 600m
+Inne liściaste - 450m
+Iglaste - 300m</Description>
+    <Duration>1 drzewo/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Drzewny kształt</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Zamieniasz się w drzewo KP+10, zr=0</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Drzwi przez wymiary</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>4</Level>
+    <Description>Teleportuje o zas. 120m + 12m/poz.</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Fałszywe życie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>2</Level>
+    <Description>Tymczasowe P.Z K10 + 1/poz.</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Gąszcz cierni</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description> obszar: kwadrat o boku 3m/poz.
+Gęste ciernie utrudniają poruszanie się (1/2 szybkości) zadają K4 obrażeń za każde przebyte 2m.</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Gracja kota</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>ZR+4</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kamienna skóra</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Redukcja obrażeń /10 do 150 pkt. (10/poz)</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Klosz niewrażliwości, mniejszy</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Odporność na czary 3 poz. i niższego</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Klosz niewrażliwości</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Odporność na czary 4 poz. i niższego</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kontrolowanie pogody</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>7</Level>
+    <Description>Rzucanie czaru trwa 10min, zmiana pogody też tyle trwa.
+Pora roku/ możliwe efekty:
+Wiosna - Burza, Tornado, deszcz ze śniegiem
+Lato - ulewny deszcz, upał, gradobicie
+Jesień - Mgła, mżawka
+Zima - wiatr o sile huraganu, śnieg</Description>
+    <Duration>4K12 godz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kontrolowanie wiatru</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>5</Level>
+    <Description>Co każde 3 poz. 1 dodatkowy poziom:
+1. Silny wiatr
+2. Potęzny wiatr (uszkodzenia budynków i statków)
+3. Wichura (zrzuca istoty latające, wyrywa mniejsze drzewa)
+4. Huragan
+5. Tornado</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kontrolowanie wody</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>4</Level>
+    <Description>Obszar: 3 m^3 /poz
+Zmniejszenie lub podwyśzenie poziomu wody o 60 cm/poz.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Korowa skóra</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Zwiększa KP+2 + 1/poz. (max. + 5).</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kształtowanie drewna</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Kształtowanie kawałka drewna</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kształtowanie kamienia</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>0,27m^3 + 0,027m^3/poz kamienia</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Leczenie poważnych ran</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>3</Level>
+    <Description>3K8 + 1 /poz. (+15 max.)</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Leczenie krytycznych ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>4</Level>
+    <Description>4K8 + 1 /poz. (+20 max.)</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Lodowa nawałnica</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Walec o promieniu 6m.
+Burza gradowa zadająca wszystkim w obszarze 3K6 obrażeń obuchowych i 2K6 obrażeń od lodu. Szybkość wszystkich spada o połowę.</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczny kamień</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Zamienia do 3 kamyków w kamienie +1
+Kamienie te zadaja normalnie K6+1, a nieumarłym 2K6+2</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczny kostur</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Drewniany drąg zamienia się w magiczny +1, dodatkowo o kategorię rozmiaru większy -&gt; K8+1). </Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Neutralizacja trucizny</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>3</Level>
+    <Description>Leczy z trucizn, dodatkowo przez 10min/poz. obiekt jest odporny na trucizny.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Oddychanie wodą</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Umożliwia oddychanie wodą.</Description>
+    <Duration>2 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odporność na żywioły</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>1</Level>
+    <Description>Chroni przed temp. od -45 do 60 st. C. , zapewnia redukcję obrażeń 5 od ognia i zimna</Description>
+    <Duration>24 h</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odpychanie drewna</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>6</Level>
+    <Description>Linia od rzucającego 18m, odpycha wszystkie drewniane przedmioty.</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odpychanie metalu</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>8</Level>
+    <Description>Linia od rzucającego 18m, odpycha wszystkie metalowe przedmioty. </Description>
+    <Duration>1min/poz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ognista burza</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Czas rzucania: 1 runda,
+Sześcian o boku 3m/poz.
+Obrażenia od ognia K6/poz. (max. 20K6) - refleks zmniejsza o połowę</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ogniste nasiona</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>Zmienia do 4 żołędzi w zadające K6 obrażeń od ognia/poz., można rzucić na max.30 m.</Description>
+    <Duration>10min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ogniste ostrze</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Z ręki wystrzela płomienne ostrze zadające K8 +1/2 poz. obrażeń (wymagany atak dotykowy) - bez modyfikatora z siły.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ogniste uderzenie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Kolumna ognia zadająca K6 obrażeń na poz. (do 15K6) Połowa od ognia, połowa od boskiej mocy. Refleks zmniejsza o połowę.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Oplątanie</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Obszar o promieniu 12m.
+Refleks neguje ale poruszanie o 1/2 szybkości.
+Test Siły o ST.20 - wyzwolenie.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Oziębienie metalu</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>1. Zimny metal -&gt; nic
+2. Lodowaty - k4 obrażeń
+3-5 Mroźny - 2K4
+6 Lodowaty
+7 - Zimny</Description>
+    <Duration>7 rund</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Plaga insektów</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Rzucanie trwa 1 rundę,
+Przyzywa 1 rój na 3 poziomy (max. 6 rojów) szarańczy.</Description>
+    <Duration>1 min/poz</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Podmuch wiatru</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Czas działania 1 runda, zasięg. 18m
+Zdmuchuje małe istoty
+Średnie nie mogą się poruszać w stronę źródła wiatru
+-4 do ataków dystansowych</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Powłoka ochrony przed życiem</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Zasięg 3m od rzucającego, żyjąće istoty nie mogą przebyć. </Description>
+    <Duration>1 min/poziom.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przełamanie choroby</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>3</Level>
+    <Description>Leczy istotę z chorób</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przełamanie klątwy</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Leczy istotę z klątwy</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przełamanie paraliżu</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>2</Level>
+    <Description>Leczy istotę z paraliżu</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przełamanie strachu</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>1</Level>
+    <Description>Leczy istotę z strachu</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie zwierzęcia 1</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>1</Level>
+    <Description>- Orzeł
+- Sowa
+- Ośmiornica
+- Wilk
+- Mała żmija</Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie zwierzęcia 2</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>2</Level>
+    <Description>- Kałamarnica
+- Krokodyl
+- Niedźwiedź czarny
+- Wąż, żmija
+- Mały żywiołak</Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie zwierzęcia 3</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>3</Level>
+    <Description>- Lew
+- Ogromny orzeł
+- Thoqua
+- Wąż dusiciel
+- Złowieszcza łasica</Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie zwierzęcia 4</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>4</Level>
+    <Description>- Jednorożec
+- Niedźwiedź brunatny
+- Tygrys
+- Żywiołak średni</Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie zwierzęcia 5</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>-Gryf
+- Niedźwiedź polarny
+- Nosorożec
+- Tojanida
+- Orka
+- Żywiołak duży</Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie zwierzęcia 6</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>- Ogromna kałamarnica
+- Niewidzialny łowca
+- Tyranozaur
+- Żywiołak, wielki</Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Żelazne ciało</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>8</Level>
+    <Description>Zmienia ciało w żywe srebro - x 10 waga, brak fizjologii (oddychanie)
+Odporność /15 adamantyt
+Odporność na choroby, ogłuszenie, oślepienie, trucizny, elektryczność (jak żelazny golem)
++6 Si, -6 Zr</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zobaczenie niewidzialnego</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>2</Level>
+    <Description>Wykrywa wszystkie niewidzialne istoty i byty znajdujące się w polu widzenia.
+
+</Description>
+    <Duration>10min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zniszczenie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>7</Level>
+    <Description>Zabija daną istotę, rzut na Wolę powoduje 10K6 obrażeń. </Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Znalezienie ścieżki</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>6</Level>
+    <Description>wskazuje drogę do wybranego miejsca (na tym samym planie)</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zmiękczenie ziemi i kamienia</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Zmienia ziemię w błoto a kamień w glinę. Kwadrat o boku 3 m/poz.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zmartwychwstanie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>7</Level>
+    <Description>Przywraca do życia istotę nawet jeżeli nie jest całośći. Istota odzyskuje wszystkie P.Ż.
+Czas rzucania: 10 min.
+Wymagany komponent: diamenty o wart. 10 tys.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Złamanie zaklęcia</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>5</Level>
+    <Description>1 istota/poz (oddalone o max. 9m)
+Uwalnia od oczarowań, przemian i klątw
+Test: K20 + poz. czarującego (max. +15) przeciw ST. 11 + poz. rzucającego zaklęcie)</Description>
+    <Duration>1 minuta</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zlokalizowanie stworzenia</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>4</Level>
+    <Description>Wskazuje kierunek gdzie znajduje się znana istota lub istota danego typu.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zlokalizowanie przedmiotu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>2</Level>
+    <Description> Wskazuje kierunek gdzie znajduje się znany przedmiot lub przedmiot dokładnie opsiany.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zdominowanie zwierzęcia</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>3</Level>
+    <Description>rzut na Wolę neguje. Zwierzę wykonuje proste rozkazy (atakuj, idz itp)</Description>
+    <Duration>1 rundę/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Dominacja</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>5</Level>
+    <Description>Wola neguje, co rundę koncentracja inaczej ofiara ma nowy rzut obronny.
+</Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zbroja maga</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>1</Level>
+    <Description>+4 KP z pancerza</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zauroczenie osoby</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>1</Level>
+    <Description>Wole neguje.
+Zmienia nastawienie osoby na przyjazne. Gdy zagrożona osoba to dostaje +5 do rzutu obronnego. Rzucająćy musi znać język ofiary. Ofiara nie wykona czegoś co jest sprzeczne z jej przekonaniami, albo co spowoduje jej śmierć.</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zauroczenie potwora</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>3</Level>
+    <Description>Wole neguje.
+Zmienia nastawienie osoby na przyjazne. Gdy zagrożona osoba to dostaje +5 do rzutu obronnego. Rzucająćy musi znać język ofiary. Ofiara nie wykona czegoś co jest sprzeczne z jej przekonaniami, albo co spowoduje jej śmierć.</Description>
+    <Duration>1 godz/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zauroczenie zwierzęcia</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>1</Level>
+    <Description>Wole neguje.
+Zmienia nastawienie zwierzęcia na przyjazne. Gdy zagrożone to dostaje +5 do rzutu obronnego. </Description>
+    <Duration>1 godz/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zatrzymanie nieumarłego</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>3</Level>
+    <Description>Unieruchamia do 3 nieumarłych (muszą być obok siebie). Wola neguje. </Description>
+    <Duration>1 runda/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zatrzymanie czasu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>9</Level>
+    <Description>Rzucający dostaje K4+1 rund za darmo </Description>
+    <Duration>1K4+1 rund</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Drzwi z cienia</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>5</Level>
+    <Description>Jak ulepszona niewidzialność</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ochrona p. zwykłymi broniami</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Chroni przez zranieniem przez zwykły oręż,</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Groza</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>2</Level>
+    <Description>Rzut na Wolę neguje</Description>
+    <Duration>K6 rund</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Bariera z ostrzy</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Ściana o długości 6m/poz lub krąg o promieniu 1,5 m/2poz.
+Czar ten powoluje do istnienia ruchoma, piono~
+wa; kurtyne wirujących ostrzy stworzonych z czy-
+stej mocy Każda istota, która przejdzie przez taką
+ścianę, otrzymuje K6 obrażeń/poziom czaruja-
+cego (maksymalnie 15k6) - udany rzut obronny na
+Refleks zmniejsza ich liczbe o polowę
+Jeśli rzucając niniejszy czar, postawisz barierę
+w miejscu, w ktérym znajduja sie jakieé istoty, kai-
+da z nich otrzyma obrażenia tak, jakby przechodzila
+pnez ściane. Wszystkie mają prawo uniknqé ostrzy
+(i znaleść się po wybranej przez siebie stronie ba-
+riery), w wyniku czego nie otrzymuja żadnych
+obrażeń po udanym rzucie obronnym na Refleks.
+Dodatkowo zapenia ochronę +4 do KP</Description>
+    <Duration>1 min/poz</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Boska łaska</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>1</Level>
+    <Description>+1 do testów ataku i obrażeń/3 poz (max. +3)
+</Description>
+    <Duration>1 minuta</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Burza zemsty</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>9</Level>
+    <Description>Czas rzucania:1 runda
+Zaklęcie to tworzy ogromną czarną chmure bu-
+grzową, w której rozblyskuja gromy i którą wstrzq-
+saja odglosy grzmotów. Każda istota, która się pod
+nią znajdzie, musi wykonaé rzut obronny na Wy-
+trwalość - nieudany oznacza ogłuszenie, na 1k4 x
+10 minut.
+Jeśli nie będziesz się koncentrowal na tym cza-
+rze po jego rzuceniu, zakończy on swe dzialanie
+Jeżeli jednak pozostaniesz skupiony, w kolejnych
+rundach powstana dodatkowe, opisane dalej efekty.
+Każdy z nich ma miejsce w twojej turze.
+- Druga runda: Na obszarze dzialania zaklęcia pada
+  kwaśny deszcz, powodujacy 1k6 obrażeń od
+kwasu (bez prawa do rzuru obronnego).
+- Trzecia runda: Sprowadzasz z chmury 6 bly-
+skawic i decydujesz gdzie uderza. W ten sam cel
+może trafić tylko jedna z nich. Każda blyskawica,
+zadaje 10k6 obrażeń od elektryczności. Trafiona
+istota ma prawo do rzutu obronnego na Refleks;
+- uclany oznacza. ie otrzymuje polowe ran.  
+- Czwarta runda: Na obszarze pada grad powodujacy 5K6 obrażeń miadźonych (bez prawa do
+rzutu obronnego)
+- Od piqtej do dziesiatej rundy: Widoczność ogranicza fioletowy deszcz miotany podmuchami wiatru.
+Uniemożliwia on korzystanie z wszelkiego typu,
+wzroku włączając w to widzenie w ciemnościach
+poza zasięg 1,5 metra. Istoty w odległości 1,5 metra
+posiadaja ukrycie (ataki podlegaja ryzyku chybie-
+nia 20%). Stworzenia znajdujace sie dalej korzystaja,
+z calkowitego ukrycia (ryzyko chybienia 50%, a ponadto atakujacy nie może zlokalizować cię za pomocą
+zmyslu wzroku), a ich szybkoéé maleje o 3/ 4.
+Oczywiécie ataki dystansowe sa na obszarze burzy
+niemożliwe. Istota rzucajaca czar musi wykonać
+test Koncentracji o ST równej ST rzutu obronnego;
+na burzę zemsty + poziom rzucanego zaklęcia - nie
+udany oznacza, iż czar zostal utracony
+</Description>
+    <Duration>10 rund (koncentracja)</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Analiza dweomeru</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>6</Level>
+    <Description>Rozróżniasz wszystkie zaklęcia i właściwości magiczne które posiada przedmiot lub osoba. W jednej turze można prześwietlić jedną istotę lub przedmiot w zasięgu bliskim.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Azyl</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>8</Level>
+    <Description>Nasączasz magiczną magię specjalnie przygotowany przedmiot (posążek, klejnot). W efekcie zyskuje on moc natychmiastowego przetransportowania jego posiadacza do ciebie bez wzlędu na odległość (musicie być tylko na tym samym planie). 
+Przemiot po takim użyciu ulega zniszczeniu.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Chwilowe olśnienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>8</Level>
+    <Description>Możesz uzyskać premię równą poziomowi (max +25) do jednego rzutu ataku, rzutu obronnego lub KP. Czar można uaktywnić w rundzie przeciwnika. </Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Cienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>9</Level>
+    <Description>Działa jak przywołanie poprzez cienie ale naśladuje zaklęcia przywołwania czarodzieja 8 lub niższego poziomu. Iluzyjne przywołania powodują 80 % obrażeń a nieraniące efekty wpływają na istoty które w nie nie wierzą z szansą 80 %</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Cud</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>9</Level>
+    <Description>O cud prosisz swojego boga. O efektach decyduje MG. Przkładowe efekty:
+- Skopiowanie dowolnego zaklęcie poziomu 8 lub niższego
+- Cofnięcie efektów szkodliwych czarów
+- Powołanie do istnienia dowolny efekt (ale max. poz. 8)
+Powyższe efekty nie wymagają poświęcenia PD.
+Poniższe kosztują 5000 PD:
+- Odwrócenie bitwy poprzez wskrzeszenie zabitych sojuszników
+- Przeniesienie drużyny w dowolne miejsce, w dowolnym planie
+- Zapobieżenie trześieniu ziemi, wybuchowi wulkanu itp.</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Czarne macki Evarda</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>4</Level>
+    <Description>Obszar: fala o promieniu 6,
+Czar powołuje pole gumowatych czarnych macek, które wystrzeliwują wprost z ziemi i chwytają oraz owijają się wokół każdej istoty miażdząc ją.
+Każda istota musi wykonać test zwarcia z macką która ma modyfikator zwarcia równy 8 + poziom czarującego. W przypadku niepowodzenia macka zadaje co rundę K6+4 obrażeń miażdzonych.
+Zwalnia również wszystkie istoty o 1/2.</Description>
+    <Duration>1r/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Deszcz kolorów</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>1</Level>
+    <Description>Stożek o zasięgu 4.5m.
+Rzut na Wolę neguje.
+Z twojej dłoni wystrzeliwuje stożek jaskrawych kolorów. Efekt czaru zależy od KW celu:
+&lt;= 2 Istota jest nieptrzytomna, oślepiona i oszołomiona przez 2K4 r, następnie oślepiona i oszołomiona przez k4 r a póżniej oszołomiona prze 1 r.
+3-4 Istota jest oślepiona i oszołomiona (p.wyżej)
+5&gt; Istota jest oszołomiona przez 1 r.
+</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Dezintegracja</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>6</Level>
+    <Description>Z twojego palca wystrzeliwuje cienki zielony promień którym należy trafić w cel (atak dystansowy dotykowy). W przypadku trafienia czar zadaje 2K6 obrażeń/poz (max. 40K6). Rzut obronny na Wytrwałość zmniejsza obrażenia do 5K6. Zmniejszenie PW celu do 0 powoduje jego całkowitą dezintegrację.
+Cel niszczy również dowolną materię w sześcianie o promieniu 3m.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Dotyk głupoty</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>2</Level>
+    <Description>Wymaga udanego ataku dotykowego.
+Zmniejsza o K6 wartość IN, MD, CH. (może uniemożliwić rzucanie czarów).
+Brak rzutu!</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Duchowa broń</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Powołuje do istnienia broń z mocy, którą można sterować. Trafiona postać otrzymuje K8 obrażeń od mocy + 1/3 poz (max. +5). Broń przyjmuje kształt ulubionej broni bóstwa.
+Premia do ataku odpowiada twojej bazowej premii + modyfikator z Mądrości. 
+Oręż traktuje się jako czar a nie broń - może ranić istoty niematerialne, ignoruje również redukcję obrażeń.
+Duchowej broni nie można zaatakować ani uszkodzić atakiem fizycznym, ale działa na nie np. Rozproszenie magii lub Dezintegracja.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Eksplozja dźwięków</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>fala o promieniu 3m.
+Zadaje K8 obrażeń od dźwięku, istota musi wykonać rzut na Wytrwałość albo będzie oszołomiona na 1 rundę.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Eteryczny spacer</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>7</Level>
+    <Description>Stajesz się eteryczny (przebywasz na planie Eterycznym). 
+Jesteś niewidzialny i niecielesny, możesz się poruszać ale tylko 1/2 szybokści, Masz prawo przechodzić przez przedmioty materialne. 
+Widzisz i słyszysz co się dzieje na planie Materialnym ale tylko w zas. 18 m. Nie możesz w żaden sposób wpływać na istoty na planie materialnym, a one mogę w ograniczonym zakresie (czary np. Magiczny pocisk). </Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Eteryczność</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>9</Level>
+    <Description>Działa podobnie jak Eteryczny spacer ale może działać na większą liczbę istot (jedna na 3 poz.)</Description>
+    <Duration>1 min/poz</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Fala wyczerpania</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>7</Level>
+    <Description>Stożek o zasięgu 18m, wszystkie żyjące istoty stają się wyczerpane. Brak rzutu!</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Fala zmęczenia</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>5</Level>
+    <Description>Stożek o zasięgu 18m, wszystkie żyjące istoty stają się zmęczone. Brak rzutu!</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Fazowe drzwi</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>7</Level>
+    <Description>Czar tworzy eteryczny otwór w drewnianej, gipsowej lub kamiennej ścianie. Drzwi są niewidzialne i niedostepne. Po wejściu znikasz i pojawiasz się po drugiej stronie. Liczba użyć: jedno/2 poz. Możesz zabrać jakąś istotę ze sobą. Drzw można zniszczyć za pomocą Rozproszenia magii.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Gęsta mgła</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>4</Level>
+    <Description>Działa jak chmura mgły ale opary są tak gęste że wszystkie istoty poruszają się z szybkością 1,5m, oraz otrzymują karę -2 do testów ataków i obrażeń.
+Może ją rozwiać tylko potężny wiatr.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Glif strażniczy</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Czas rzucania: 10 min.
+Ofiarą czaru pada istota wchodząca na chroniony obszar lub próbująca otworzyć chroniony przedmiot bez wypowiadania hasła. Glif można również dostroić pod odpowiednie istoty (rasa, charakter, wzrost itp.).
+Rzucając niniejsze zaklęcie tkasz wokół znaku sieć linii błyszczących słabym światłem. 
+Glif można wykryć poprzez Odczytanie magii (ST/13) można go również rozproszyć.
+Unieszkodliwienie lub wykrycie glifu wymaga ST.28
+Są dwie wersje glifu:
+1. Wybuchający - zadaje K8 obrażeń/2 poz. (max. 5K8) intruzowi oraz wszystkim w promienu 2m. Może zadawać obrażenia od ognia,kwasu,lodu itp. Refleks zmniejsza o połowę.
+2. Glif z czarem - w znaku możesz umieścić dowolny znany ci raniący czar 3 poziomu lub niższego
+</Description>
+    <Duration>permanenty</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Glif strazniczy, potężniejszy</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>6</Level>
+    <Description>To samo co glif, ale wybuch powoduje 10K8 obrażeń i można w nim umieścić czar 6 poz. lub niższego.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Głęboka drzemka</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>3</Level>
+    <Description>Działa jak Uśpienie ale wpływa na 10 KW istot.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Gnilnik</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>9</Level>
+    <Description>Zaklęcie to tworzy K4+2 gnilniki o 11 KW każdy. Pozostają z tobą 7 dni lub do odesłania. W przypadku gdy każesz któremuś stróżować to czar będzie trwał nawet 7 miesięcy.</Description>
+    <Duration>7 dni</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Gracja kota, zbiorowa</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>6</Level>
+    <Description>Wpływa na jedną istotę/poz w zas. 9m.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Heroizm</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>3</Level>
+    <Description>Istota ma wielką odwagę i chęć do bitwy. Otrzymuje premię z morale +2 do testów ataku, rzutów obronnych i testów umiejętności.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Heroizm, potężniejszy</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>6</Level>
+    <Description>Tak jak Heroizm, ale premia to +4 dodatkowo odporność na strach oraz +1 PW/poz.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Hipnoza</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>1</Level>
+    <Description>Za sprawą gestów fascynujesz znajdujące się w pobliżu istoty które zatrzymują się i wpatrują się w ciebie otępiałe. Rzuć K8 aby okreslić całkowitą liczbę KW stworzeń na które wpłynie czar. W pierwszej kolejności ofiarą czaru padają istoty o najmniejszej liczbie KW i będące najbliżej. 
+Użycie czaru w walce powoduje, że istota dostaje +2 do rzutu obronnego (Wola).</Description>
+    <Duration>2K4 rund</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Iluzoryczna ściana</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>4</Level>
+    <Description>Powołuje do istnienia iluzję ściany, podłogi lub sufitu. Dotyk lub przeszukanie ujawniają prawdziwą naturę iluzji.</Description>
+    <Duration>Permanenty</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Implozja</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>9</Level>
+    <Description>Czas działania: do 4 rund (koncentracja)
+W każdej rundzie, w której sie koncentrujesz sprawiasz, że jedno stworzenie zapada się w sobie i ginie.
+Rzut obronny na Wytrwałość neguje czar.</Description>
+    <Duration>Jedna istota/rundę do 4 r.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Jasnowidzenie/Jasnosłyszenie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>3</Level>
+    <Description>Powołuje do istnienia w konkretnym miejscu magiczny czujnik,dzięki któremu można słyszeć lub widzieć wszystko wokoło.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Języki</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>3</Level>
+    <Description>Sprawia że istota potrafi rozumieć język dowolnej inteligentnej istoty.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kamień w ciało</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>6</Level>
+    <Description>Aby przeżyć proces odpetryfikowania istota musi wykonać rzut na Wytrwałość o ST.15</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kąśliwy wzrok</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>6</Level>
+    <Description>W każdej rundzie możesz obrać za cel jedną żywą istotę, którą atakujesz falą złej potęgi.
+W zależności od KW celu:
+&gt;=10 Osłabienie
+5-9 Panika, osłabienie
+&lt;4 Śpiączka, panika, osłabienie
+Osłabienie: nagły ból i gorączka. -2 do wszystkich testów. Pozostaje osłabiona przez 10 min/poz.
+Panika: przez K4 panika
+Śpiączka: Ofiara zapada w katatoniczną śpiączkę trwającą 10 min/poz. Nie da się jej obudzić. Wpływa też na Elfy.</Description>
+    <Duration>1 r/3 poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Klatka mocy</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Czar powołuje niewidzialne, sześcienne więzienie o wymiarach 6mx6x6. Można się z niego uwolnić tylko teleportacją (ale nie astralną).
+Klatka opiera się rozproszeniu magii, można ją zniszczyć tylko dezintegracją ew. berłem zniszczenia mag. przedmiotów.
+Komponent: Rubin o wartości 1500 sz.</Description>
+    <Duration>2 godz/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Klon</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>8</Level>
+    <Description>Czas rzucania:10 min.
+Czar powołuje do istnienia bezwładny duplikat istoty. Jeśli oryginał zostanie zabity, jego dusza przenosi się do stworzonego klona. Stworzenie klona wymaga kawałka ciała oryginału. Po rzuceniu zaklęcia klon musi się rozwijać w laboratorium przez 2K4 miesiące.
+W przypadku przenisienia duszy nowy klon traci 1 poziom na stałe.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Konsekracja</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>obszar o promienu 6m.
+Wszystkie testy odpędzania nieumarłych na tym obszarze dostają premię +3. Wszyscy nieumarli otrzymują karę -1 do testów. Na tym obszarze nie można również tworzyć ani przyzywać nieumarłych.
+Jeśli na obszarze czaru znajduje się ołtarz lub kapliczka poświęcony twemu bóstwu czar podwaja swoją siłę.</Description>
+    <Duration>2 godz/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Koszmar</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>5</Level>
+    <Description>Czas rzucania: 10 min.
+Zsyłasz koszmary na ofiarę. Otrzymuje ona K10 obrażeń, jest zmęczona i nie może spać przez 24h.
+Rzut na wolę neguje, modyfikator w zależności od znajomości ofiary:
+- Żadna: +10
+- Z drugiej ręki: +5
+- Z pierwszej ręki: +0
+- Dobra: -5</Description>
+    <Duration />
+    <Range>Infinite</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Krajobrazowa halucynacja</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>4</Level>
+    <Description>Sprawiasz że naturalny teraz wygląda zupełnie inaczej (np. droga wygląda jak jezioro itp.). Konstrukcje, wyposażenie i stworzenia nie zostają zmienione.
+Rzut na Wolę neguje efekt działania.</Description>
+    <Duration>2 godz/poz.</Duration>
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Krąg śmierci</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>6</Level>
+    <Description>Rozprysk o promieniu 12m
+Zaklęcie zabija istoty którym nie powiedzie się rzut na Wytrwałość o KW równej K4 KW/poz (max. 20K4). Najpierw działą na istoty najsłabsze i najbliższe. Czar nie działa na istoty o 9 KW i więcej.
+Komponent: proszej z czarnej perły o wart. 500 sz.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Krąg teleportacji</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>9</Level>
+    <Description>Krąg o promieniu 1,5m, trwa 10 min/poz.
+Krąg przenosi istoty które w niego wchodzą do wyznaczonego wcześniej miejsca. Krąg trudno wykryć i unieszkodliwić (ST.34).</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Krzyk</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Zasięg: 9m, stożek.
+Wydajesz rozdzierający uszy wrzask który rani i ogłusza istoty w zasięgu działania czaru. Stworzenie ulega ogłuszeniu na 2K6 rund i otrzymuje 5K6 obrażeń od dźwięku. Rzut na wytrwałość zmniejsza rany o połowę i neguje ogłuszenie</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Krzyk, potężniejszy</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Zasięg: 18m, stożek.
+Wydajesz rozdzierający uszy wrzask który rani i ogłusza istoty w zasięgu działania czaru. Stworzenie ulega ogłuszeniu na 4K6 rund i otrzymuje 10K6 obrażeń od dźwięku. Rzut na wytrwałość zmniejsza rany o połowę i neguje ogłuszenie</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Krzywda</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>6</Level>
+    <Description>Negatywna energia zadaje 10 obr/poz (max.150). Udany rzut na Wolę zmniejsza rany o połowę.
+Nieumarli zamiast odnosić rany są leczeni tym czarem.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ognista kula z opóźnionym zapłonem</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Zadaje K6 obrażeń od ognia/poz (max. 20K6), wybuch może nastapić z opóźnieniem do 5 r(ustalane w chwili czarowania)</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Labirynt</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>8</Level>
+    <Description>Wyganiasz ofiarę do pozawymiarowego labiryntu planów mocy. W każdej rundzie może próbować uciec wykonując rzut Intelektu o ST.20. </Description>
+    <Duration>10 min.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Laska czaru</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>6</Level>
+    <Description>Magazynujesz w drewnianym drągu dowolny czar który możesz później z niego rzucić.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Latanie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>5</Level>
+    <Description>Podmiot czaru (dotknięty) lata z prędkością 18 m / 12m (cięzki pancerz). Wznosi się z połową tej prędkości. </Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Lewitacja</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Pozwala unosić się i opadać z prędkością 3m/rundę. Gdy lewitujaca istota atakuje co rudnę dostae dodatkowe -1 do testów ataku.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczna broń</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Obdarzasz broń premią +1.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczne usta</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>2</Level>
+    <Description>Czar obdarza przedmiot lub istotę ustami, które pojawiają się nagle i wypowiadają wiadomość gdy tylko zajdzie specyficzne wydarzenie (ustalane w chwili rzucania). Wiadomość może liczyć maksymalnie 25 słów.
+</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczny kieł</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Czar nadaje broni naturalnej premię +1.
+</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczny kieł, potężniejszy</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Czar nadaje broni naturalnej premię +1./4poz (max+5)
+</Description>
+    <Duration>1 godz./poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczny krąg przeciw złu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Emanuje w promienu 3m od dotkniętej istoty
+Wszystkie istoty w obszarze działania czaru korzystają z efektu czaru Ochron przez złem. Na teren działania nie mogą wkroczyć przyzwane istoty o charakterze innym niż dobry.
+</Description>
+    <Duration>10min./poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczny krą przeciw dobru</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Emanuje w promienu 3m od dotkniętej istoty
+Wszystkie istoty w obszarze działania czaru korzystają z efektu czaru Ochron przez dobrem. Na teren działania nie mogą wkroczyć przyzwane istoty o charakterze innym niż zły.
+</Description>
+    <Duration>10min./poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczny słój</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>5</Level>
+    <Description>Rzucając czar umieszczasz swoją duszę w klejnocie zwanym słojem pozostawiając ciało bez życia. Następnie możesz próbować przejąć kontrolę nad pobliskim ciałem, zmuszając przebywającą w nim duszę do przeniesienia się do słoja. 
+Przebywając w słoju potrafisz wyczuć i zaatakować wszystkie siły życiowe w promieniu 3m/poz. Wyczuwasz liczbę i mniej więcej siłe pobliskim istot. Jeżli istote nie chroni czar Ochrona przed złem i nie powiedzie jej się rzut na Wolę przejmujesz kontrolę nad jej ciałem.
+Nie możesz korzystać z zakleć/um. czaropodobnych opetanej istoty (siły umysłowe pozostają twoje)</Description>
+    <Duration>1 godz/poz</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Mamidło</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>7</Level>
+    <Description>Czas rzucania:12 godz.
+Tworzy iluzyjną kopię istoty. Ten duplikat jest częsciowo realny, ale posiada tylko 1/2 KW oryginału. Nie można stworzyć mamidła bytu którego KW jest 2 x poziomu czarującego. Istota znająca oryginał może rozpoznać oszustwo, wykonując test Spostrzegawczości o ST.20.
+Mamidło znajduje się pod twoimi rozkazami, rozwiewa się gdy PW spada do 0. Można go naprawić w laboratorium płacą 100sz/PZ.
+Komponent: fragment ciała kopiowanej istoty + rubin wart 100sz/KW istoty</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Mądrość sowy</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>+4 do Mądrości</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Miecz Mordenkainena</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Zasięg: Bliski.
+Powołuje do istnienia magiczny, unoszący sie w powietrzu miecz. Oręż atakuje dowolnego przeciwnika w zasięgu, max. 1 w rundzie. Ma premię do ataku równą twojemu poziomowi+premia z INT+premia 3. Oręż może ranic istoty bezcielestne i eteryczne.
+Zadaje 4K6+3 obrażeń od mocy, kryt. 19-20 x2.
+Nie można go atakować fizycznie, działa na niego Rozproszenie magii, dezintegracja itp.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Migotanie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Migoczesz przeskakując z planu materialnego na eteryczny (wygląda jakbyś pojawiał się i znikał).
+Wymierzone w ciebie ataki fizyczne i czary mają szanse chybienia 50 %, czary obszarowe zadają tylko 50 % obrażeń.
+Zyskujesz premię do ataku jak istota niewidzialna (+2, ignoruje premie zręczności)
+</Description>
+    <Duration>1r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Miraż</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>5</Level>
+    <Description>Działą jak krajobrazowa halucynacja ale może dodawać/ukrywać również konstrukcje (ale nie istoty)
+</Description>
+    <Duration>1 godz/poz (koncentracja)</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Mistyczne oko</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>4</Level>
+    <Description>Czas rzucania 1 min.
+Tworzysz niewidzialny magiczny czujnik, który przesyła wizualne informacje. Porusza się z prędkością 3 m/rundę. Może poruszać się w dowolnym kierunku.
+Aby używać oka musisz się koncentrować.
+</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Infinite</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Mistyczny wzrok</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>3</Level>
+    <Description>Wykrywasz magiczne aury znajdujące się w odl. do 36 m od ciebie. Znasz potęgę aury, oraz szkołę magii.
+Jeżeli skupisz się na konkretnej istocie mośze poznać czy posiada jakieś czary lub zdolności czaropodobne oraz najsilniejszy czar/umiejetność.
+</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Mistyczny zamek</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Magicznie zamyka drzwi/skrzynie/portal. Do ST otwarcia takiego przedmiotu należy dodać 10.
+</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Młot chaosu</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>4</Level>
+    <Description>rozprysk o promieniu 6m.
+Wybuch energii chaosu raniącej tylko praworządne i neutralne istoty. Zadaje K8/2 poz istotom praworządnym (max. 5K8) a K6/poz (10K6) praworządnym przybyszom + spowalnia je na K6 rund.
+Udany rzut na Wolę zmniejsza obrażenia o połowę i neguje spowolnienie.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Modlitwa</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>3</Level>
+    <Description>Działa na wszystkich w promieniu 12m.
+Ty i twoi towarzysze otrzymujecie +1 do testów a wrogowie -1.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Nadanie czarowania</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Czas rzucania:10min, dotknięta istota. Trwa do wyładowania.
+Przenosisz na inną istotę część czarów oraz zdolność ich rzucania. Istota musi mieć intelekt co najmniej 5 i Roztropność co najmniej 9. Można przenieść czary szkół odrzucania, poznania i leczenia. 
+Liczba czarów przeniesionych zależy od KW istoty:
+&lt;=2 Jeden czar 1 poz.
+3-4 1-2 czary 1 poz.
+5&gt; 1-2 czary 1 poz, 1 czar 2 poz.
+</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Nałożenie klątwy</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>3</Level>
+    <Description>Wola neguje. Dotyk. Nakładasz na ofiarę klątwę. Efekty do wyboru:
+- -6 do wartości atrybutu
+- Kara -4 do wszystkich rzutów
+- W każdej turze ofiara ma 50 % szans, że nic nie robi
+Klątwy nie da się rozproszyć, należy użyć przełamania klatwy.
+</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Nienaruszalna strefa Otiluka</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Refleks neguje.
+Sfera mocy otacza istotę (średnica 30cm/poz.). Nic nie może przejść przez tę barierę. Można ją rozproszyć (Rozproszenie magii) lub dezintegrować.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Niepodatność na czar</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Chroni przez jednym zaklęciem/4 poz. (4 poz. lub niższego). Nie zabezpiecza podmiotu przed efektami nadnaturalnymi.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Niepodatność na czary, potężniejsza</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>8</Level>
+    <Description>Chroni przez jednym zaklęciem/4 poz.(8poz. lub niższego). Nie zabezpiecza podmiotu przed efektami nadnaturalnymi.</Description>
+    <Duration>10 min/poz</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Nieustający płomień</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Z przedmiotu wystrzeliwuje płomień, dający tyle światła co pochodnia. Efet jest permanentny.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Niewidzialność, ulepszona</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>4</Level>
+    <Description>Podobnie jak niewidzialność, ale atak nie przerywa działania czaru.</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Niewidzialność, zbiorowa</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>7</Level>
+    <Description>Podobnie jak niewidzialność, ale działa na całą drużynę.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Niewykrywalność</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Chronioną istotę trudno wykryć zaklęciami poznania. Aby wykryć istotę należy wykonać test (K20 + poziom czarującego) o ST: 15 + poz. czarującego.</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Obawa</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>1</Level>
+    <Description>Wszyscy wrogowie w promieniu 15m.
+Obawa napełnia wrogów strachem i wątpliwościami. Otrzymują -1 do trafienia i rzutów. Czar rozprasza i kontruje Błogosławieństwo.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Obcowanie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>5</Level>
+    <Description>Kontaktujesz się ze swoim bóstwem i zadajesz pytania na które można odpowiedzieć "Tak" lub "Nie". Odpowiedź jest poprawna w granicach wiedzy bóstwa. Można zadać jedno pytanie na poziom.</Description>
+    <Duration />
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Obcowanie z naturą</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>4</Level>
+    <Description>Czas rzucania:10min
+Zyskujesz wiedzę dotyczącą otoczenia. 3 tematy z następujących:
+- ziemia i ukształtowanie terenu
+- rośliny
+- minerały
+- akweny wodne
+- istoty
+- obecność stworzeń leśnych
+- obecność potęznych stworzeń nadnaturalnych
+Na zewnątrz czar działa w promieniu 0,5 km/poz.
+Wewnątrz jaskiń (naturalnych) 30m/poz.</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Obłęd</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>7</Level>
+    <Description>Wola neguje.
+Istota na którą rzucono czar znajduje się pod permanentnym efektem czaru Dezorientacja. Można ją zdjąć za pomocą cudum życzenia, przywrócenia energii życiowej lub uzdroweinia.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ochrona pzed czarami</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>8</Level>
+    <Description>Podmiot uzyskuje premię +8 do wszystkich rzutów obronnych na zaklęcia i zdolności czaropodobne.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ochrona przed energią</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Zapewnia niepodatność na jeden wybrany typ energii (ogień, elektryczność, dźwięk itp.). Zaklęcie może pochłonąć 12 pkt obrażeń/poz czarującego - póżniej ulega rozproszeniu.</Description>
+    <Duration>10 min/poz</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ochrona przed strzałami</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Zapewnia ochronę 10/magia przeciw broni dystansowej. Ulega rozporoszeniu po pochłonięciu 10 obrażeń/poz (max.100)
+</Description>
+    <Duration>10 min/poz</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ochrona przed śmiercią</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>4</Level>
+    <Description>Podmiot staje się niepodatny na zaklęcia śmierci, wysączenie energii oraz efekty oparte na energii negatywnej.
+</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ochrona przed złem</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>1</Level>
+    <Description>Dotyk, 
+Powołuje do istnienia magiczną barierę wokół podmiotu. Otrzymuje +2 KP, +2 rzutów wobec złych istot i efektów.
+Zapobiega opętaniu, zauroczeni, dominacji
+Zapobiega kontaktowi z przyzwanymi stworami (złymi) - chyba że atakują z dystansu. Ochrona kończy się, jeżeli podmiot zaatakuje takie stworzenie.
+Odporność na czary przełamuje tę barierę.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ochrona przed dobrem</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>1</Level>
+    <Description>Powołuje do istnienia magiczną barierę wokół podmiotu. Otrzymuje +2 KP, +2 rzutów wobec dobrych istot i efektów.
+Zapobiega opętaniu, zauroczeni, dominacji
+Zapobiega kontaktowi z przyzwanymi stworami (dobrymi) - chyba że atakują z dystansu. Ochrona kończy się, jeżeli podmiot zaatakuje takie stworzenie.
+Odporność na czary przełamuje tę barierę.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odbicie czaru</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Potrafi odbić K4+6 poziomów czarów, nie działa na czary obszarowe.</Description>
+    <Duration>10 min/poz</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odesłanie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>4</Level>
+    <Description>Wola neguje
+Zaklęcia zmusza istotę pozaplanarną do powrotu do odpowiedniego planu (ST. rzutu = ST rzutu obronnego na czar - KW istoty + poziom czarującego).</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odporność na czary</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Istota uzyskuje odporność na czary w wysokości 12 + poz. czarującego.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odporność na energię</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Zapewnia ochronę przed wybranym typem energii. Odporność ta wynosi 10, rośnie do 20 na 7poz. i do 30 na 11.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odrzucenie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Zas. 3m/poz (osobisty)
+Pole trzyma istoty z daleka jeżeli nie uda im się rzut obronny na Wolę (nie mogą się zbliżyć). Ale mogą rzucać czary i używać broni dystansowej.</Description>
+    <Duration> 1 r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Odwrócenie grawitacji</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>7</Level>
+    <Description>Sześcian o krawędzi 3m/2 poz.
+Odwraca grawitacje w zasięgu swojego działania. Wszystkie nieprzymocowane przedmitoy i istoty "spadają do góry".</Description>
+    <Duration>1 r./poz</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ogłupienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>5</Level>
+    <Description>Wola neguje.
+Intelekt i charyzma istoty spadają do 1. Nie może rzucać czarów, rozumieć języków czy komunikować się. Może ew. podążać za przyjacielem.
+Czar może przełamać cud, życzenie lub uzdrowienie.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ognista strzała</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Działa na 20 pocisków.
+Zamienia strzały/bełty w płomienne (dodatkowe K6 obrażeń od ognia).</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ognista tarcza</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>4</Level>
+    <Description>2 wersje:
+- Tarcza ciepła (zółta) - otrzymujesz ochronę 50 % przed atakami opartymi na chłodzie, tarcza zadaje K6+1/poz(+15) obrażeń od ognia atakującemu wręcz
+- Zimna tarcza (niebieska) - otrzymujesz ochronę 50 % przed atakami opartymi na ogniu. tarcza zadaje K6+1/poz(+15) od lodu</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ograniczone życzenie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>7</Level>
+    <Description>Wywołuje różne efekty, przykłady:
+- Skopiowanie dowolnego zaklęcia poz. 6 lub niższego
+- Cofnięcie szkodliwych efektów wielu czarów
+- Powołać efekt nie przekraczający poz. 6.
+Koszt: 300 PD</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ohydne usychanie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>8</Level>
+    <Description>Żyjące istoty znajdujące się nie dalej niż 18 m od siebie.
+Rzut na wytrwałość zmniejsza obrażenia o połowę.
+Wilgoć z ofiar ciał wyparowuje, co powoduje K6 obrażeń /poz( max.20K6), żywiołaki wody i rośliny otrzymują K8 obrażeń/poz.</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Opóźnienie działania trucizny</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>2</Level>
+    <Description>Zapewnia niepodatność na trucizny.</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Oręż na nieumarłych</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>5</Level>
+    <Description>Działa na jedną broń do walki wręcz, 
+Każdy trafiony nieumarły którego KW są mniejsze niż twój poziom musi wykonać rzut obronny na Wolę inaczej zostaje zniszczony.</Description>
+    <Duration>1 rundę/poz</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ostra krawędź</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Działa na konkretną broń,
+Zwiększa dwukrotnie możliwość trafienia krytycznego daną bronią.</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ożywienie liny</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Ożywia linę o długości do 15m + 1,5/poz.
+Możliwe rozkazy które można wydać linie:
+- "Zwiń się"
+- "Utwórz pętlę"
+- "Zawiąż węzeł"
+Zasięg liny to 30cm.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Ożywienie umarłego</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>3</Level>
+    <Description>Ożywia zwłoki zmarłych istot w szkielety lub zombie. Masz prawo ożywić nieumarłych o KW nie większym niż twój poziomx2 (Profanacja zwiększa to dwukrotnie).
+Możesz kontrolować 4 KW nieumarłych/poz.
+</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pajęcza wspinaczka</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Podmiot potrafi poruszać się po ścianach, sufitach itp. jak pająk z prędkością 6m/rundę.
+</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pajęczyna</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>2</Level>
+    <Description>Zasięg 6m
+Rzut na refleks neguje, ale istota i tak jest spowolniona
+Pajęczyna musi być przyczepiona do dwóch przeciwległych obiektów (np. ściany,sufi). Oplątana istota może wykonać próbę uwolenienia się (rzut na siłę o ST.20 lub wyzwalanie się o ST.25)
+Pajęczyna jest łatopalna.</Description>
+    <Duration>10min/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Palec śmierci</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>7</Level>
+    <Description>Jeśli istocie nie powiedzie się rzut na Wytrwałość natychmiast ginie, w przypadku udanego rzutu otrzymuje 3K6 obrażeń + 1/poz (max 25)</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Piekące światło</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Snop światła (promień) wymaga udanego ataku dotykowego dystansowego. Istota otrzymuje K8 obrażeń/2 poz(max. 5K8), nieumarli otrzymują K8 /poz (max.10K8).</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Planarne spętanie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>Czas rzucania:10min.
+Przyzywa przybyszów lub żywiołaki o KW &lt;=12
+Zwabia stworzenie z innego wymiaru do specjalnie przygotowanej pułapki. Sprowadzona istota pozostaje uwięziona dopóki nie zgodzi się oddać jakichś usług w zamian za wolność.
+Stworzenie pułapki wymaga rzucenia magicznego kręgu ochrony rzuconego do wewnątrz. Podmiot spętania ma prawo do rzutu na Wolę (raz dziennie). Masz prawo przekonywać istotę do przysługi (ew. oferując nagrodę) - rzut na Charyzmę. Po wykonaniu zadania stworzenie powraca do macierzystego planu, w przypadku zadań nieskończonych pozostanie 1dzień/poz.</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pole antymagii</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Zas. 3m od rzucającego
+Otacza cię niewidzialna, poruszająca się wraz z tobą bariera która tłumi większość efektów magicznych i czarów (także przedmioty). Pola to tłumi ale nie rozprasza zaklęcia i efekty (po opuszczeniu pola działają normalnie). Przyzwane istoty i bezcieleśni nieumarli zniakają w polu ale pojawiają się znowu gdy pole się przemieści. Gdy mają odporność na magię trzeba rzucić (K20 + poziom czarująćego kontra odporność)</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Polimorfia</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>4</Level>
+    <Description>Przemienia chętny podmiot w inną żywą istotę. Podmiot może zmienić się w istotę następujących rodzajów:
+- giganci,
+- humanoidy (duże też)
+- istoty baśniowe
+- magiczne bestie,
+- robactwo
+- rośliny
+-śluzy
+-smoki
+-zwierzęta
+Przybrany kształ nie może mieć więcej KW niż twój poziom, do max.15 KW. Podmito zachowuje własną IN,MD i CH.</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Polimorfowanie innego</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>8</Level>
+    <Description>rzut na Wytrwałość neguje
+Pozwala przemienić istotę w dowolny przedmiot lub inną istotę. Czas trwania czaru zależy od róznicy wielkośći między celem a oryginałem.
+Np. 12 godz : jaszczurka w Mantikorę.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pomniejsze tworzenie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>4</Level>
+    <Description>Tworzysz niemagiczny przedmiot z nieorganicznej materii roślinnej (ubranie, line, drabine itp.). Objętość stworzonej rzeczy wynosi 0,027 m^3/poz.</Description>
+    <Duration>1godz/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pomniejszenie osoby</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Wytrwałość neguje
+Zmniejsza istotę o jedno kategorię. 
+Traci ona 2 SI, zyskuje 2ZR, +1 KP, +1 atak (z rozmiaru)</Description>
+    <Duration>1min/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pomocna dłoń</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>3</Level>
+    <Description>zas. 7,5km
+Tworzysz widmowy obraz dłoni którą wysyłasz na poszukiwanie istoty znajdującej się w zasiegu. Możesz określić ogólne kryteria poszukiwania (rasa,płeć,aparycja).
+Czas poszukiwania zależy od odległości:
+30 m&lt; - 1 r.
+300 m - 1min
+1,5 km - 10min
+3 km - 1 godz.
+Istota nie musi podążać za dłonią, ta wtedy znika.</Description>
+    <Duration>1 godz/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Porywający taniec Otta</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>8</Level>
+    <Description>trwa 1k4+1 rund, brak rzutu obronnego
+Dotknięta istota zaczyna tańczyć (-4 KP, -10 Refleks) powodując ataki okazyjne w każdej turze.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Postać gazowa`</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Podmiot staje się niematerialny, mglisty i przezoczysty. Zyskuje redukcje obrażeń 10/magia, niepodatność na trucizny i trafienia krytyczne. Nie może rzucać czarów wymagających komponentów. Istota może latać z prędkością 3m, może przedostawać się przez wąskie przejścia. Na podmiot wpływa wiatr, nie może też wejść do wody.</Description>
+    <Duration>2min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Powiększenie osoby</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Zwiększa humanoida o 1 poziom wielkości, dostaje on +2 SI, -2 ZR, -1At,-1KP ale większą broń, rozmiar i zasięg wynosi 3m.
+</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pozbawienie sił</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>4</Level>
+    <Description>Promień o bliskim zas. (atak dotykowy dystansowy).
+Z palca wystrzeliwuje czarny promień energii negatywnej tłumiący siły życiowe przeciwnika. Udane trafienie zadaje K4 poziomy negatywne. Istota która ma tyle samo negatywnych poz. co KW ginie. Każdy poziom negatywny zmniejsza efektywny poziom istoty o jeden. </Description>
+    <Duration>1godz/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Prawdziwe zmartwychwstanie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>9</Level>
+    <Description>Zaklęcie działa jak wskrzeszenie ale może przywrócić zycie istocie która nie żyje max. od 10 lat.  Potrafi ożywić istotę, nawet jeśli jej ciało uległo całkowitemu zniszczeniu. Wskrzeszona istota nie traci poziomów ani atrybutów. 
+Komponent mat: diamenty warte co najmniej 25 tys. sz.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Profanacja</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>emanacja o promieniu 6m.
+Nasącza obszar energią negatywną. Każdy test odpędzania nieumarłych otrzymuje -3, nieumarli otrzymują premię +1, +1PW/KW. Jeżeli na obszarze działania znajduje się kaplica poświęcona twojemu bóstwu efekty te ulegają podwojeniu.</Description>
+    <Duration>1 godz/poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Projekcja astralna</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>9</Level>
+    <Description>Czas rzucania:30min
+Czar ten uwalnia twego ducha z fizycznego ciała, dzięki czemu możesz dokonać projekci astralnej do innego planu. Możesz zabrać towarzyszy (muszą znajdować się blisko ciebie). 
+Ciało pozostaje w stanie zatrzymania funkcji życiowych na planei materialnym, natomiast na planie astralnym pojawia się twoja kopia ze wszystkim co posiadasz. Możesz wkroczyć do plany stykającego się z planem Astralnym formując nowe ciało fizyczne w nowym planie. Czar działa do rozproszenia.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Projekcja duplikatu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>7</Level>
+    <Description>Tworzysz prawie realną, iluzyjną wersję samego siebie. Kopia naśladuje twoje działania, chyba że nakażesz jej robić coś innego (akcja ruchu). 
+Masz prawo patrzeć oczami duplikatu i słyszeć jego uszami. Kopia jest niematerialna. Przez cały czas musi cię łączyć z kopią linia efektu, po przerwaniu czar ulega rozproszeniu.</Description>
+    <Duration>1r/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Promień chłodu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>8</Level>
+    <Description>Zasięg bliski, promień.
+Promień zadaje K6 obrażeń od lodu (max.25K6), musi się udać atak dystansowy dotykowy.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pryzmatyczna sfera</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>9</Level>
+    <Description>Sfera o promieniu 3m i środku w Tobie.
+Tworzy nieprzezroczystą sferę światła która chroni przed wszystkimi rodzajami ataków. Oślepia istoty o KW&lt;8 (na 10 min). Możesz wchodzić i opuszczać sferę, ale nie możesz z niej ani rzucać czarów ani atakować.
+Inne istoty mogą przejść przez sfere ponosząc efekty działania każdego koloru.</Description>
+    <Duration>10min/poz.</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pryzmatyczna ściana</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>8</Level>
+    <Description>Ściana o dł. 1m/poz wys. 0,5m/poz. trwa 10min/poz.
+Powołuje nieprzeroczystą ściane z wielokolorowego światła, chroni przed wszystkimi typami ataków.
+Możesz przez nią przechodzić. Światło oślepia istoty o KW&lt;8 w odl. 6m od ściany.
+Próba przejścia przez ścianę powoduje obrażenia od każdego z 7 kolorów. Ścianę można zniszczyć niszcząc po kolei kolory składowe. Nie można jej zniszczyć poprzez Rozproszenie magii, tylko Berło albo Rozłączenie Mordenkainena.
+Kolory:
+1. Czerwony - Zatrzymuje niemagiczną broń dyst., zadaje 20 obrażeń od ognia (Ref.1/2). Negowany przez Stożek Zimna.
+2. Pomarańczowy - Zatrzymuje magiczną broń dyst. Zadaje 40 obrażeń od kwasu (Ref1/2). Negowany przez Podmuch wiatru
+3. Żółty - Zatrzymuje trucizny,gazy,petryfikację. Zadaje 80 od elektryczności (Ref1/2). Neguje dezintegracja
+4. Zielony - Zatrzymuje broń oddechową. Trucizna zabijająca - Wytr neguje ale Bd spada o K6). Neguje Przejście w ścianie
+5. Niebieski - Zatrzymuje efekty poznania i ataki mentalne. Przemiana w kamień (Wytr neguje). Neguje Magiczny pocisk.
+6. Indygo - Zatrzymuje wszystkie czary. Obłąkanie (Wola neguje). Neguje Światło dnia.
+7. Fioletowy - niszczy wszystkie przedmioty i efekty. Wysłanie istot na inny plan (Wola neguje). Rozproszenie magii.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Pryzmatyczny deszcz</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Stożek o zasięgu 18m. Wystrzeliwuje siedem migoczących snopów światła. Istoty mające KW&lt;8 są automatycznie oślepione na 2K4 r. Każda istota w zasięgu jest trafiona losowo jednym snopem:
+Kolory:
+1. Czerwony - zadaje 20 obrażeń od ognia (Ref.1/2). 
+2. Pomarańczowy - Zadaje 40 obrażeń od kwasu (Ref1/2). 
+3. Żółty - Zadaje 80 od elektryczności (Ref1/2). 
+4. Zielony - Trucizna zabijająca - Wytr neguje ale Bd spada o K6). 
+5. Niebieski - Przemiana w kamień (Wytr neguje). 
+6. Indygo - Obłąkanie (Wola neguje). 
+7. Fioletowy - Wysłanie istot na inny plan (Wola neguje). </Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przebranie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Illusion</SpellShool>
+    <Level>1</Level>
+    <Description>Sprawia że wyglądasz inaczej. Otrzymujesz +10 do testów Przebierania się. </Description>
+    <Duration>10min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przejście bez śladu</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Dotyk- 1 istota/poz. 
+Nie pozostawiasz po sobie żadnych śladów.</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przejście w ścianie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>5</Level>
+    <Description>Dotyk, Tworzy otwór o wymiarach 1,5x2,4m i głębokości 3m +1,5m/3poz. w ścianie drewnianej,gipsowej lub kamiennej. </Description>
+    <Duration> 1 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przeklęcie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Emanancja o promienu 12m.
+Czas rzucania:24h
+Konkretny teren, budynek stają się przeklęte:
+1. Jest tam magiczny krąg ochrony przed dobrem
+2. Odpędzanie nieumarłych ma tam -4 kary, nieumarli otrzymują premie+4.
+3. Z przeklętym terenem możesz związać efekt czaru, który utrzymuje się przez rok (jeden z nich):
+- błogosławieństwo,
+- ciemność, cisza, obawa, ochrona przed energią, rozproszenie magii, swoboda działania, 
+Komponent: Zioła, olejki i kadziła o wart. 1000 /poz czaru związnego z miejscem.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przeklęcie wody</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>1</Level>
+    <Description>Czas rzucania:10min
+Czar ten zmienia flakon (0,5) wody w wodę przeklęta zadającą obrażenia dobrym przybyszom podobnie jak woda święcona nieumarłym.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przeklęta aura</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>8</Level>
+    <Description>Działa na 1 istotę/poz w promieniu 6m od ciebie,.Podmioty otacza złowroga ciemność. Efekty:
+1. Premia +4 KP i rzuty (do wszystkich ataków)
+2. Odporność na czary 25 względem zaklęć rzucanych przez dobre stworzenia
+3. Blokuje próby opętania
+4. Jeżeli dobrej istocie uda się trafić podmiot (wręcz) jej siła spada o K6 (Wytr neguje).</Description>
+    <Duration>1 r/poz</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przełamanie ślepoty/głuchoty</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>3</Level>
+    <Description>Leczy magiczną głuchotę i ślepotę.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyspieszenie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Zasięg bliski, z w odl. 9m.
+Przyspieszona istota otrzymuje jeden dodatkowy atak, +1 KP za uniki a jej prędkość wzrasta o 9m.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 1</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>1</Level>
+    <Description>Potwory:
+- Pies
+- Sowa
+- Borsuk
+- Kruk</Description>
+    <Duration>1 r.poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 2</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>2</Level>
+    <Description>Potwory:
+- Orzeł
+- Wilk
+- Lemure
+- Skorpion, średni
+- Potworny pająk
+- Średnia żmija</Description>
+    <Duration>1 r.poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 4</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>4</Level>
+    <Description>Potwory:
+- Archon
+- Ogromna sowa
+- Lew
+- Ogromny orzeł
+- Mefit
+- Złowieszczy wilk
+- Rekin
+- Ogar yeth
+- Potworny pająk, duży
+- Wielka żmija</Description>
+    <Duration>1 r.poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 5</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Potwory:
+- Archon-ogar
+- Niedźwiedź brunatny
+- Gryf
+- Żywiołak średni
+- Złowieszczy dzik
+- Tygrys
+- Złowieszczy rosomak</Description>
+    <Duration>1 r.poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 6</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>Potwory:
+- Niedźwiedź polarny
+- Orka
+- Bralani
+- Złowieszczy lew
+- Dzinn
+- Zywiołak (duży)
+- Besia chaosu
+- Xill</Description>
+    <Duration>1 r.poz,</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 7</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>7</Level>
+    <Description>Potwory:
+- Słoń
+- Avoral
+- Niewidzialny łowca
+- Żywiołak, wielki
+- Slaad, czerowony
+- Babau (demon)
+</Description>
+    <Duration>1 r.poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 8</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>8</Level>
+    <Description>Potwory:
+- Złowieszczy niedźwiedź
+- Lilend
+- Żywiołak, większy
+- Slaad, błękitny
+- Piekielny kot
+- Tyranozaur
+- Złowieszczy tygrys
+- Vrock (demon)</Description>
+    <Duration>1 r.poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Przyzwanie potwora 9</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>9</Level>
+    <Description>Potwory:
+- Leonal
+- Rok
+- Żywiołak, starszy
+- Diabeł, kolczasty
+- Wiedźma nocy
+- Bebilith (demon)
+- Hezrou (demon)</Description>
+    <Duration>1 r.poz</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Regeneracja</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>7</Level>
+    <Description>Regeneracja leczy K8 obrażeń co rundę.</Description>
+    <Duration>1r/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Rozłączenie Mordenkainena</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>9</Level>
+    <Description>Rozprysk w promieniu 12m
+Wszystkie czary i efekty magiczne ulegają rozproszeniu na terenie działania czaru (również należące do przemiotów). Istnieje również 1%/poz szansy na zniszczenie artefaktów.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Rozproszenie magii, potężniejsze</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Działa analogicznie jak Rozproszenie magii ale max. poziom do testów wynosi +20, dodatkowo może rozpraszać efekty jak PRzełamanie klątwy.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Rozproszenie zła</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Czar ma 3 efekty:
+1. +4 KP względem ataków złych istot
+2. Wykonując udany atak dotykowy wymierzony w złą istotę z innego planu możesz odesłać ją z powrotem do jej rodzimego wymiaru. To użycie kończy zaklęcie. (Wola neguje)
+3. Samym dotykiem rozpraszasz dowolny czar oczarowania rzucony przez złą istotę, To użycie kończy zaklęcie.</Description>
+    <Duration>1r.poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Rozproszenie dobra</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Podobnie jak Rozproszenie zła, tylko działą na dobre istoty</Description>
+    <Duration>1r.poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Rój meteorów</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>9</Level>
+    <Description>Tworzy 4 meteory które wybuchają raniąc wszystkich w promieniu 12m. Każdy z nich zadaje 2K6 obrażeń miażdżonych + 6K6 obrażeń od ognia. Meteorami można celować niezależnie od siebie.</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Sanktuarium</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>1</Level>
+    <Description>Każdy przeciwnik próbujący zaatakować lub rzucić zaklęcie na podmiot (nie dot. zaklęć obszarowych) musi rzucić na Wolę, niepowodzenie oznacza że atak nie doszedł skutku. Jeżeli podmiot zaatakuje lub rzuci ofensywne zaklęcie czar przestaje działać.</Description>
+    <Duration>1r/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Scalanie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Całkowicie naprawia przedmiot wykonany z dowolnej substancji. Nie odtwarza jednak właściwości zniszczonego magicznego przedmiotu. </Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Schowanie przedmiotu</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Dotyk (przedmiot o wadze max. 50 kg/poz)
+Ukrywa przedmiot przed lokalizacją za pomocą efektów poznania</Description>
+    <Duration>8 godz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Sekretna strona</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Zmienia zawartość strony, że wygląda zupełnie inaczej.  
+Czar da sie rozproszyć.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Sentencja</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Zasięg: promień 12m i środek w Tobie
+Każda niepraworządna istota która usłyszy słowa czaru padnie ofiarą efektów zależnych od róznicy KW między nią a rzucającym:
+0 - Ogłuszenie
+-1 Spowolnienie, ogłuszenie
+-5 Sparaliżowanie, spowolnienie, ogłuszenie
+-10 Śmierć, sparaliżowanie, spowolenienie, ogłuszenie
+Efekty się kumulują. 
+Ogłuszenie: istota jest przez K4 r. ogłuszona
+Spowolnienie: przez 2K4 r.
+Paraliż: przez K10 minut
+Brak rzutu obronnego, istoty o KW&gt;twój poziom są odporne ne działąnie zaklęcia.</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Siła byka, zbiorowa</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>6</Level>
+    <Description>Podobnie jak siła byka ale działa na 1istotę/poz.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Skok</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>Podmito uzyskuje premie +10 do skakania (+20 na 5 poz i +30 na 9).</Description>
+    <Duration>1min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Słoneczny promień</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>7</Level>
+    <Description>Zasięg 18m, do wykorzystania przez 1r/poz.
+W każdej rundzie moższe sprowadzić jeden snop światła. Maksymalna liczba snopów to jeden/3poz (max. 6 na 18). Każda istota w obszarze działąnia jest oślepiona i dostaje 4K6 obrażeń, udany rzut na Ref neguje oślepienie i zmniejsza liczbę ran o połowę.
+Nieumarli otrzymują K6 obrażeń/poz (max.20K6), Ref zmniejsza to o połowę. Istoty szczegołnie wrażliwe na światło (np. wampiry) giną gdy nie powiedzie im się rzut obronny.
+</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Słowo mocy: oszołomienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>8</Level>
+    <Description>Wybrana przez ciebie istota ulega oszołomieniu. Czas działania zależy od aktualnej liczby PW celu:
+&lt;50 - 4K4 r.
+50-100 - 2K4 r.
+100-150 K4 r.
+</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Słowo mocy: oślepienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>7</Level>
+    <Description>Wybrana przez ciebie istota ulega oślepieniu. Czas działania w zależności od PW:
+&lt;50 na stałe
+51-100 K4+1 min.
+101-200 K4+1 rund
+</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Słowo mocy: śmierć</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Enchantment</SpellShool>
+    <Level>9</Level>
+    <Description>Wybrana przez ciebie istota umiera pod warunkiem, że ma mniej niż 101 PW.
+</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Słowo powrotu</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>Czar teleportuje cie do wybranego wcześniej schronienia (musi znajdować się na tym samym planie). Możesz również przetransportować jedną chetną istotę/3poz.
+</Description>
+    <Duration />
+    <Range>Infinite</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Słuszna potęga</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>5</Level>
+    <Description>Twój wzrost zwiększa się dwukrtonie a waga 8 krotnie. Zwiększa się twoja kategoria rozmiaru o 1. Otrzymujesz +4SI, +2BD, +2KP redukcje obrażeń 3/zło. Twoja broń również ulega zwiększeniu</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Spadające piórko</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>rzucanie: 1 akcja darmowa, 
+Sprawia, że istoty lub przedmioty powoli spadają - nie otrzymują obrażeń po upadku. Spadają 18m/rundę.
+Czar działa na jedną średnią istoę/poz.</Description>
+    <Duration>1r/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Spowolnienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Bard</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>3</Level>
+    <Description>Jedna istota/poz. (w odl. 9m) 
+Spowolniona istota ma prawo w swojej turze tylko do pojedynczej akcji ruchu lub akcji standardowej, Dodaje -1 do testów ataku i KP oraz rzutów na Refleks. Prusza się z 1/2 normalnej prędkości.</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Stożek zimna</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Stożek z zimna o zas. 18m zadający k6 obrażeń/poz. (max. 15K6). Rzut obronny na refleks zmniejsza obrażenia o połowę</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Długi krok</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>zwiększ szybkość o 3m</Description>
+    <Duration>1 godz./poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.leczenie kryt. ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>8</Level>
+    <Description>4K8 +1/poz (max.20) w promieniu 9m</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.leczenie lekkich ran</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Leczy K8+1/poz (max 5) grupowo</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.leczenie poważnych ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>8</Level>
+    <Description>3K8 +1/poz (max.15) grupowo</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.leczenie średnich ran</Name>
+    <SpellTypes>
+      <SpellType>Bard</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>2K8 +1/poz (max.10) grupowo</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Magiczna broń, potężna</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>4</Level>
+    <Description>domagicznia broń: +1/na 4 poz. (max.+5) lub max. 50 strzał lub bełtów</Description>
+    <Duration>1 godz/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Słoneczny wybuch</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>8</Level>
+    <Description>Tworzy kulę palącego blasku, zadaje 6K6 obrażeń (istoty mroku x2) oraz ulegając oślepieniu. Refleks redukuje obrażenia o połowę i neguje oślepienie.
+Rozprasza wszystkie zaklęcia ciemności o poz. &lt; 9</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Teleportacja</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Czar przenosi w wybrane miejsce oddalone o max. 150 km. Może teleportować też 1 istotę/3 poz. czarującego. Teleportowane istoty muszą być ze sobą w kontakcie. 
+Szansa powodzenia k%
+Znajomość miejsca/ W celu/ Poza celem/ Podobne miejsce/ Nieszczęście:
+Dobrze znane: 01-97/98-99/100/-
+Uważnie zbadane: 01-94/95-97/98-99/100
+Widziane okazjonalnie: 01-88/89-94/95-98/99-100
+Widziane raz: 01-75/75-88/89-96/97-100
+Błędne miejsce (K20 + 80): -/-/81-92/93-100
+</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Teleportacja, potężna</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>7</Level>
+    <Description>Nie istnieje ryzyko nie trafienia do celu.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Uwarunkowanie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Możesz umieścić na sobie czar którego efekty wejdą w chwili spełnienia założonego warunku. Poziom nałożonego czaru nie może przekroczyć 1/3 twojego poziomu.
+Wymaga koncentratora: posążka z kości słoniowej wartego 1500 sz.</Description>
+    <Duration>Jeden dzień/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Uwięzienie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>9</Level>
+    <Description>Rzut na wolę neguje.
+Więzisz istotę w kuli pod powiechnią ziemi, dopóki ktoś nie rzuci tam zaklęcia Wolność.
+Jeśli znasz imię istoty dostaje ona -4 do rzutu obronnego.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Uzdrowienie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>6</Level>
+    <Description>Leczy 10 pz/poz (max.150) obrażenia i niegatywne efekty z wyjątkiem wyssanych/negatywnych poziomów.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Uzdrowienie, zbiorowe</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>9</Level>
+    <Description>Leczy 10 pz/poz (max250) obrażenia i niegatywne efekty z wyjątkiem wyssanych/negatywnych poziomów istotom znajdującym się nie dalej niz 9 m od siebie</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wezwanie błyskawic</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Raz w rundzie możesz wezwać błyskawicę zadającą 3K6 obrażeń wybranemu celowi. Możesz wezwać 1 błyskawicę na poziom, poświęcając akcję standardową.</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wolność</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Abjuration</SpellShool>
+    <Level>9</Level>
+    <Description>Podmito zostaje uwolniony z wszystkich efektów ograniczających poruszanie się (labirynt, uwięzienie, oplątanie, pajęczyna itp.)</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wskrzeszenie</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Przyrwacasz życie martwej istocie, która zmarła ie wcześniej niż na dzień na poz. Wskrzeszona istota traci jeden poziom.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wycie banshee</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>9</Level>
+    <Description>Zabija wszystkie żywe istoty w promieniu 12 m. Wytrwałość neguje.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Wykrycie zła</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>1</Level>
+    <Description>Wymaga utrzymania koncentracji. Zasięg: 18 m. (stożek)
+1 runda: brak lub obecność zła w obszarze
+2 runda: liczba złych aur
+3 runda: siła i położenie każdej z aur w obszarze</Description>
+    <Duration>10 min/poz. (konc.)</Duration>
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zabicie żywego</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>5</Level>
+    <Description>Zabija dotkniętą, żywą istotę której nie powiedzie się rzut na wytrwałość. Jeśli jej się powiedzie otrzymuje 3K6 +1/poz obrażeń.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zabójcza chmura</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>5</Level>
+    <Description>Chmura o promieniu 6m, zabija istoty o KW &lt; 4, istoty o KW &gt; 4 &amp; &lt;= 6 muszą wykonać rzut na Wytrwałosć lub giną. Silniejsze istoty tracą co rundę K4 Budowy chyba że uda się rzut to połowę. Chmura jest cięższa od powietrza i utrzymuje się przy ziemi.</Description>
+    <Duration>1 min./poz</Duration>
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zadawanie lekkich ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>1</Level>
+    <Description>Zadajesz K8+1/poz(max.5) obrażeń od energii negatywnej. Leczysz nieumarłych.</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zadawanie średnich ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>2</Level>
+    <Description>Zadajesz 2K8+1/poz(max.10) ran od negatywnej energii</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zadawanie poważnych ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>3</Level>
+    <Description>Zadajesz 3K8+1/poz(max.15) ran od negatywnej energii</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zadawanie krytycznych ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>4</Level>
+    <Description>Zadajesz 4K8+1/poz(max.20) ran od negatywnej energii</Description>
+    <Duration />
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.zadawanie lekkich ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>5</Level>
+    <Description>Zadajesz 1K8+1/poz(max.25) ran od negatywnej energii
+jednej istocie/poz nie znajdującej się dalej niż 9 m od siebie.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.zadawanie średnich ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>6</Level>
+    <Description>Zadajesz 2K8+1/poz(max.30) ran od negatywnej energii
+jednej istocie/poz nie znajdującej się dalej niż 9 m od siebie.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.zadawanie poważnych ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>7</Level>
+    <Description>Zadaje 3K8+1(max.35) obrażeń.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Zb.zadawanie krytycznych ran</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Necromancy</SpellShool>
+    <Level>8</Level>
+    <Description>Zadajesz 4K8+1/poz(max 40) ran od negatywnej energii
+jednej istocie/poz nie znajdującej się dalej niż 9 m od siebie.</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Życzenie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Divination</SpellShool>
+    <Level>9</Level>
+    <Description>Pozwala:
+- skopiować dowolne zaklęcie Maga poz. 8 lub niższego
+- skopiować dowolne zaklęcie poz. 6 lub niższego
+- cofnąć efekty szkodliwych zaklęć
+- obdarzyć istotę premię dziedziczoną +1 do atrybutu
+- wyleczyć choroby i przypadłości
+- przywrócić życie
+- przetransportować podróżników
+- cofnąć efekty jednego rzutu
+kosztuje PD (do 5000)
+</Description>
+    <Duration />
+    <Range>Special</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Bombardowanie</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>8</Level>
+    <Description>Z nieba spada deszcz głazów grzebiąc przeciwników w promieniu 4,5 m. Zadaje K8 /poz (do 10K8) i wymusza wygrzebanie się spod głazów. Rzut na refleks neguje połowę obrażeń i zasypanie</Description>
+    <Duration />
+    <Range>Long</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Boska dłoń</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>2</Level>
+    <Description>Aura boskiej energii zapewniająca +2 do rzutów obronnych</Description>
+    <Duration>1 min/poz.</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Elastyczne wibracje</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>5</Level>
+    <Description>Stożek potężnego dźwięku zadający 1 pkt./2 poz., udany rzut na refleks zmniejsza rany o połowę. Czar wymaga utrzymania koncentracji</Description>
+    <Duration>1 r/poz.</Duration>
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kamienne kości</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+      <SpellType>Cleric</SpellType>
+      <SpellType>Paladin</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>2</Level>
+    <Description>Szkielet wybranego nieumarłego twardnieje, +3 KP</Description>
+    <Duration>10 min/poz</Duration>
+    <Range>Touch</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kamuflaż</Name>
+    <SpellTypes>
+      <SpellType>Druid</SpellType>
+      <SpellType>Ranger</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>1</Level>
+    <Description>+10 do ukrywania się</Description>
+    <Duration>10 min/poz</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kwasowa burza</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>6</Level>
+    <Description>Kwasowy deszcz o promieniu 6m. Zadaje K6 obrażeń od kwasu/poz (max. 15K6). Refleks zmniejsza o połowę.</Description>
+    <Duration />
+    <Range>Medium</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Kwasowe zionięcie</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Summoning</SpellShool>
+    <Level>3</Level>
+    <Description>Stożek o zasięgu 7,5m +1.5/2 poz., zadaje K6 obrażeń od kwasu (max.10k6) refleks neguje połowę</Description>
+    <Duration />
+    <Range>Close</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Matryca czarów</Name>
+    <SpellTypes>
+      <SpellType>Mage</SpellType>
+    </SpellTypes>
+    <SpellShool>Transmutation</SpellShool>
+    <Level>5</Level>
+    <Description>Matryca pozwala na przechowanie 4 czarów maksymalnie 3 poz.
+Rzucenie tak przygotowanych zaklęć liczy się jako akcja darmowa. Każde umieszczenie czaru zadaje K6 obrażeń (niewyleczalnych). Każde rzucenie czaru z matrycy liczy się tak samo jak rzucenie zaklęcia przyspieszonego</Description>
+    <Duration>10 min/poz.</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+  <SpellDefinition>
+    <Name>Mistyczny bicz</Name>
+    <SpellTypes>
+      <SpellType>Cleric</SpellType>
+    </SpellTypes>
+    <SpellShool>Conjuration</SpellShool>
+    <Level>3</Level>
+    <Description>Zło.
+Długi bicz z niematerialnej czerownej energii. Można nim władać (atak dotykowy dystansowy), zadaje K8 obrażeń +1/2 poz (max.+5) od elektryczności. Brak permii z siły. 
+Trafiony przeciwnik musi wykonać rzut na Wytrwałość, nieudany oznacza otumanienie na 1 rundę.
+Jeśli bicz trafi można go wypuścić z dłoni a on będzię kontynuował atakowanie danej istoty.</Description>
+    <Duration>1 r/poz</Duration>
+    <Range>OnlyCaster</Range>
+  </SpellDefinition>
+</ArrayOfSpellDefinition>

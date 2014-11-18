@@ -1,0 +1,142 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfSkillDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Scripts />
+  <Elements>
+    <SkillDefinition Name="Nasłuchiwanie">
+      <Id>ff5eb78a-3454-4f0e-90d4-005b056ed6e2</Id>
+      <BonusProperty>Wisdom</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Test sporny z Cichym poruszaniem się. ST = 5 (Osoba w zbroi), ST = 10 (bez zbroi)</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Używanie liny">
+      <Id>5c3a31cf-6482-4b5c-bbbb-068f023d946d</Id>
+      <BonusProperty>Dexterity</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Wiadomo</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Czaroznastwo">
+      <Id>8fcc4ae1-beec-475b-98a6-191f2e3ccf57</Id>
+      <BonusProperty>Inteligence</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>ST:15 + poziom czaru (odkrycie rzucanego czaru), takie samo ST dla nauki nowych zaklęć</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Jeździectwo">
+      <Id>b33f9118-0cdd-4a2d-8914-1e0fa199336f</Id>
+      <BonusProperty>Strength</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+    </SkillDefinition>
+    <SkillDefinition Name="Ciche poruszanie się">
+      <Id>bb272755-3245-4181-aec9-21c282ef869e</Id>
+      <BonusProperty>Dexterity</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Wiadomo. ST: jakieś tam coś tam</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Koncentracja">
+      <Id>2e4f5df0-0a13-4951-85d2-3bea6b9054f1</Id>
+      <BonusProperty>Constitution</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>ST = 10 + zadane obrażenia</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Pływanie">
+      <Id>300c7fbe-bd9c-4bdc-b744-44a3825554a2</Id>
+      <BonusProperty>Strength</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Spokojna woda(10), Wzburzona woda(15), Sztorm(20)
+Wstrzymanie oddechu możliwe na ilość rund równą kondycji.
+Później co rundę rzut na kondycję o ST:10 (co rundę zwiększany o 1)</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Spostrzegawczość">
+      <Id>3bdc92dd-63db-4575-94d1-458e0f6c38ab</Id>
+      <BonusProperty>Wisdom</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Test sporny z Ukrywaniem</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Sztuka przetrwania">
+      <Id>10fe6ba1-b055-4afd-b3fc-53058951e413</Id>
+      <BonusProperty>Wisdom</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description />
+    </SkillDefinition>
+    <SkillDefinition Name="Dyplomacja">
+      <Id>d7555c77-2a01-4b0b-8b6b-601ef7535968</Id>
+      <BonusProperty>Charisma</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Wiadomo.</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Postępowanie ze zwięrzętami">
+      <Id>76711b1b-7a31-4d44-8c2e-6b705f4fcba1</Id>
+      <BonusProperty>Charisma</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>ST:10 + KW zwierzaka</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Zastraszanie">
+      <Id>26eab141-3cfc-4dd9-9bf5-6c1e044c9353</Id>
+      <BonusProperty>Charisma</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description />
+    </SkillDefinition>
+    <SkillDefinition Name="Ukrywanie się">
+      <Id>b93a52d3-f777-4cc4-8102-7b5c8ff4e9ec</Id>
+      <BonusProperty>Dexterity</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Gdy niewidzialny premia +20</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Skakanie">
+      <Id>9649a300-808d-4dce-9f33-8244ed4347b1</Id>
+      <BonusProperty>Strength</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>ST: 5 / 1,5 m w dal
+ST: 4/ 30cm w górę</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Przeszukiwanie">
+      <Id>586aa8b4-63c6-4780-9d54-8ec73d820da3</Id>
+      <BonusProperty>Inteligence</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Używane przy znajdowaniu pułapek, ukrytych drzwi</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Unieszkodliwanie mechanizmów">
+      <Id>5e9bc519-4de2-4481-90d7-927d810561e0</Id>
+      <BonusProperty>Inteligence</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Proste ST:10</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Występy">
+      <Id>8d4ed97e-f4f1-4e2f-bb88-92db83be124f</Id>
+      <BonusProperty>Charisma</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Aktorstwo, sztuczki</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Stosowanie mag. urządzeń">
+      <Id>3ef1f1f4-e253-4181-9dd1-b13d2550b710</Id>
+      <BonusProperty>Inteligence</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description />
+    </SkillDefinition>
+    <SkillDefinition Name="Wspinaczka">
+      <Id>dd4a0100-6518-4b20-8f58-bbf0c4aee7d5</Id>
+      <BonusProperty>Strength</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>ST: 5 (z liną), ST: 10 (nierówna ściana), ST:15 (tylko ręce)
+Poruszasz się z 1/4 bazowej prędkości (za każdym razem rzut na podowdzenie).
+Porażka o więcej niż 5 - upadek, 4-0 brak progresusu</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Leczenie">
+      <Id>c24efc83-3808-4257-b1c6-ef39e6a3d770</Id>
+      <BonusProperty>Wisdom</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>ST: 15 + poziom (pierwsza pomoc)</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Szacowanie">
+      <Id>5d5e4ab3-42ef-44de-a574-ef8a58bd7805</Id>
+      <BonusProperty>Inteligence</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>Znane przedmioty: ST:15</Description>
+    </SkillDefinition>
+    <SkillDefinition Name="Otwieranie zamków">
+      <Id>a89dcd7d-10eb-46d3-ab37-f8273a00a91b</Id>
+      <BonusProperty>Dexterity</BonusProperty>
+      <PanaltyModifier>0</PanaltyModifier>
+      <Description>ST zamków: 20 - prosty, 30 - niezły, 40 - świetny</Description>
+    </SkillDefinition>
+  </Elements>
+</RepositoryOfSkillDefinition>

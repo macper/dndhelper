@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Atutes>
+  <Atute ID="1" Name="Akrobatyka">
+    <Description>+2 do skakania i zwinności</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="2" Name="Atak w przelocie">
+    <Description>Wyprowadzając szarżę na wierzochowcu, możesz wykonać ruch i atak
+    a następnie znów się poruszyć (w linii ataku). Nie prowokujesz ataków
+  okazyjnych</Description>
+    <Requirements>Jeździectwo, walka z wierzchowca</Requirements>
+  </Atute>
+  <Atute ID="3" Name="Atak z doskoku">
+    <Description>Możesz ruszyć się zarówno przed jak i po ataku (ale pokonany dystans nie może przekorczyć maksymalnego dla postaci w rundzie)</Description>
+    <Requirements>Zr 13, Ruchliwość, Uniki, Atak+4</Requirements>
+  </Atute>
+  <Atute ID="4" Name="Bezpośredni strzał">
+    <Description>+1 do ataku i obrażeń bronią dystansową gdy odl. mniejszą niż 9 m</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="5" Name="Biegłość w broni egzotycznej">
+    <Description>Brak kar</Description>
+    <Requirements>Atak +1</Requirements>
+  </Atute>
+  <Atute ID="6" Name="Chwytanie strzał">
+    <Description>Możesz chwytać nadlatujące pociski i włocznie i odrzucić w stronę wroga (wymagana jedna ręka wolna)</Description>
+    <Requirements>Zr 15, doskonalsze uderzenie bez broni, odbijanie strzał</Requirements>
+  </Atute>
+  <Atute ID="7" Name="Czar natury">
+    <Description>Moższe używać komponentów werbalnych i materialnych w postaci zwierzęcia</Description>
+    <Requirements>Rzt 13, kształty natury</Requirements>
+  </Atute>
+  <Atute ID="8" Name="Daleki strzał">
+    <Description>Zasięg broni x 1.5 (włocznie x2)</Description>
+    <Requirements>Bezpośredni strzał</Requirements>
+  </Atute>
+  <Atute ID="9" Name="Defensywna walka dwoma orężami">
+    <Description>+1 do KP gdy walczysz dwiema broniami</Description>
+    <Requirements>Zr 15, walka dwiema broniami</Requirements>
+  </Atute>
+  <Atute ID="10" Name="Dodatkowe odpędzanie">
+    <Description>Można brać wielokrotnie, za każdym razem zwiększa liczbę odpędzeń o 4</Description>
+    <Requirements>zdolność odpędzania</Requirements>
+  </Atute>
+  <Atute ID="11" Name="Doskonalsza finta">
+    <Description>Finta akcją ruchu</Description>
+    <Requirements>Int 13, wyszkolenie w walce</Requirements>
+  </Atute>
+  <Atute ID="12" Name="Doskonalsza szarża byka">
+    <Description>brak ataków okazyjnych, +4 do testów siły</Description>
+    <Requirements>SI 13, Potężny atak</Requirements>
+  </Atute>
+  <Atute ID="13" Name="Doskonalsza walka dwoma orężami">
+    <Description>Drugi atak bronią drugorzędną (-5 kara)</Description>
+    <Requirements>Zr 17, walka dwiema broniami, Atak+6</Requirements>
+  </Atute>
+  <Atute ID="14" Name="Doskonalsza walka w zwarciu">
+    <Description>Brak ataków okazyjnych w zwarciu, premia +4 do testów zwarcia</Description>
+    <Requirements>Zr 13, doskonalsze uderzenie bez broni</Requirements>
+  </Atute>
+  <Atute ID="15" Name="Doskonalsze kontrczarowanie">
+    <Description>Możesz kontrczarować używając zaklęcia tej samej szkoły o jeden poziom wyższego</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="16" Name="Doskonalsze obalanie">
+    <Description>Ofiara nie może uniknąć obalania, +4 do testu siły</Description>
+    <Requirements>SI 13, Potężny atak</Requirements>
+  </Atute>
+  <Atute ID="17" Name="Doskonalsze przewracanie">
+    <Description>Brak ataków okazyjnych, premia +4 do testu siły, możliwość wyprowadzenia od razu ataku</Description>
+    <Requirements>Int 13, Wyszkolenie w walce</Requirements>
+  </Atute>
+  <Atute ID="18" Name="Doskonalsze rozbrajanie">
+    <Description>Brak ataków okazyjnych, +4 do spornego testu</Description>
+    <Requirements>Int 13, Wyszkolenie w walce</Requirements>
+  </Atute>
+  <Atute ID="19" Name="Doskonalsze roztrzaskiwanie">
+    <Description>Brak ataków okazyjnych</Description>
+    <Requirements>SI 13, potężny atak</Requirements>
+  </Atute>
+  <Atute ID="20" Name="Doskonalsze trafienie krytyczne">
+    <Description>Podwojenie zagrożenia trafieniem kryt. (np. z 19-20 do 17-20)</Description>
+    <Requirements>Atak+8</Requirements>
+  </Atute>
+  <Atute ID="21" Name="Doskonalsze uderzenie bez broni">
+    <Description>Uznaje cię za uzbrojnego nawet bez broni, możesz zadawać zarówno obrażenia jak i stłuczenia</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="22" Name="Doskonalsze uderzenie tarczą">
+    <Description>Nie tracisz premii z KP po uderzeniu tarczą</Description>
+    <Requirements>biegłość w tarczy</Requirements>
+  </Atute>
+  <Atute ID="23" Name="Doskonalszy precyzyjny strzał">
+    <Description>Ignorujesz premię do KP zapewniane przez osłonę inną niż całkowita. Automatycznie trafiasz w przeciwników w zwarciu</Description>
+    <Requirements>Zr 19, bezpośredni strzał, precyzyjny strzał</Requirements>
+  </Atute>
+  <Atute ID="24" Name="Finezja w broni">
+    <Description>Gdy walczysz bronią lekką/rapierem stosujesz premię ze zręczności a nie siły</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="25" Name="Krzepa">
+    <Description>Premie do pływania, forsownego marszu, brak zmęczenia skutek spania w pancerzu</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="26" Name="[Meta]Maksymalizacja czaru">
+    <Description>Maksymalne obrażenia/leczenie, zajmuje komórkę o 3 poziomy wyższą niż rzeczywisty czar</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="27" Name="Odbijanie strzał">
+    <Description>Raz w rundzie moższe odbić wymierzony w ciebie atak dystansowy, wymaga jednej ręki wolnej</Description>
+    <Requirements>Zr 13, Doskonalsze uderzenie bez broni</Requirements>
+  </Atute>
+  <Atute ID="28" Name="Oszałamiająca pięść">
+    <Description>Raz w rundzie możesz wyprowadzić atak bez broni, który poza normalnymi obrażeniami zmusza przeciwnika do rzutu na Wytrwałość (ST: 10 +1/2 poziomu + premia z Rzt). Nieudany oznacza oszołomienie na 1 rundę. Oszołomiona postać traci premię z KP za zręczność i dostaje -2 do KP. Zdolności tej można użyc raz na 4 poziomy.</Description>
+    <Requirements>Zr 13, Rzt 13, Doskonalsze uderzenie bez broni</Requirements>
+  </Atute>
+  <Atute ID="29" Name="[Meta]Podbicie czaru">
+    <Description>Podbite zaklęcie ma wyższy poziom czaru niż normalnie ale zajmuje też wyższą komórkę</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="30" Name="Porywająca szarża">
+    <Description>Kiedy szarżujesz z wierzchowca zadajesz bronią do walki wręcz podwójne orażenia (kopią potrójne)</Description>
+    <Requirements>Jeździectwo, Atak w przelocie, walka z wierzchowca</Requirements>
+  </Atute>
+  <Atute ID="31" Name="[Meta]Poszerzenie czaru">
+    <Description>Zwiększa obszar działani czaru o 100%. Zajmuje komórkę o 3 poziomy wyższą</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="32" Name="Potężniejsza specjalizacja w broni">
+    <Description>+2 do testów obrażeń</Description>
+    <Requirements>Biegłość w orężu, Potęzniejsze skupienie na broni, specjalizacja</Requirements>
+  </Atute>
+  <Atute ID="33" Name="Potężniejsza walka dwiema broniami">
+    <Description>Możesz wyprowadzić trzeci atak bronią drugorzędną (kara -10)</Description>
+    <Requirements>Zr 19, doskonalsza walka dwiema broniami, Atak+11</Requirements>
+  </Atute>
+  <Atute ID="34" Name="Potężniejsze przenikanie czarem">
+    <Description>+2 do poziomu czarującego w celu pokonania odporności na czary wroga</Description>
+    <Requirements>przenikanie czarem</Requirements>
+  </Atute>
+  <Atute ID="35" Name="Potężniejsze skupienie na broni">
+    <Description>+1 do testów ataku daną bronią</Description>
+    <Requirements>Skupienie na broni</Requirements>
+  </Atute>
+  <Atute ID="36" Name="Potężniejsze skupienie na czarze">
+    <Description>Zwiększa ST o 1 dla czarów wybranej szkoły</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="37" Name="Potężny atak">
+    <Description>Dla wszystkich ataków w rundzie, możesz zwiększyć obrażenia zmniejszając atak</Description>
+    <Requirements>SI 13</Requirements>
+  </Atute>
+  <Atute ID="38" Name="[Meta]Powiększenie czaru">
+    <Description>Zwiększa dystans czaru o 100%, zajmuje komórkę o poziom wyższą</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="39" Name="Precyzyjny strzał">
+    <Description>Nie ma kary -4 do ataku w walczącego wręcz wroga</Description>
+    <Requirements>Bezpośredni strzał</Requirements>
+  </Atute>
+  <Atute ID="40" Name="[Meta]Przedłużenie czaru">
+    <Description>Czar działa dwa razy dłużej, zajmuje komórkę o poziom wyższą</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="41" Name="Przenikanie czarem">
+    <Description>Przenikanie czarem</Description>
+    <Requirements>+2 do testów pokonywanie odpornośći na czary</Requirements>
+  </Atute>
+  <Atute ID="42" Name="[Meta]Przyspieszenie czaru">
+    <Description>Rzucenie czaru to akcja darmowa, zajmuje komórkę o 4 poz. wyższą. W rundzie można rzucić tylko jeden taki czar.</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="43" Name="Rozszczepienie">
+    <Description>Po obaleniu wroga, możesz wyprowadzić atak w następnego</Description>
+    <Requirements>S 13, potężny atak</Requirements>
+  </Atute>
+  <Atute ID="44" Name="Ruchliwość">
+    <Description>Premia +4 do KP w przypadku ataków okazyjnych</Description>
+    <Requirements>Zr 13, Uniki</Requirements>
+  </Atute>
+  <Atute ID="45" Name="Skupienie na broni">
+    <Description>+1 do testów ataku daną bronią</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="46" Name="Skuteczniejsze przyzywanie">
+    <Description>Przywołana istota dostaje +4 SI, +4 BD</Description>
+    <Requirements>Skupienie na czarze (przywoływanie)</Requirements>
+  </Atute>
+  <Atute ID="47" Name="Skuteczniejsze rozszczepienie">
+    <Description>Działa jak roszczepienie ale można użyć dowolną ilość w rundzie</Description>
+    <Requirements>S 13, potężny atak, rozszczepienie</Requirements>
+  </Atute>
+  <Atute ID="48" Name="Specjalizacja w broni">
+    <Description>+2 do testów obrażeń daną bronią</Description>
+    <Requirements>Brak</Requirements>
+  </Atute>
+  <Atute ID="49" Name="Strzał w biegu">
+    <Description>Możesz ruszyć się zarówno przed jak i po strzale</Description>
+    <Requirements>Zr 13, bezpośredni strzał, ruchliwość, uniki</Requirements>
+  </Atute>
+  <Atute ID="50" Name="Strzelanie z wierzchowca">
+    <Description>Kara -2 zamiast -4, -4 zamiast -8 gdy koń biegnie</Description>
+    <Requirements>Jeżdziectwo, walka z wierzchowca</Requirements>
+  </Atute>
+  <Atute ID="51" Name="[Tp]Stworzenie berła">
+    <Description>1 dzień na każde 1000 sz wartości</Description>
+    <Requirements>9 poz. czarującego</Requirements>
+  </Atute>
+  <Atute ID="52" Name="[Tp]Stworzenie cudownego przedmiotu">
+    <Description></Description>
+    <Requirements>3 poz. czarującego</Requirements>
+  </Atute>
+  <Atute ID="53" Name="Skupienie na czarze">
+    <Description></Description>
+    <Requirements>+1 do ST przeciwko czarom danej szkoły</Requirements>
+  </Atute>
+  <Atute ID="54" Name="[Tp]Stworzenie laski">
+    <Description></Description>
+    <Requirements>12 poz. czarującego</Requirements>
+  </Atute>
+  <Atute ID="55" Name="[Tp]Stworzenie magicznej broni i pancerza">
+    <Description></Description>
+    <Requirements>5 poz. czarującego</Requirements>
+  </Atute>
+  <Atute ID="56" Name="[Tp]Stworzenie różdżki">
+    <Description></Description>
+    <Requirements>5 poz. czarującego</Requirements>
+  </Atute>
+  <Atute ID="57" Name="Szybki strzał">
+    <Description>Jeden dodatkowy atak bronią dystansową, ale wszystkie ataki -2 do ataku</Description>
+    <Requirements>Zr 13, Bezpośredni strzał</Requirements>
+  </Atute>
+  <Atute ID="58" Name="Szybkie dobywanie broni">
+    <Description>Dobywasz broni w akcji darmowej</Description>
+    <Requirements>Atak+1</Requirements>
+  </Atute>
+  <Atute ID="59" Name="Szybkie naciąganie kuszy">
+    <Description>Naciąganie kuszy akcją darmową (lekka) lub ruchu (ciężka)</Description>
+    <Requirements></Requirements>
+  </Atute>
+  <Atute ID="60" Name="Talent do magii">
+    <Description>+2 do testów czarostwa i używania mag. urządzeń</Description>
+    <Requirements></Requirements>
+  </Atute>
+  <Atute ID="61" Name="Tropienie">
+    <Description>ST: 5 (bardzo miękkie podłoże) do 20 (bardzo twarde)</Description>
+    <Requirements></Requirements>
+  </Atute>
+  <Atute ID="62" Name="Twardość">
+    <Description>+3 PŻ</Description>
+    <Requirements></Requirements>
+  </Atute>
+  <Atute ID="63" Name="Uniki">
+    <Description>+1 do KP względem wybranego wroga</Description>
+    <Requirements>Zr 13</Requirements>
+  </Atute>
+  <Atute ID="64" Name="Walka dwiema broniami">
+    <Description>Zmniejsza kary: główna broń o 2 a drugorzędnej o 6 </Description>
+    <Requirements>Zr 15</Requirements>
+  </Atute>
+  <Atute ID="65" Name="Walka na ślepo">
+    <Description>Możesz powtórzyć atak gdy chybiłeś ukrytego przeciwnika</Description>
+    <Requirements>Zr 13</Requirements>
+  </Atute>
+  <Atute ID="66" Name="Walka z wierzchowca">
+    <Description>Raz w rundzie, po udanym teście jeździectwa możesz zanegować obrażenia zadane wierzchowcowi</Description>
+    <Requirements>Jeżdziectwo</Requirements>
+  </Atute>
+  <Atute ID="67" Name="[Tp]Warzenie eliksirów">
+    <Description>Potrafisz warzyć mikstury</Description>
+    <Requirements>Poz. 3 czarującego</Requirements>
+  </Atute>
+  <Atute ID="68" Name="Wielostrzał">
+    <Description>Możesz wystrzelić dwie strzały do przeciwnika znajdującego się nie dalej niż 9m, z karą -4</Description>
+    <Requirements>Zr 17, bezpośredni strzał, szybki strzał</Requirements>
+  </Atute>
+  <Atute ID="69" Name="Wirujący atak">
+    <Description>Poświęcając akcję całkowitego ataku możesz zaatakować wszystkich przeciwników naokoło</Description>
+    <Requirements>Zr 13, Int 13, Atak z doskoku, ruchliwość</Requirements>
+  </Atute>
+  <Atute ID="70" Name="[Tp]Wykucie pierścienia">
+    <Description>Potrafisz wykuć pierścień</Description>
+    <Requirements>12 poz.</Requirements>
+  </Atute>
+  <Atute ID="71" Name="Wyszkolenie w walce">
+    <Description>Gdy atakujesz, możesz zdecydować się na karę -5 do testów ataku a tę premię użyć do KP</Description>
+    <Requirements>Int 13</Requirements>
+  </Atute>
+  <Atute ID="72" Name="[Meta]Wzmocnienie czaru">
+    <Description>Liczbowe efekty czaru ulegają zwiększeniu o połowę. Zajmuje komórkę o 2 poz. wyższą</Description>
+    <Requirements></Requirements>
+  </Atute>
+  <Atute ID="73" Name="[Tp]Zapisanie zwoju">
+    <Description>Tworzysz zwój</Description>
+    <Requirements>1 poz.</Requirements>
+  </Atute>
+  <Atute ID="74" Name="Zawziętość">
+    <Description>Gdy PŻ pomiędzy -1 a -9 automatycznie się stabilizujesz. Możesz działać jako osoba poraniona (1 akcja w rundzie).</Description>
+    <Requirements>Krzepa</Requirements>
+  </Atute>
+  <Atute ID="75" Name="Zmysł walki">
+    <Description>Możesz wyprowadzić dodatkowe ataki okazyjne w ilości równej premii ze zręczności</Description>
+    <Requirements></Requirements>
+  </Atute>
+</Atutes>

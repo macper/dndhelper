@@ -1,0 +1,22 @@
+﻿<div class="alert alert-danger" ng-show="parseError">Nie udało się sparsować wpisanej wartości obrażeń</div>
+<div class="alert alert-info" ng-show="parseSuccess">Wartość sparsowana i ustawiona, naciśnij zapisz</div>
+<table class="table striped">
+    <tr><td>Wartość (obrażenia)</td>
+        <td><input type="text" ng-model="damageToParse" />
+            <button class="btn btn-default" ng-click="parseDamage(damageToParse)">Parsuj</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Typy obrażeń</td>
+        <td>
+            <ul>
+                <li>[Fizyczne]</li>
+                <li>[Ogień]</li>
+                <li>[Zimno]</li>
+                <li>[Elektryczność]</li>
+                <li>[Negatywna energia]</li>
+                <li>[Boska energia]</li>
+            </ul>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.Repos.Effects"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="760" Background="White" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Controls">
+    <Grid Width="760">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Szukanie:" Height="28" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Top" />
+        <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="12,31,0,0" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,33,0,0" VerticalAlignment="Top" Width="212" Text="{Binding SearchName, UpdateSourceTrigger=PropertyChanged}" />
+        <ListBox Height="462" HorizontalAlignment="Left" Margin="12,62,0,0" VerticalAlignment="Top" Width="275" ItemsSource="{Binding Effects}" DisplayMemberPath="Name" SelectedValue="{Binding SelectedEffect}" />
+        <Button Content="Nowy" Command="{Binding AddEffect}" Height="26" HorizontalAlignment="Left" Margin="212,530,0,0" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Button Content="Usuń" Command="{Binding RemoveEffect}" Height="26" HorizontalAlignment="Right" Margin="0,530,94,0" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Button Content="Wybierz" Command="{Binding SelectEffect}" Visibility="{Binding Path=SelectMode, Converter={StaticResource BooleanToVisibilityConverter}}" Height="26" HorizontalAlignment="Left" Margin="50,530,0,0" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Border BorderBrush="Silver" BorderThickness="1" Grid.Column="1" Height="423" HorizontalAlignment="Left" Margin="8,5,0,0" Name="border1" VerticalAlignment="Top" Width="436" Visibility="{Binding Path=IsEffectVisible, Converter={StaticResource BooleanToInverseVisibilityConverter}}">
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" DataContext="{Binding EffectModel}" >
+                <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label2" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="117,10,0,0" Text="{Binding Name}" VerticalAlignment="Top" Width="303" />
+                <Label Content="Opis:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" VerticalAlignment="Top" />
+                <TextBox Height="110" HorizontalAlignment="Left" Margin="117,40,0,0" Text="{Binding Description}" VerticalAlignment="Top" Width="303" AcceptsReturn="True" TextWrapping="Wrap" />
+                <my:BonusEditor HorizontalAlignment="Left" Margin="6,187,0,0" DataContext="{Binding BonusModel}" VerticalAlignment="Top" Width="422" Height="156" />
+                <Label Content="Domyślny czas trwania:" Height="28" HorizontalAlignment="Left" Margin="6,155,0,0" Name="label3" VerticalAlignment="Top" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="144,156,0,0" Value="{Binding DefaultDuration, Mode=TwoWay}" VerticalAlignment="Top" Width="95" />
+                <Label Content="Licznik:" Height="28" HorizontalAlignment="Left" Margin="250,156,0,0" Name="label6" VerticalAlignment="Top" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="307,158,0,0" Value="{Binding DefaultCounter, Mode=TwoWay}" VerticalAlignment="Top" Width="113" />
+                <Button Content="Zapisz" Height="26" Command="{Binding Commit}" HorizontalAlignment="Left" Margin="353,386,0,0" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+                <CheckBox Content="Pozytywny" IsChecked="{Binding IsPositive}" HorizontalAlignment="Left" Margin="325,348,0,0" VerticalAlignment="Top" Width="99"/>
+                <CheckBox Content="Bojowy" IsChecked="{Binding IsBattleEffect}" HorizontalAlignment="Left" Margin="325,366,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </Border>
+        <GroupBox Visibility="{Binding Path=IsEffectVisible, Converter={StaticResource BooleanToVisibilityConverter}}" Grid.Column="1" Header="Szczegóły efektu" Height="446" HorizontalAlignment="Left" Margin="9,5,0,0"  VerticalAlignment="Top" Width="439">
+            <Grid DataContext="{Binding Effect}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="413*" />
+                    <ColumnDefinition Width="10*" />
+                </Grid.ColumnDefinitions>
+                <Label Content="Czas trwania:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" VerticalAlignment="Top" />
+                <Label Content="Licznik:" Height="28" HorizontalAlignment="Left" Margin="281,42,0,0" Name="label5" VerticalAlignment="Top" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="332,44,0,0" Value="{Binding Counter, Mode=TwoWay}"  VerticalAlignment="Top" Width="82" />
+                <Button Command="{Binding Path=DataContext.ConfirmSelect, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}" Content="Ok" Height="26" HorizontalAlignment="Left" Margin="338,391,0,0" VerticalAlignment="Top" Width="83" Template="{StaticResource buttonInfo}" Grid.ColumnSpan="2" />
+                <my:BonusEditor HorizontalAlignment="Left" Margin="6,101,0,0" DataContext="{Binding Bonuses}" VerticalAlignment="Top" Width="408" Height="171" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="90,41,0,0" Value="{Binding Duration, Mode=TwoWay}" VerticalAlignment="Top" Width="80" />
+                <Button Content="&gt; min." Command="{Binding Path=DataContext.ConvertToMins, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}" Height="26" FontWeight="Bold" HorizontalAlignment="Left" Margin="176,42,0,0" Name="button1" VerticalAlignment="Top" Width="50" />
+                <Button Content="&gt; godz." Command="{Binding Path=DataContext.ConvertToHours, RelativeSource={RelativeSource FindAncestor, AncestorType=UserControl}}"  FontWeight="Bold" Height="26" HorizontalAlignment="Left" Margin="232,42,0,0" Name="button2" VerticalAlignment="Top" Width="50" />
+                <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="90,6,0,0" Text="{Binding InstanceName}" VerticalAlignment="Top" Width="192" />
+                <CheckBox Content="Stały" Height="16" HorizontalAlignment="Left" Margin="90,72,0,0" IsChecked="{Binding Permanent}" VerticalAlignment="Top" Width="80" />
+                <GroupBox Header="Dodatkowe info" Height="107" HorizontalAlignment="Left" Margin="6,278,0,0" Name="groupBox1" VerticalAlignment="Top" Width="408">
+                    <Grid Height="83" Width="397">
+                        <TextBox Height="71" HorizontalAlignment="Left" Margin="6,6,0,0" Text="{Binding CustomText}" VerticalAlignment="Top" Width="385" AcceptsReturn="True" />
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

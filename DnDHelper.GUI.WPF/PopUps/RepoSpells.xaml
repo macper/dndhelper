@@ -1,0 +1,8 @@
+﻿<Window x:Class="DnDHelper.GUI.WPF.PopUps.RepoSpells"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edycja czarów" Height="650" Width="810" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Panels.Repos" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <my:Spells HorizontalAlignment="Stretch" x:Name="spells1" VerticalAlignment="Stretch" />
+    </Grid>
+</Window>

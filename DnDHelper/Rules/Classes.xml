@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<ClassesDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ClassList>
+    <Class>
+      <Name>Wojownik</Name>
+      <PW>10</PW>
+      <AttackSkill>High</AttackSkill>
+      <HighReflexThrow>false</HighReflexThrow>
+      <HighWillThrow>false</HighWillThrow>
+      <HighEnduranceThrow>true</HighEnduranceThrow>
+    </Class>
+    <Class>
+      <Name>Barbarzyńca</Name>
+      <PW>12</PW>
+      <AttackSkill>High</AttackSkill>
+      <HighReflexThrow>false</HighReflexThrow>
+      <HighWillThrow>false</HighWillThrow>
+      <HighEnduranceThrow>true</HighEnduranceThrow>
+    </Class>
+    <Class>
+      <Name>Tropiciel</Name>
+      <PW>8</PW>
+      <AttackSkill>High</AttackSkill>
+      <HighReflexThrow>true</HighReflexThrow>
+      <HighWillThrow>false</HighWillThrow>
+      <HighEnduranceThrow>true</HighEnduranceThrow>
+    </Class>
+	<Class>
+		<Name>Mnich</Name>
+		<PW>8</PW>
+		<AttackSkill>Medium</AttackSkill>
+		<HighReflexThrow>true</HighReflexThrow>
+		<HighWillThrow>true</HighWillThrow>
+		<HighEnduranceThrow>true</HighEnduranceThrow>
+	</Class>
+    <Class>
+      <Name>Mag</Name>
+      <PW>4</PW>
+      <AttackSkill>Low</AttackSkill>
+      <HighReflexThrow>false</HighReflexThrow>
+      <HighWillThrow>true</HighWillThrow>
+      <HighEnduranceThrow>false</HighEnduranceThrow>
+      <SpellsPerLevel>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="3" Type="Mage" />
+          <SpellCasting Level="2" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Mage" />
+          <SpellCasting Level="2" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Mage" />
+          <SpellCasting Level="2" Count="3" Type="Mage" />
+          <SpellCasting Level="3" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Mage" />
+          <SpellCasting Level="2" Count="4" Type="Mage" />
+          <SpellCasting Level="3" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="4" Type="Mage" />
+          <SpellCasting Level="3" Count="3" Type="Mage" />
+          <SpellCasting Level="4" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="4" Type="Mage" />
+          <SpellCasting Level="3" Count="4" Type="Mage" />
+          <SpellCasting Level="4" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="4" Type="Mage" />
+          <SpellCasting Level="4" Count="3" Type="Mage" />
+          <SpellCasting Level="5" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="4" Type="Mage" />
+          <SpellCasting Level="4" Count="4" Type="Mage" />
+          <SpellCasting Level="5" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="4" Type="Mage" />
+          <SpellCasting Level="5" Count="3" Type="Mage" />
+          <SpellCasting Level="6" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="4" Type="Mage" />
+          <SpellCasting Level="5" Count="4" Type="Mage" />
+          <SpellCasting Level="6" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="4" Type="Mage" />
+          <SpellCasting Level="6" Count="3" Type="Mage" />
+          <SpellCasting Level="7" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="4" Type="Mage" />
+          <SpellCasting Level="6" Count="4" Type="Mage" />
+          <SpellCasting Level="7" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="5" Type="Mage" />
+          <SpellCasting Level="6" Count="4" Type="Mage" />
+          <SpellCasting Level="7" Count="3" Type="Mage" />
+          <SpellCasting Level="8" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="5" Type="Mage" />
+          <SpellCasting Level="6" Count="4" Type="Mage" />
+          <SpellCasting Level="7" Count="4" Type="Mage" />
+          <SpellCasting Level="8" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="5" Type="Mage" />
+          <SpellCasting Level="6" Count="5" Type="Mage" />
+          <SpellCasting Level="7" Count="4" Type="Mage" />
+          <SpellCasting Level="8" Count="3" Type="Mage" />
+          <SpellCasting Level="9" Count="2" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="5" Type="Mage" />
+          <SpellCasting Level="6" Count="5" Type="Mage" />
+          <SpellCasting Level="7" Count="4" Type="Mage" />
+          <SpellCasting Level="8" Count="4" Type="Mage" />
+          <SpellCasting Level="9" Count="3" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="5" Type="Mage" />
+          <SpellCasting Level="6" Count="5" Type="Mage" />
+          <SpellCasting Level="7" Count="5" Type="Mage" />
+          <SpellCasting Level="8" Count="4" Type="Mage" />
+          <SpellCasting Level="9" Count="4" Type="Mage" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Mage" />
+          <SpellCasting Level="2" Count="5" Type="Mage" />
+          <SpellCasting Level="3" Count="5" Type="Mage" />
+          <SpellCasting Level="4" Count="5" Type="Mage" />
+          <SpellCasting Level="5" Count="5" Type="Mage" />
+          <SpellCasting Level="6" Count="5" Type="Mage" />
+          <SpellCasting Level="7" Count="5" Type="Mage" />
+          <SpellCasting Level="8" Count="5" Type="Mage" />
+          <SpellCasting Level="9" Count="5" Type="Mage" />
+        </ArrayOfSpellCasting>
+      </SpellsPerLevel>
+    </Class>
+    <Class>
+      <Name>Bard</Name>
+      <PW>6</PW>
+      <AttackSkill>Medium</AttackSkill>
+      <HighReflexThrow>true</HighReflexThrow>
+      <HighWillThrow>true</HighWillThrow>
+      <HighEnduranceThrow>false</HighEnduranceThrow>
+      <SpellsPerLevel>
+        <ArrayOfSpellCasting />
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="1" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="2" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="3" Type="Bard" />
+          <SpellCasting Level="2" Count="1" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="2" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="3" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="3" Type="Bard" />
+          <SpellCasting Level="3" Count="1" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="2" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="3" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="3" Type="Bard" />
+          <SpellCasting Level="4" Count="1" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="4" Type="Bard" />
+          <SpellCasting Level="4" Count="2" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="4" Type="Bard" />
+          <SpellCasting Level="4" Count="3" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="4" Type="Bard" />
+          <SpellCasting Level="4" Count="3" Type="Bard" />
+          <SpellCasting Level="5" Count="1" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="4" Type="Bard" />
+          <SpellCasting Level="4" Count="4" Type="Bard" />
+          <SpellCasting Level="5" Count="2" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Bard" />
+          <SpellCasting Level="2" Count="4" Type="Bard" />
+          <SpellCasting Level="3" Count="4" Type="Bard" />
+          <SpellCasting Level="4" Count="4" Type="Bard" />
+          <SpellCasting Level="5" Count="3" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Bard" />
+          <SpellCasting Level="2" Count="5" Type="Bard" />
+          <SpellCasting Level="3" Count="4" Type="Bard" />
+          <SpellCasting Level="4" Count="4" Type="Bard" />
+          <SpellCasting Level="5" Count="3" Type="Bard" />
+          <SpellCasting Level="6" Count="1" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Bard" />
+          <SpellCasting Level="2" Count="5" Type="Bard" />
+          <SpellCasting Level="3" Count="5" Type="Bard" />
+          <SpellCasting Level="4" Count="4" Type="Bard" />
+          <SpellCasting Level="5" Count="4" Type="Bard" />
+          <SpellCasting Level="6" Count="2" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Bard" />
+          <SpellCasting Level="2" Count="5" Type="Bard" />
+          <SpellCasting Level="3" Count="5" Type="Bard" />
+          <SpellCasting Level="4" Count="5" Type="Bard" />
+          <SpellCasting Level="5" Count="4" Type="Bard" />
+          <SpellCasting Level="6" Count="3" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Bard" />
+          <SpellCasting Level="2" Count="5" Type="Bard" />
+          <SpellCasting Level="3" Count="5" Type="Bard" />
+          <SpellCasting Level="4" Count="5" Type="Bard" />
+          <SpellCasting Level="5" Count="5" Type="Bard" />
+          <SpellCasting Level="6" Count="4" Type="Bard" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Bard" />
+          <SpellCasting Level="2" Count="5" Type="Bard" />
+          <SpellCasting Level="3" Count="5" Type="Bard" />
+          <SpellCasting Level="4" Count="5" Type="Bard" />
+          <SpellCasting Level="5" Count="5" Type="Bard" />
+          <SpellCasting Level="6" Count="5" Type="Bard" />
+        </ArrayOfSpellCasting>
+      </SpellsPerLevel>
+    </Class>
+    <Class>
+      <Name>Kapłan</Name>
+      <PW>8</PW>
+      <AttackSkill>Medium</AttackSkill>
+      <HighReflexThrow>false</HighReflexThrow>
+      <HighWillThrow>true</HighWillThrow>
+      <HighEnduranceThrow>true</HighEnduranceThrow>
+      <SpellsPerLevel>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="3" Type="Cleric" />
+          <SpellCasting Level="2" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Cleric" />
+          <SpellCasting Level="2" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Cleric" />
+          <SpellCasting Level="2" Count="3" Type="Cleric" />
+          <SpellCasting Level="3" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Cleric" />
+          <SpellCasting Level="2" Count="4" Type="Cleric" />
+          <SpellCasting Level="3" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Cleric" />
+          <SpellCasting Level="2" Count="4" Type="Cleric" />
+          <SpellCasting Level="3" Count="3" Type="Cleric" />
+          <SpellCasting Level="4" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Cleric" />
+          <SpellCasting Level="2" Count="4" Type="Cleric" />
+          <SpellCasting Level="3" Count="4" Type="Cleric" />
+          <SpellCasting Level="4" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Cleric" />
+          <SpellCasting Level="2" Count="5" Type="Cleric" />
+          <SpellCasting Level="3" Count="4" Type="Cleric" />
+          <SpellCasting Level="4" Count="3" Type="Cleric" />
+          <SpellCasting Level="5" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Cleric" />
+          <SpellCasting Level="2" Count="5" Type="Cleric" />
+          <SpellCasting Level="3" Count="4" Type="Cleric" />
+          <SpellCasting Level="4" Count="4" Type="Cleric" />
+          <SpellCasting Level="5" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="5" Type="Cleric" />
+          <SpellCasting Level="3" Count="5" Type="Cleric" />
+          <SpellCasting Level="4" Count="4" Type="Cleric" />
+          <SpellCasting Level="5" Count="3" Type="Cleric" />
+          <SpellCasting Level="6" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="5" Type="Cleric" />
+          <SpellCasting Level="3" Count="5" Type="Cleric" />
+          <SpellCasting Level="4" Count="4" Type="Cleric" />
+          <SpellCasting Level="5" Count="4" Type="Cleric" />
+          <SpellCasting Level="6" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="5" Type="Cleric" />
+          <SpellCasting Level="4" Count="5" Type="Cleric" />
+          <SpellCasting Level="5" Count="4" Type="Cleric" />
+          <SpellCasting Level="6" Count="3" Type="Cleric" />
+          <SpellCasting Level="7" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="5" Type="Cleric" />
+          <SpellCasting Level="4" Count="5" Type="Cleric" />
+          <SpellCasting Level="5" Count="4" Type="Cleric" />
+          <SpellCasting Level="6" Count="4" Type="Cleric" />
+          <SpellCasting Level="7" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="6" Type="Cleric" />
+          <SpellCasting Level="4" Count="5" Type="Cleric" />
+          <SpellCasting Level="5" Count="5" Type="Cleric" />
+          <SpellCasting Level="6" Count="4" Type="Cleric" />
+          <SpellCasting Level="7" Count="3" Type="Cleric" />
+          <SpellCasting Level="8" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="6" Type="Cleric" />
+          <SpellCasting Level="4" Count="5" Type="Cleric" />
+          <SpellCasting Level="5" Count="5" Type="Cleric" />
+          <SpellCasting Level="6" Count="4" Type="Cleric" />
+          <SpellCasting Level="7" Count="4" Type="Cleric" />
+          <SpellCasting Level="8" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="6" Type="Cleric" />
+          <SpellCasting Level="4" Count="6" Type="Cleric" />
+          <SpellCasting Level="5" Count="5" Type="Cleric" />
+          <SpellCasting Level="6" Count="5" Type="Cleric" />
+          <SpellCasting Level="7" Count="4" Type="Cleric" />
+          <SpellCasting Level="8" Count="3" Type="Cleric" />
+          <SpellCasting Level="9" Count="2" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="6" Type="Cleric" />
+          <SpellCasting Level="4" Count="6" Type="Cleric" />
+          <SpellCasting Level="5" Count="5" Type="Cleric" />
+          <SpellCasting Level="6" Count="5" Type="Cleric" />
+          <SpellCasting Level="7" Count="4" Type="Cleric" />
+          <SpellCasting Level="8" Count="4" Type="Cleric" />
+          <SpellCasting Level="9" Count="3" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="6" Type="Cleric" />
+          <SpellCasting Level="4" Count="6" Type="Cleric" />
+          <SpellCasting Level="5" Count="6" Type="Cleric" />
+          <SpellCasting Level="6" Count="5" Type="Cleric" />
+          <SpellCasting Level="7" Count="5" Type="Cleric" />
+          <SpellCasting Level="8" Count="4" Type="Cleric" />
+          <SpellCasting Level="9" Count="4" Type="Cleric" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Cleric" />
+          <SpellCasting Level="2" Count="6" Type="Cleric" />
+          <SpellCasting Level="3" Count="6" Type="Cleric" />
+          <SpellCasting Level="4" Count="6" Type="Cleric" />
+          <SpellCasting Level="5" Count="6" Type="Cleric" />
+          <SpellCasting Level="6" Count="5" Type="Cleric" />
+          <SpellCasting Level="7" Count="5" Type="Cleric" />
+          <SpellCasting Level="8" Count="5" Type="Cleric" />
+          <SpellCasting Level="9" Count="5" Type="Cleric" />
+        </ArrayOfSpellCasting>
+      </SpellsPerLevel>
+    </Class>
+    <Class>
+      <Name>Złodziej</Name>
+      <PW>6</PW>
+      <AttackSkill>Medium</AttackSkill>
+      <HighReflexThrow>true</HighReflexThrow>
+      <HighWillThrow>true</HighWillThrow>
+      <HighEnduranceThrow>false</HighEnduranceThrow>
+    </Class>
+    <Class>
+      <Name>Druid</Name>
+      <PW>8</PW>
+      <AttackSkill>Medium</AttackSkill>
+      <HighReflexThrow>false</HighReflexThrow>
+      <HighWillThrow>true</HighWillThrow>
+      <HighEnduranceThrow>true</HighEnduranceThrow>
+      <SpellsPerLevel>
+        <ArrayOfSpellCasting xsi:nil="true" />
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="3" Type="Druid" />
+          <SpellCasting Level="2" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Druid" />
+          <SpellCasting Level="2" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Druid" />
+          <SpellCasting Level="2" Count="3" Type="Druid" />
+          <SpellCasting Level="3" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="4" Type="Druid" />
+          <SpellCasting Level="2" Count="4" Type="Druid" />
+          <SpellCasting Level="3" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Druid" />
+          <SpellCasting Level="2" Count="4" Type="Druid" />
+          <SpellCasting Level="3" Count="3" Type="Druid" />
+          <SpellCasting Level="4" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Druid" />
+          <SpellCasting Level="2" Count="4" Type="Druid" />
+          <SpellCasting Level="3" Count="4" Type="Druid" />
+          <SpellCasting Level="4" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Druid" />
+          <SpellCasting Level="2" Count="5" Type="Druid" />
+          <SpellCasting Level="3" Count="4" Type="Druid" />
+          <SpellCasting Level="4" Count="3" Type="Druid" />
+          <SpellCasting Level="5" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="5" Type="Druid" />
+          <SpellCasting Level="2" Count="5" Type="Druid" />
+          <SpellCasting Level="3" Count="4" Type="Druid" />
+          <SpellCasting Level="4" Count="4" Type="Druid" />
+          <SpellCasting Level="5" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="5" Type="Druid" />
+          <SpellCasting Level="3" Count="5" Type="Druid" />
+          <SpellCasting Level="4" Count="4" Type="Druid" />
+          <SpellCasting Level="5" Count="3" Type="Druid" />
+          <SpellCasting Level="6" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="5" Type="Druid" />
+          <SpellCasting Level="3" Count="5" Type="Druid" />
+          <SpellCasting Level="4" Count="4" Type="Druid" />
+          <SpellCasting Level="5" Count="4" Type="Druid" />
+          <SpellCasting Level="6" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="5" Type="Druid" />
+          <SpellCasting Level="4" Count="5" Type="Druid" />
+          <SpellCasting Level="5" Count="4" Type="Druid" />
+          <SpellCasting Level="6" Count="3" Type="Druid" />
+          <SpellCasting Level="7" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="5" Type="Druid" />
+          <SpellCasting Level="4" Count="5" Type="Druid" />
+          <SpellCasting Level="5" Count="4" Type="Druid" />
+          <SpellCasting Level="6" Count="4" Type="Druid" />
+          <SpellCasting Level="7" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="6" Type="Druid" />
+          <SpellCasting Level="4" Count="5" Type="Druid" />
+          <SpellCasting Level="5" Count="5" Type="Druid" />
+          <SpellCasting Level="6" Count="4" Type="Druid" />
+          <SpellCasting Level="7" Count="3" Type="Druid" />
+          <SpellCasting Level="8" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="6" Type="Druid" />
+          <SpellCasting Level="4" Count="5" Type="Druid" />
+          <SpellCasting Level="5" Count="5" Type="Druid" />
+          <SpellCasting Level="6" Count="4" Type="Druid" />
+          <SpellCasting Level="7" Count="4" Type="Druid" />
+          <SpellCasting Level="8" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="6" Type="Druid" />
+          <SpellCasting Level="4" Count="6" Type="Druid" />
+          <SpellCasting Level="5" Count="5" Type="Druid" />
+          <SpellCasting Level="6" Count="5" Type="Druid" />
+          <SpellCasting Level="7" Count="4" Type="Druid" />
+          <SpellCasting Level="8" Count="3" Type="Druid" />
+          <SpellCasting Level="9" Count="2" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="6" Type="Druid" />
+          <SpellCasting Level="4" Count="6" Type="Druid" />
+          <SpellCasting Level="5" Count="5" Type="Druid" />
+          <SpellCasting Level="6" Count="5" Type="Druid" />
+          <SpellCasting Level="7" Count="4" Type="Druid" />
+          <SpellCasting Level="8" Count="4" Type="Druid" />
+          <SpellCasting Level="9" Count="3" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="6" Type="Druid" />
+          <SpellCasting Level="4" Count="6" Type="Druid" />
+          <SpellCasting Level="5" Count="6" Type="Druid" />
+          <SpellCasting Level="6" Count="5" Type="Druid" />
+          <SpellCasting Level="7" Count="5" Type="Druid" />
+          <SpellCasting Level="8" Count="4" Type="Druid" />
+          <SpellCasting Level="9" Count="4" Type="Druid" />
+        </ArrayOfSpellCasting>
+        <ArrayOfSpellCasting>
+          <SpellCasting Level="1" Count="6" Type="Druid" />
+          <SpellCasting Level="2" Count="6" Type="Druid" />
+          <SpellCasting Level="3" Count="6" Type="Druid" />
+          <SpellCasting Level="4" Count="6" Type="Druid" />
+          <SpellCasting Level="5" Count="6" Type="Druid" />
+          <SpellCasting Level="6" Count="5" Type="Druid" />
+          <SpellCasting Level="7" Count="5" Type="Druid" />
+          <SpellCasting Level="8" Count="5" Type="Druid" />
+          <SpellCasting Level="9" Count="5" Type="Druid" />
+        </ArrayOfSpellCasting>
+      </SpellsPerLevel>
+    </Class>
+  </ClassList>
+</ClassesDefinition>

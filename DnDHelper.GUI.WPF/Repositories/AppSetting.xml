@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfAppSetting xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>7173</Version>
+  <Scripts />
+  <Elements>
+    <AppSetting Name="Time">
+      <Id>c8cde138-bb2f-4a37-acad-b6da296fa5ce</Id>
+      <Value>1301-07-24 09:05:42</Value>
+    </AppSetting>
+    <AppSetting Name="Notes">
+      <Id>914134aa-17b6-4807-9660-5384d62d688a</Id>
+      <Value>Pierścień leczenia - 26-06-1301 19:01 x2
+
+400
+
+21-06-1301 klejnot
+
+22-06-1301
+
+Bank: 1200
+Sztabka mithrillu
+
+26.05 wieczór teleport na plan ognia
+
+Łuk (kiedy,co i jak)
+
+Didric Stavik - śledczy
+
+
+
+
+
+
+
+
+</Value>
+    </AppSetting>
+  </Elements>
+</RepositoryOfAppSetting>

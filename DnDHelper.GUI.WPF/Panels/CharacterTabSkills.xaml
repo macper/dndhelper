@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.CharacterTabSkills"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:Domain="clr-namespace:DnDHelper.Domain;assembly=DnDHelper.Domain" mc:Ignorable="d" 
+             d:DesignHeight="620" d:DesignWidth="800" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Controls" xmlns:ViewModels="clr-namespace:DnDHelper.GUI.WPF.ViewModels">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type ViewModels:SkillViewModel}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Nazwa:" Grid.Column="2" Height="28" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" />
+                <TextBox Height="23" Text="{Binding CurrentSkill.Name, Mode=OneWay}" HorizontalAlignment="Left" Margin="60,37,0,0" VerticalAlignment="Top" Width="204" IsReadOnly="True" />
+                <Label Content="Opis:" Height="28" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Grid.Column="2" />
+                <TextBox Height="155" Text="{Binding CurrentSkill.Definition.Description, Mode=OneWay}" HorizontalAlignment="Left" Margin="60,67,0,0" VerticalAlignment="Top" Width="204" TextWrapping="Wrap" IsReadOnly="True" />
+                <Label Content="Wartość bazowa:" Height="28" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="144,231,0,0" Value="{Binding BaseValue, Mode=TwoWay}" VerticalAlignment="Top" Width="120" />
+                <Label Content="Wartość całkowita:" Height="28" HorizontalAlignment="Left" Margin="10,262,0,0" Name="label1" VerticalAlignment="Top" />
+                <Label Content="{Binding TotalValue}" Height="28" HorizontalAlignment="Left" Margin="144,260,0,0" Name="label2" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" />
+                <my:BonusHelper HorizontalAlignment="Left" Margin="239,262,0,0" Bonuses="{Binding Bonuses}" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type Domain:Atut}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Nazwa:" Grid.Column="2" Height="28" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" />
+                <TextBox Height="23" Text="{Binding Name, Mode=OneWay}" HorizontalAlignment="Left" Margin="60,37,0,0" VerticalAlignment="Top" Width="204" IsReadOnly="True" />
+                <Label Content="Opis:" Height="28" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" Grid.Column="2" />
+                <TextBox Height="155" Text="{Binding Definition.Description, Mode=OneWay}" HorizontalAlignment="Left" Margin="60,67,0,0" VerticalAlignment="Top" Width="204" TextWrapping="Wrap" IsReadOnly="True" />
+                <Label Content="Dodatkowe info:" Height="28" HorizontalAlignment="Left" Margin="6,228,0,0" VerticalAlignment="Top" />
+                <TextBox Height="81" HorizontalAlignment="Left" Margin="10,252,0,0" Text="{Binding AdditionalInfo}"  VerticalAlignment="Top" Width="254" TextWrapping="Wrap" AcceptsReturn="True" />
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="220" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Height="23" HorizontalAlignment="Center" FontSize="16" Margin="5"  Text="Umiejętności" VerticalAlignment="Top" />
+        <TextBlock Grid.Column="1" Height="23" HorizontalAlignment="Center" FontSize="16" Margin="5"  Text="Atuty" VerticalAlignment="Top" />
+        <ListView Height="527" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="5,68,5,0" ItemsSource="{Binding Skills}" SelectedValue="{Binding SelectedSkill}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Nazwa" Width="200" DisplayMemberBinding="{Binding Name}"  />
+                    <GridViewColumn Header="Wartość" Width="100" DisplayMemberBinding="{Binding Value}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <ListBox Grid.Column="1" Height="506" HorizontalAlignment="Stretch" Margin="5,68,5,0" ItemsSource="{Binding Atutes}" SelectedValue="{Binding SelectedAtut}" DisplayMemberPath="Name"  VerticalAlignment="Top" />
+        <Button Command="{Binding AddAtut}" Content="Dodaj" Grid.Column="1" Height="25" HorizontalAlignment="Left" Margin="140,585,0,0"  VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Button Command="{Binding RemoveAtut}" Content="Usuń" Height="25" HorizontalAlignment="Left" Margin="59,585,0,0"  VerticalAlignment="Top" Width="75" Grid.Column="1" Template="{StaticResource buttonInfo}" />
+        <ContentControl Content="{Binding CurrentModel}" Grid.Column="2" Height="408" HorizontalAlignment="Stretch" Margin="5,20,5,0" VerticalAlignment="Top" >
+        </ContentControl>
+        <Label Content="Pozostałe punkty:" Height="28" HorizontalAlignment="Left" Margin="5,34,0,0" Name="label1" VerticalAlignment="Top" />
+        <my:AdditiveControl HorizontalAlignment="Left" Margin="185,35,0,0" Value="{Binding SkillPointsLeft, Mode=TwoWay}" VerticalAlignment="Top" Width="110" />
+        <Label Content="Pozostałe punkty:" Height="28" HorizontalAlignment="Left" Margin="5,32,0,0" Name="label2" VerticalAlignment="Top" Grid.Column="1" />
+        <my:AdditiveControl HorizontalAlignment="Left" Margin="105,34,0,0" Value="{Binding AtutesPointsLeft, Mode=TwoWay}" VerticalAlignment="Top" Width="110" Grid.Column="1" />
+    </Grid>
+</UserControl>

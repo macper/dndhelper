@@ -1,0 +1,8 @@
+﻿<Window x:Class="DnDHelper.GUI.WPF.PopUps.RepoEffects"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Efekty" Height="654" Width="785" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Panels.Repos" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <my:Effects HorizontalAlignment="Stretch" x:Name="effects1" VerticalAlignment="Stretch" />
+    </Grid>
+</Window>

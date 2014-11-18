@@ -1,0 +1,877 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfEffectDefinition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>92</Version>
+  <Scripts />
+  <Elements>
+    <EffectDefinition Name="Szał">
+      <Id>34070082-75ae-4ad1-9a27-92cfd1d292d8</Id>
+      <Description>+4 SI, +4 KON</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <Attribute>Strength</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <Attribute>Constitution</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="ACBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+          <ACType>Zbroja</ACType>
+        </BaseBonus>
+        <BaseBonus xsi:type="ThrowBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">0</Value>
+          <BonusType>
+            <WillThrow>2</WillThrow>
+            <ReflexThrow>0</ReflexThrow>
+            <EnduranceThrow>0</EnduranceThrow>
+          </BonusType>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>4</DefaultDuration>
+      <DefaultCounter>6</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Niewrażliwość na magię">
+      <Id>b1d2cf24-3d1a-4ff6-8f63-0c250e1eac8c</Id>
+      <Description>OC: LICZNIK</Description>
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Paraliż">
+      <Id>4172a995-a112-4278-96bb-b4c881935301</Id>
+      <Description />
+      <Bonuses />
+      <DefaultDuration>5</DefaultDuration>
+      <DefaultCounter>10</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Poprawione łapanie">
+      <Id>c69601d8-5ed5-446c-8a7e-adc6ac4548d2</Id>
+      <Description>Po udanym ataku wręcz ofiara jest chwytana</Description>
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Podpalenie">
+      <Id>9f9236cb-90e9-497e-b758-ef18d6b46bb9</Id>
+      <Description />
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Redukcja obrażeń">
+      <Id>e2ec5dbc-32d4-46f2-98b2-e7296ca24a29</Id>
+      <Description>/5 +1</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="ResistanceBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Redukcja obrażeń</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">3</Value>
+          <DamageType>Fizyczne</DamageType>
+          <OverrideValue>30</OverrideValue>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Petryfikacja">
+      <Id>49967d2f-bdc9-4edd-8684-9755f49ff49d</Id>
+      <Description>Zasięg: 9m
+ST:13 (Wytr)</Description>
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Zatrucie">
+      <Id>29debf93-5499-439f-a3ad-de5ef75fc342</Id>
+      <Description>-K4 SI
+-K4 BD
+ST: 14 (Wytr)</Description>
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Regeneracja">
+      <Id>bf34fd82-586a-4132-8969-1b9f52a95ffd</Id>
+      <Description>Licznik - ile na rundę</Description>
+      <Bonuses />
+      <DefaultDuration>1</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Strach">
+      <Id>2f0e7599-ef79-424e-a38c-ddda2adfcb87</Id>
+      <Description />
+      <Bonuses />
+      <DefaultDuration>5</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Niepodatność na obrażenia">
+      <Id>83ae0c05-d804-47cf-a167-dd7dbfd37a9f</Id>
+      <Description>Kłute i Sieczne</Description>
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Wyssanie poziomu">
+      <Id>5f306dd7-a997-48cd-bea6-50d615040dd5</Id>
+      <Description>1</Description>
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Niewidzialność">
+      <Id>923b2bbe-e955-4d8f-a443-e45858a6a82f</Id>
+      <Description />
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Blokada umysłu">
+      <Id>5da47767-0bb5-4e20-82b8-2402d306103f</Id>
+      <Description />
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Mumijna zgnilizna">
+      <Id>938dc6cd-d6a4-4e45-b28c-797a2dc0883c</Id>
+      <Description />
+      <Bonuses />
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Zbroja maga">
+      <Id>9fe2439c-20ed-4edb-a0dc-11d7cbebb09d</Id>
+      <Description />
+      <Bonuses>
+        <BaseBonus xsi:type="ACBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Zbroja maga</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <ACType>Odbicie</ACType>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>0</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Lustrzane odb">
+      <Id>0f99de57-019c-4310-bd19-fb1dde21b5e0</Id>
+      <Description>7</Description>
+      <Bonuses />
+      <DefaultDuration>11</DefaultDuration>
+      <DefaultCounter>6</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Siła byka">
+      <Id>14bf8a68-39e1-40ea-a318-5cfafe3fdea1</Id>
+      <Description>Zwiększa siłę</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">(nowy efekt)</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <Attribute>Strength</Attribute>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>100</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Błogosławieństwo">
+      <Id>5ee1464e-4f79-4347-ad47-4f50209070bd</Id>
+      <Description>+1 do wszystkich rzutów</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="OverallBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Błogosławieństwo</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">1</Value>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>100</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Potężny">
+      <Id>3d87a2c9-15f5-4bc0-8185-7380f1d55c89</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="AttackBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Potężny</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-8</Value>
+          <Melee>true</Melee>
+        </BaseBonus>
+        <BaseBonus xsi:type="DamageBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Potężny</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">0</Value>
+          <Amount>
+            <Elements>
+              <DamageBone>
+                <MaxValue>1</MaxValue>
+                <Count>12</Count>
+                <DamageType>Fizyczne</DamageType>
+              </DamageBone>
+            </Elements>
+          </Amount>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>1</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Gracja kota">
+      <Id>d4cb53ff-e3b9-4a25-b950-4da08d9ad076</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Gracja kota</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <Attribute>Dexterity</Attribute>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>110</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Zmęczenie">
+      <Id>9d8d0f92-ffba-4ceb-bdad-d03ec3d69888</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="OverallBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Zmęczenie</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>50</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Mnich] Grad ciosów">
+      <Id>2eb57a88-4bff-4db9-ac73-3290ac1b0964</Id>
+      <Description>-2 Atak
++1 atak/rundę
+Wymaga całorundowej akcji ataku</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="AttackBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">[Mnich] Grad ciosów</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+          <Melee>true</Melee>
+        </BaseBonus>
+        <BaseBonus xsi:type="NumberOfAttacksBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">[Mnich] Grad ciosów</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">1</Value>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>1</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Szybki strzał">
+      <Id>fc4fd7f9-8b64-41d9-9db4-6e3d67cf0c28</Id>
+      <Description>+1 dodatkowy atak dystansowy
+-2 do ataku</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="AttackBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Szybki strzał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+          <Melee>false</Melee>
+        </BaseBonus>
+        <BaseBonus xsi:type="NumberOfAttacksBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Szybki strzał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">1</Value>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>1</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Potężniejszy szał">
+      <Id>427f0f59-bf0a-4656-923a-3fbc40fbc328</Id>
+      <Description>+6 SIła, Kondycja
+-2 KP
++3 Wola</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Potężniejszy szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">6</Value>
+          <Attribute>Strength</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Potężniejszy szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">6</Value>
+          <Attribute>Constitution</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="ACBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Potężniejszy szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+          <ACType>Naturalny pancerz</ACType>
+        </BaseBonus>
+        <BaseBonus xsi:type="ThrowBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Potężniejszy szał</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">0</Value>
+          <BonusType>
+            <WillThrow>3</WillThrow>
+            <ReflexThrow>0</ReflexThrow>
+            <EnduranceThrow>0</EnduranceThrow>
+          </BonusType>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Odporność na czary">
+      <Id>7a70c0da-bf84-4bf5-9a34-af86d4ac18d3</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Allip] Bełkotanie">
+      <Id>56df5598-a80d-49b6-9439-2e8f25170df6</Id>
+      <Description>Wola ST: 16 lub hipnoza na k4 rund</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Bezcielestność">
+      <Id>300b3994-afe2-4503-9bf5-c5f22f59d4e2</Id>
+      <Description>Może zostać zraniony jedynie przez magiczną broń +1 lub lepszą lub magię. 50 % szans na uniknięcie obrażeń.</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Bezcielestny dotyk">
+      <Id>17817d9e-35ac-470d-8837-3eb2e684fe44</Id>
+      <Description>Trafienie wysącza K6 punktów Siły</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Paraliż po trafieniu">
+      <Id>6a102a44-722d-4427-b14c-b7f8486e68b8</Id>
+      <Description>Po trafieniu Paraliż na K6+1 rund.
+ST rzutu - licznik</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>15</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Redukcja obrażeń fizycznych">
+      <Id>b05db431-bfd0-4325-952c-452261e1c1cf</Id>
+      <Description>50 % redukcja
+1 - kłute
+2 - sieczne
+4 - obuchowe
+7 - wszystkie</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>1</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Odporność na ogień">
+      <Id>ddcc910c-7274-4bea-a14e-7bf64c22ed5b</Id>
+      <Description>% - licznik</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>50</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Odporność na zimno">
+      <Id>cda84cb5-c715-47ac-8305-da7e82b8437c</Id>
+      <Description>% - licznik</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>50</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Odporność na elektryczność">
+      <Id>11ca770d-f244-491f-b109-eed1ee58380b</Id>
+      <Description>% - licznik</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>50</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Mohrg] Paraliż">
+      <Id>05ce1429-5585-4a24-892b-f6a4eab12fb5</Id>
+      <Description>ST: 17 (Wytr), na 4K4 rund</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Mumia] Rozpacz">
+      <Id>c8e3e5d7-e94f-4a6e-88b0-154c51441ee5</Id>
+      <Description>ST: licznik (Wola), Paraliż na K4 r.</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Mumia] Mumijna zgnilizna">
+      <Id>90af6843-bcba-4db4-adad-dedf6c6d7102</Id>
+      <Description>RZut na Wytrwałosć (ST: licznik), czas inkubacji 1 dzień. Codziennie utrata 1K6 kondycji (aż do śmierci).</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>20</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Aura chłodu">
+      <Id>75303ded-bb01-4dc2-ab9a-0d08aea89100</Id>
+      <Description>W promieniu 18m niszczy mikstury</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Niepodatność na czary">
+      <Id>51ba3bbc-331d-46d4-87ef-bddcf5419926</Id>
+      <Description>Poziomu LICZNIK lub niższego</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>1</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Smok] Strach">
+      <Id>c17048b0-0798-4721-bca4-8d2dc425337f</Id>
+      <Description>Rzut na ST: LICZNIK (Wola) lub ucieczka przez K6+1 rund.</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Negatywny dotyk">
+      <Id>21e30e7f-c221-4452-b562-d649122131ae</Id>
+      <Description>Po trafieniu 2 poziomy negatywne.
+ST rzut (Wytr) = LICZNIK</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>15</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Wampir] Dominacja">
+      <Id>1bb0d54a-7161-4f4b-9121-9c7431b50843</Id>
+      <Description>Raz na spotkanie
+Rzut na Wolę (ST: 17), trwa 2K6+1 r.</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Tarcza">
+      <Id>904f3fc9-56e5-4256-9c8c-023826974183</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>20</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Długi krok">
+      <Id>5194edea-fc50-4ce5-b3cd-6d312ce6ebaa</Id>
+      <Description>+3 /rundę</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="SpeedBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Długi krok</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">3</Value>
+          <MultiplyMode>false</MultiplyMode>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>13</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Korowa skóra">
+      <Id>4f8df158-475d-44c9-bce0-e0997bb64072</Id>
+      <Description>10 min/poz
++4 KP</Description>
+      <Bonuses>
+        <BaseBonus xsi:type="ACBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Korowa skóra</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <ACType>Odbicie</ACType>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>13</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Kamienna skóra">
+      <Id>ae24bfd7-1a1e-4514-9f85-38ba1c485cc6</Id>
+      <Description>10 wyparowań
+10 /poz do 150</Description>
+      <Bonuses />
+      <DefaultDuration>10</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Postawa defensywna">
+      <Id>36091f04-2086-4652-aa6e-78c6f7ded5fc</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="ACBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Postawa defensywna</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">2</Value>
+          <ACType>Naturalny pancerz</ACType>
+        </BaseBonus>
+        <BaseBonus xsi:type="AttackBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Postawa defensywna</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-4</Value>
+          <Melee>true</Melee>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>1</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Sanktuarium">
+      <Id>2300f0f8-7775-427e-94b9-79b6f7e15d60</Id>
+      <Bonuses />
+      <DefaultDuration>11</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Latanie">
+      <Id>b82b6bea-3335-470a-8708-d7e2fd552d8f</Id>
+      <Bonuses />
+      <DefaultDuration>11</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Pole antymagii">
+      <Id>3e66648f-855b-4f01-b2cd-d3bb697e1f68</Id>
+      <Description>Zas. 45m
+</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Obserwator] promienie">
+      <Id>67d7830d-a92e-4486-b659-df7cacf7e151</Id>
+      <Description>Można w jednej rundzie skierować tylko 3 promienie na jedną istotę. Jak 13 poz. zaklinacz ST: 18
+1. Zauroczenie osoby/potwora (Wola)
+2. Uśpienie (Wola)
+3. Ciało w kamień (Wytr)
+4. Dezintegracja  (Wytr)
+5. Strach (Wola)
+6. Spowolnienie (Wola)
+7. Palec śmierci (Wytr)
+
+</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Stworzenie ognia">
+      <Id>b14cc670-ba39-4b9d-9543-fb22d0bdd05f</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Klosz">
+      <Id>31a76418-ca06-4fc1-b7c1-1dd8e39504f3</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Krwawienie">
+      <Id>0e1a7f21-0286-40d8-9da1-14ba64d1fccc</Id>
+      <Description>Ofiara co rundę traci 2 PW póki rana nie zostanie opatrzona</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Hydra]">
+      <Id>f9ec4d74-fd82-45e0-9457-8f561a2c8bf3</Id>
+      <Description>Głowy</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Ogniowa tarcza">
+      <Id>4edde2bd-b5ff-47bf-9457-e1f63866c66f</Id>
+      <Description>Zadaje obrażenia równe K6 + licznik od ognia</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Przyspieszenie">
+      <Id>0c9e92de-467a-4baa-9e8e-7abd6beaf23d</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="SpeedBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Przyspieszenie</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">9</Value>
+          <MultiplyMode>false</MultiplyMode>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Głowa Hydry">
+      <Id>a7083c5b-66b7-451e-ab60-1a2f4d4a0e0c</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>20</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Premia do intelektu">
+      <Id>56f93945-f0b6-449d-b1ad-a19fea4aefda</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Premia do intelektu</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <Attribute>Inteligence</Attribute>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Ochrona przed złem">
+      <Id>3aea47f8-2133-4475-a8ec-6df8d47a17c5</Id>
+      <Description>+2 KP przed złymi istotami</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Boska łaska">
+      <Id>07d0abc7-f273-4b8a-9769-5beadb2bd96b</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="AttackBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Boska łaska</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">3</Value>
+          <Melee>true</Melee>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>10</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Modlitwa">
+      <Id>5f455500-f04b-40d1-bcf6-781a6c0e1489</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="AttackBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Modlitwa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">1</Value>
+          <Melee>true</Melee>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Oślepienie">
+      <Id>6a29b0d7-2cd2-4263-bb8c-f9ca53231385</Id>
+      <Description>Brak rzutu</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Labirynt">
+      <Id>90f9686d-c3c2-4695-be5d-61874145a8e5</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Spowolnienie">
+      <Id>2f762748-b571-48f7-99bf-b8a54dded73c</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Bariera z ostrzy">
+      <Id>f4ec2479-e143-4036-9e73-4464b3e74df0</Id>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Golem] Broń oddechowa">
+      <Id>9f89eab3-a893-4d19-86bc-578b09e1db9d</Id>
+      <Description>Można użyć w 1 rundzie, chmura trującego gazu.
+ST: 18 (Wytr), spowolnienie i utrata K4 pkt. budowy</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Wyssanie kondycji">
+      <Id>7d19cad8-f145-4f63-84f0-61cd43ac8327</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Wyssanie kondycji</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-3</Value>
+          <Attribute>Constitution</Attribute>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Przeklęta aura">
+      <Id>1dfdd35f-5690-4c74-b58c-93e978d844b1</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="ACBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Przeklęta aura</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>200</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Ulepszenie broni">
+      <Id>1d4fe313-c8f2-4c18-a71e-0cbef8b682bd</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="AttackBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Ulepszenie broni</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">3</Value>
+          <Melee>true</Melee>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration>120</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Ogłupienie">
+      <Id>be9a0274-bd70-4a9b-a1fb-0e343cc5e18f</Id>
+      <Bonuses />
+      <DefaultDuration>3</DefaultDuration>
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Klątwa inteligencji">
+      <Id>762acd8e-5fb1-4022-b4cf-fb02ee8fe4a2</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Klątwa inteligencji</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-13</Value>
+          <Attribute>Inteligence</Attribute>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="Żręczność">
+      <Id>f5410477-20dc-4dce-ad43-dba20dc7c4a7</Id>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Żręczność</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">4</Value>
+          <Attribute>Dexterity</Attribute>
+        </BaseBonus>
+      </Bonuses>
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+    <EffectDefinition Name="[Siewca śmierci] Większe rozpraszanie">
+      <Id>9369df86-292c-4ee9-b2c1-9c1fc2107f04</Id>
+      <Description>tak jak poz. 20 mag</Description>
+      <Bonuses />
+      <DefaultDuration xsi:nil="true" />
+      <DefaultCounter>0</DefaultCounter>
+      <IsPositive>false</IsPositive>
+      <IsBattleEffect>false</IsBattleEffect>
+    </EffectDefinition>
+  </Elements>
+</RepositoryOfEffectDefinition>

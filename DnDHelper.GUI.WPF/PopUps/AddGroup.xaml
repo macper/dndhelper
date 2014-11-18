@@ -1,0 +1,10 @@
+﻿<Window x:Class="DnDHelper.GUI.WPF.PopUps.AddGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodawanie nowej grupy" Height="121" Width="292" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Name="textBox1" Height="23" HorizontalAlignment="Left" Margin="66,14,0,0" VerticalAlignment="Top" Width="192" Text="{Binding Path=GroupName}" />
+        <Button Template="{StaticResource buttonInfo}" Content="Zapisz" Margin="85,14,-85,-14" Command="{Binding Path=Save}" />
+    </Grid>
+</Window>

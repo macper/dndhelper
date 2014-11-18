@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Development\publish" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/EntityFramework.dll" publishTime="04/06/2013 20:00:13" />
+    <file relUrl="bin/DnDHelper.UpdateServiceAPI.dll" publishTime="06/08/2013 18:51:01" />
+    <file relUrl="bin/DnDHelper.UpdateService.pdb" publishTime="06/08/2013 18:51:01" />
+    <file relUrl="bin/DnDHelper.UpdateService.dll" publishTime="06/08/2013 18:51:01" />
+    <file relUrl="Web.config" publishTime="06/08/2013 18:51:01" />
+    <file relUrl="Service.svc" publishTime="06/07/2013 21:02:54" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="04/06/2013 20:00:13" />
+    <file relUrl="DataModel.edmx.sql" publishTime="04/06/2013 20:17:23" />
+    <file relUrl="packages.config" publishTime="04/06/2013 20:00:15" />
+    <file relUrl="bin/DnDHelper.UpdateServiceAPI.pdb" publishTime="06/08/2013 18:51:01" />
+  </publishProfile>
+</publishData>

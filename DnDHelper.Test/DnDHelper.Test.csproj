@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B0FFDB50-4A10-426F-B630-5E301673630C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DnDHelper.Test</RootNamespace>
+    <AssemblyName>DnDHelper.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.2.1312.1622\lib\net40\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\DnDHelper.Infrastructure\bin\Debug\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.Text.3.9.71\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppFacadeTest.cs" />
+    <Compile Include="BaseTest.cs" />
+    <Compile Include="BattleTest.cs" />
+    <Compile Include="CharacterCalculatorTest.cs" />
+    <Compile Include="DamageTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoriesTest.cs" />
+    <Compile Include="SampleDataRepository.cs" />
+    <Compile Include="ScriptEngineTests.cs" />
+    <Compile Include="UpdateServiceClientTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SampleScripts\atutMnichGradCiosow.py" />
+    <Content Include="SampleScripts\atutMnichPremiaDoKP.py" />
+    <Content Include="SampleScripts\atutPaladynBoskaLaska.py" />
+    <Content Include="SampleScripts\atutSkupienieNaBroni.py" />
+    <Content Include="SampleScripts\atutSpecjalizacja.py" />
+    <Content Include="SampleScripts\classBarbarian.py" />
+    <Content Include="SampleScripts\classBard.py" />
+    <Content Include="SampleScripts\classDruid.py" />
+    <Content Include="SampleScripts\classMage.py" />
+    <Content Include="SampleScripts\classMonk.py" />
+    <Content Include="SampleScripts\classPaladin.py" />
+    <Content Include="SampleScripts\classRanger.py" />
+    <Content Include="SampleScripts\classThief.py" />
+    <Content Include="SampleScripts\customChangeWeapon.py" />
+    <Content Include="SampleScripts\customPotezny.py" />
+    <Content Include="SampleScripts\raceBoost.py" />
+    <Content Include="SampleScripts\raceElf.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DnDHelper.Domain\DnDHelper.Domain.csproj">
+      <Project>{0dcbac2a-b866-46c2-842b-a42b051b75f4}</Project>
+      <Name>DnDHelper.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.Infrastructure\DnDHelper.Infrastructure.csproj">
+      <Project>{e241425a-aa53-45d2-a2b2-539cd0730636}</Project>
+      <Name>DnDHelper.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.UpdateServiceAPI\DnDHelper.UpdateServiceAPI.csproj">
+      <Project>{720ebf98-c452-44da-885c-1cd30c10b6f6}</Project>
+      <Name>DnDHelper.UpdateServiceAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.UpdateService\DnDHelper.UpdateService.csproj">
+      <Project>{b13afea5-2f32-48ae-956f-eec1af028a49}</Project>
+      <Name>DnDHelper.UpdateService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

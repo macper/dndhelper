@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<ChangeTracker xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LastSync>635497614537932116</LastSync>
+  <RepositoryChanges>
+    <RepositoryChange>
+      <Name>BaseEntity</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="e45b807f-4eba-4b6c-9d78-c9041c659daf" TimeStamp="635497446880435810" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>Character</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="4ccca3b7-a912-4893-8b44-895a0c44a843" TimeStamp="635497450360827025" />
+        <EntityChange IsUpdateInsert="true" Id="50a97766-4aa3-40fa-a001-9b60d795d75a" TimeStamp="635497450618033624" />
+        <EntityChange IsUpdateInsert="true" Id="d313eaa7-adca-4a8a-9c89-72f6dd57d9b5" TimeStamp="635497614537932116" />
+        <EntityChange IsUpdateInsert="true" Id="b13152c8-2157-4fe7-a3db-e35fd647d68e" TimeStamp="635501696910718842" />
+        <EntityChange IsUpdateInsert="true" Id="f43becbb-b439-4d4a-892a-c7d183a19aa1" TimeStamp="635501696910808902" />
+        <EntityChange IsUpdateInsert="true" Id="ad1e60ad-a98d-48ab-a3d2-ae861827c967" TimeStamp="635501696910848937" />
+        <EntityChange IsUpdateInsert="true" Id="cd546846-af4d-41b1-8e1b-01e29597090f" TimeStamp="635501696910848937" />
+        <EntityChange IsUpdateInsert="true" Id="5c600eab-dc0a-4823-9804-d53025f3616b" TimeStamp="635501696910878955" />
+        <EntityChange IsUpdateInsert="true" Id="8a071ae7-eea2-4b42-b573-2d0330a7b69a" TimeStamp="635501696910878955" />
+        <EntityChange IsUpdateInsert="true" Id="4b20fef6-71ea-4fdc-b2b1-0e065cb92e40" TimeStamp="635501696910878955" />
+        <EntityChange IsUpdateInsert="true" Id="4fd8f241-c967-44bd-bd9a-e054cfca74e8" TimeStamp="635501696910919050" />
+        <EntityChange IsUpdateInsert="true" Id="02c610ce-c82c-4783-9542-faedbd508e22" TimeStamp="635501696910919050" />
+        <EntityChange IsUpdateInsert="true" Id="17916c13-39a4-41ae-8fb2-ad3609f273dc" TimeStamp="635501696910919050" />
+        <EntityChange IsUpdateInsert="true" Id="ac340e37-b568-4962-a3b7-83f19d77af6b" TimeStamp="635501696910919050" />
+        <EntityChange IsUpdateInsert="true" Id="2341dd87-0659-4a20-a4bb-6e77354f828f" TimeStamp="635501696910919050" />
+        <EntityChange IsUpdateInsert="true" Id="f46862cc-8382-4b6a-be30-e3d1f15b1d91" TimeStamp="635501696910969018" />
+        <EntityChange IsUpdateInsert="true" Id="97fb6b8d-6ceb-437d-a786-1eb864a10951" TimeStamp="635501696910999042" />
+        <EntityChange IsUpdateInsert="true" Id="21a5f6f8-856a-49b4-8ede-085e30ff1286" TimeStamp="635501696911038907" />
+        <EntityChange IsUpdateInsert="true" Id="05a5d813-3ce7-48a4-8e51-4f23cba5b28b" TimeStamp="635501696911038907" />
+        <EntityChange IsUpdateInsert="true" Id="8dc7d579-6c7f-4acb-a0cd-57e0bfb60304" TimeStamp="635501696911038907" />
+        <EntityChange IsUpdateInsert="true" Id="b6b4161f-0ad2-4f4a-a013-5217a3875b18" TimeStamp="635501696911068931" />
+        <EntityChange IsUpdateInsert="true" Id="4e8e7d2b-c366-4b0a-8dce-fc651ad9c483" TimeStamp="635501696911068931" />
+        <EntityChange IsUpdateInsert="true" Id="af9f5f2b-9527-4e33-a887-84889ced44c7" TimeStamp="635501696911068931" />
+        <EntityChange IsUpdateInsert="true" Id="61608313-3269-4226-a12e-06f092cfde89" TimeStamp="635501696911119056" />
+        <EntityChange IsUpdateInsert="true" Id="64b04dd2-f088-48a8-a8af-4cbbeab6d595" TimeStamp="635501696911119056" />
+        <EntityChange IsUpdateInsert="true" Id="f938f470-cdec-46a3-9308-8d1269db227a" TimeStamp="635501696911149180" />
+        <EntityChange IsUpdateInsert="true" Id="7cd11543-670d-4d7e-a01a-d65865c69272" TimeStamp="635501696911189109" />
+        <EntityChange IsUpdateInsert="true" Id="b6648af3-42d7-4490-a056-17c04fcdf21f" TimeStamp="635501696911219149" />
+        <EntityChange IsUpdateInsert="true" Id="5b69255d-531e-47e4-8113-a38461334e7e" TimeStamp="635501696911249151" />
+        <EntityChange IsUpdateInsert="true" Id="d2604840-3e6b-42cc-a1aa-8c78800ec33e" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="ebddc1fc-af65-4c91-a5f6-924cbb27787f" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="0e6491d5-fe05-4405-bb40-194fedd37598" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="028e8f49-5008-4a7c-87b2-e7e040eaf0e0" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="da9b0052-3a67-4211-b287-6e62d520dccf" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="bcaa81db-34d4-4f04-b43f-b51347288ee6" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="32727f97-2035-418f-80cc-cdc96ea6a9b8" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="c1d13db2-88cc-4700-9d2f-d59b9806763f" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="69fa02ce-16fd-4c4e-b77f-6d11d0e90ee3" TimeStamp="635501696911289176" />
+        <EntityChange IsUpdateInsert="true" Id="57e9ac66-21aa-4512-b858-000f613f0b24" TimeStamp="635501696911319204" />
+        <EntityChange IsUpdateInsert="true" Id="5a8cdb19-af84-46a9-a938-c356a32176dd" TimeStamp="635501696911329214" />
+        <EntityChange IsUpdateInsert="true" Id="e58fb3dc-c02e-4de8-9c7b-e2196d16f994" TimeStamp="635501782758910367" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>ItemDefinition</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="false" Id="64303740-dfcc-4e3c-bf7a-c4dbc92f6665" TimeStamp="635497451827081910" />
+        <EntityChange IsUpdateInsert="true" Id="e15b9afc-750e-4036-b2c9-32b2f7256cf0" TimeStamp="635501696909971905" />
+        <EntityChange IsUpdateInsert="true" Id="37ff4d8f-dd55-4310-87b4-9765737e0ff7" TimeStamp="635501696910048302" />
+        <EntityChange IsUpdateInsert="true" Id="f7f8da52-4a90-44bf-8be1-7128920f00a3" TimeStamp="635501696910078330" />
+        <EntityChange IsUpdateInsert="true" Id="00080fd9-94dc-4ef3-ac78-f4ae5f2f8e28" TimeStamp="635501696910078330" />
+        <EntityChange IsUpdateInsert="true" Id="b7a88463-1eb9-463b-8228-0711d73ae071" TimeStamp="635501696910118422" />
+        <EntityChange IsUpdateInsert="true" Id="1b8201ff-1c70-40d4-8953-691260ab237a" TimeStamp="635501696910158447" />
+        <EntityChange IsUpdateInsert="true" Id="e5a94817-1c8e-4931-b1aa-538cfb44a8f0" TimeStamp="635501696910158447" />
+        <EntityChange IsUpdateInsert="true" Id="4bcdebae-86bc-4b63-96f9-81180d861595" TimeStamp="635501696910158447" />
+        <EntityChange IsUpdateInsert="true" Id="9e6d44e3-bd7c-467e-856d-ff92f1c2b337" TimeStamp="635501696910158447" />
+        <EntityChange IsUpdateInsert="true" Id="32b44203-e35c-461f-8585-e8ca5f3279b8" TimeStamp="635501696910218432" />
+        <EntityChange IsUpdateInsert="true" Id="c1a53927-8bda-46e6-be4d-eaea0e2daaa2" TimeStamp="635501696910248446" />
+        <EntityChange IsUpdateInsert="true" Id="d6376321-06a4-4a67-a2cd-c58f141fa8bb" TimeStamp="635501696910248446" />
+        <EntityChange IsUpdateInsert="true" Id="0f278ff8-b242-4c2e-b343-9328c0170fea" TimeStamp="635501696910278471" />
+        <EntityChange IsUpdateInsert="true" Id="dcc71d9d-593c-4774-9ce7-4947d792a917" TimeStamp="635501696910278471" />
+        <EntityChange IsUpdateInsert="true" Id="642f85e3-c7b8-48de-858f-1fe8b10ce39f" TimeStamp="635501696910318499" />
+        <EntityChange IsUpdateInsert="true" Id="b9175d35-014e-4b07-9e3e-917e923cd6b8" TimeStamp="635501696910358530" />
+        <EntityChange IsUpdateInsert="true" Id="6d9c5d3c-de68-4a83-830b-45ccdb56e1c7" TimeStamp="635501696910388542" />
+        <EntityChange IsUpdateInsert="true" Id="17b67c28-cb82-436f-b0d0-57f99d87c817" TimeStamp="635501696910428477" />
+        <EntityChange IsUpdateInsert="true" Id="16e3e5cb-e57f-491e-97de-70a0c1d197de" TimeStamp="635501696910478515" />
+        <EntityChange IsUpdateInsert="true" Id="654a6292-f585-431b-96ff-a4648de77d7a" TimeStamp="635501696910518540" />
+        <EntityChange IsUpdateInsert="true" Id="aabc7a92-1166-46f1-8b7c-2a18e75d00af" TimeStamp="635501696910558569" />
+        <EntityChange IsUpdateInsert="true" Id="43be1d22-9094-4cc6-aab6-73f702e46944" TimeStamp="635501696910558569" />
+        <EntityChange IsUpdateInsert="true" Id="25f3a363-897b-4011-bdbb-bc87017c9cf0" TimeStamp="635501696910588590" />
+        <EntityChange IsUpdateInsert="true" Id="667be461-1346-4065-b399-485f9ce65659" TimeStamp="635501696910628788" />
+        <EntityChange IsUpdateInsert="true" Id="2564f4df-a594-41f1-b6e6-f5df33e8d34b" TimeStamp="635501696910628788" />
+        <EntityChange IsUpdateInsert="true" Id="7eb8d681-297b-4a14-934c-336135245f3e" TimeStamp="635501696910628788" />
+        <EntityChange IsUpdateInsert="true" Id="b61f9b92-bb66-4e83-a77c-d0bae36c5834" TimeStamp="635501696910668739" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>CharacterGroup</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="08eb3525-4487-4d77-8ccc-6cdd8a2008a3" TimeStamp="635501696982994365" />
+        <EntityChange IsUpdateInsert="true" Id="8b2ca090-970e-4a08-8da8-ae7c18f14c17" TimeStamp="635501697597937690" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>AppSetting</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="ef705f38-d631-4c50-b032-f5e6bf7f4af9" TimeStamp="635501698466422568" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>Script</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="a87f1cd3-92a3-44a0-8aca-5fee06ef4341" TimeStamp="635501737206908516" />
+        <EntityChange IsUpdateInsert="false" Id="688db98a-21d2-4ca1-b791-2812e01a7235" TimeStamp="635501748633141256" />
+        <EntityChange IsUpdateInsert="true" Id="3baf11ba-3a4d-4a9b-8118-266c4397792c" TimeStamp="635501780668382223" />
+        <EntityChange IsUpdateInsert="true" Id="d2749cf0-e47b-44a0-8a4d-451463dbd858" TimeStamp="635502711372941238" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>RaceDefinition</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="43c044bc-26e1-4247-8062-bebff214620f" TimeStamp="635501781815718837" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>ClassDefinition</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="001d9f3f-0f98-4076-9e58-05169cfa9901" TimeStamp="635502755359153826" />
+        <EntityChange IsUpdateInsert="true" Id="f01cfe11-84bf-429e-ab4c-5fc3b2eb5377" TimeStamp="635502750442894564" />
+        <EntityChange IsUpdateInsert="false" Id="f45ba6de-2168-455a-b638-2ea67b2ceb18" TimeStamp="635502758196637974" />
+        <EntityChange IsUpdateInsert="false" Id="8741c0be-cbf9-47a3-9016-28375c0e81c9" TimeStamp="635502758241110124" />
+        <EntityChange IsUpdateInsert="false" Id="430c0f4f-ddeb-48aa-bca8-a58c1c1b4b69" TimeStamp="635502758220968653" />
+      </EntityChanges>
+    </RepositoryChange>
+  </RepositoryChanges>
+</ChangeTracker>

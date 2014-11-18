@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.Repos.Skills"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="790" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Controls" xmlns:Domain="clr-namespace:DnDHelper.Domain;assembly=DnDHelper.Domain">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="490" />
+        </Grid.ColumnDefinitions>
+        <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="66,16,0,0"  VerticalAlignment="Top" Width="226" Text="{Binding SearchName, UpdateSourceTrigger=PropertyChanged}" />
+        <ListBox Height="513" HorizontalAlignment="Left" Margin="12,46,0,0" ItemsSource="{Binding Skills}" SelectedValue="{Binding SelectedSkill}" DisplayMemberPath="Name" VerticalAlignment="Top" Width="280" />
+        <Button Content="Dodaj" Height="26" HorizontalAlignment="Left" Margin="217,565,0,0" Command="{Binding AddSkill}" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Button Content="Usuń" Height="26" HorizontalAlignment="Left" Margin="136,565,0,0" Command="{Binding RemoveSkill}" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+        <Label Content="Nazwa:" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="9,16,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Grid.Column="1" Height="23" Margin="161,20,12,0" Text="{Binding SelectedSkill.Name}" VerticalAlignment="Top" />
+        <Label Content="Opis:" Height="28" HorizontalAlignment="Left" Margin="9,46,0,0" Name="label3" VerticalAlignment="Top" Grid.Column="1" />
+        <TextBox Grid.Column="1" Height="146" HorizontalAlignment="Left" Margin="161,48,0,0" Text="{Binding SelectedSkill.Description}" VerticalAlignment="Top" Width="317" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="False" />
+        <Label Content="Bonusowa cecha:" Height="28" HorizontalAlignment="Left" Margin="9,197,0,0" Name="label4" VerticalAlignment="Top" Grid.Column="1" />
+        <ComboBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="161,200,0,0" ItemsSource="{Binding Source={x:Static Domain:EnumsDictionary.MainSkills}}" DisplayMemberPath="Name" SelectedValuePath="Value" SelectedValue="{Binding SelectedSkill.BonusProperty}" VerticalAlignment="Top" Width="224" />
+        <Label Content="Modyfikator kar:" Height="28" HorizontalAlignment="Left" Margin="9,231,0,0" Name="label5" VerticalAlignment="Top" Grid.Column="1" />
+        <my:AdditiveControl Grid.Column="1" HorizontalAlignment="Left" Margin="161,231,0,0" Value="{Binding SelectedSkill.PanaltyModifier, Mode=TwoWay}" VerticalAlignment="Top" Width="138" />
+        <Button Command="{Binding Commit}" Content="Zapisz" Grid.Column="1" Height="26" HorizontalAlignment="Left" Margin="403,268,0,0" Name="button3" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+    </Grid>
+</UserControl>

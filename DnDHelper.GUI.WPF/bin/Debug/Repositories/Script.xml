@@ -1,0 +1,124 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfScript xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Elements>
+    <Script Name="Test1">
+      <Id>a87f1cd3-92a3-44a0-8aca-5fee06ef4341</Id>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Atut, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import *
+
+def Calculate(character,repository,atut):
+    level = character.Level
+    armor = character.GetItemByPosition(ItemPosition.Torso)
+    if (armor == None):
+        character.CustomAttacks.RemoveAll(lambda a:a.Name == "Atak (pięść)")
+        customAttack = CustomAttack()
+        customAttack.Name = "Atak (pięść)"
+        bonus = BonusFactory.GetByName("DamageBonus")
+        damage = Damage()
+        if (level &lt;= 3):
+            damage.Elements.Add(DamageBone(8,1))
+        if (level &gt; 3 and level &lt;= 7):
+            damage.Elements.Add(DamageBone(6,2))
+        if (level &gt; 7 and level &lt;= 11):
+            damage.Elements.Add(DamageBone(8,2))
+        if (level &gt; 11 and level &lt;= 15):
+            damage.Elements.Add(DamageBone(6,3))
+        if (level &gt; 15):
+            damage.Elements.Add(DamageBone(8,4))           
+        bonus.Amount = damage
+        customAttack.Bonuses.Add(bonus)
+        character.CustomAttacks.Add(customAttack)
+
+        character.CustomAttacks.RemoveAll(lambda a:a.Name == "Atak (grad ciosów)")
+        customAttack = CustomAttack()
+        customAttack.Name = "Atak (grad ciosów)"
+        bonus = BonusFactory.GetByName("DamageBonus")
+        bonus.Amount = damage
+        customAttack.Bonuses.Add(bonus)
+
+        bonus = BonusFactory.GetByName("AttackBonus")
+        bonus.Value = -2
+        customAttack.Bonuses.Add(bonus)
+
+        bonus = BonusFactory.GetByName("NumberOfAttacksBonus")
+        bonus.Value = 1
+        customAttack.Bonuses.Add(bonus)
+        character.CustomAttacks.Add(customAttack)
+    return</Content>
+      <ScriptContext>Atut</ScriptContext>
+    </Script>
+    <Script Name="RACE_Elf">
+      <Id>3baf11ba-3a4d-4a9b-8118-266c4397792c</Id>
+      <TypeName>System.Action`3[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.Race, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+import DnDHelper.Domain.Bonuses
+
+def Calculate(character,repository):
+    atut = BonusFactory.GetByName("AtutBonus")
+    atut.Source = "Rasa"
+    atut.Name = "Odporność na zauroczenia"
+    skill = BonusFactory.GetByName("SecondarySkillBonus")
+    skill.Source = "Rasa"
+    skill.Name = "Nasłuchiwanie"
+    skill.Value = 2
+    character.InitialBonuses.AddRange([atut, skill])
+    return</Content>
+      <ScriptContext>Race</ScriptContext>
+    </Script>
+    <Script Name="CLASS_barbarian">
+      <Id>d2749cf0-e47b-44a0-8a4d-451463dbd858</Id>
+      <TypeName>System.Action`2[[DnDHelper.Domain.Character, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[DnDHelper.Domain.RepositorySet, DnDHelper.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]</TypeName>
+      <Content>import clr
+clr.AddReference('DnDHelper.Domain')
+from DnDHelper.Domain.Bonuses import BonusFactory
+from DnDHelper.Domain import DamageTypes
+
+def Calculate(character,repository):
+    source = "Klasa"
+    level = character.Level
+    atutRage = BonusFactory.GetByName("AtutBonus", source)
+    atutRage.AtutName = "Szał"
+    atutRage.AdditionalInfo = "{0}/dzień".format((level / 4)+1)
+    character.Controller.AddBonusOriginal(atutRage)
+    at = BonusFactory.GetByName("SpeedBonus",source)
+    at.Value = 3;
+    character.Controller.AddBonusOriginal(at)
+    if (level &gt;= 2):
+        at = BonusFactory.GetByName("AtutBonus", source)
+        at.AtutName = "Nieświadomy unik"
+        character.Controller.AddBonusOriginal(at)
+    if (level &gt;= 3):
+        at = BonusFactory.GetByName("AtutBonus", source)
+        at.AtutName = "Wyczucie pułapek"
+        at.AdditionalInfo = "+{0}".format(level/3)
+        character.Controller.AddBonusOriginal(at)
+    if (level &gt;= 7):
+        at = BonusFactory.GetByName("AtutBonus", source)
+        at.AtutName = "Redukcja obrażeń"
+        at.AdditionalInfo = "Fizyczne({0})".format(1 + (level - 7) / 3)
+        character.Controller.AddBonusOriginal(at)
+        at = BonusFactory.GetByName("ResistanceBonus", source)
+        at.Value = 1 + (level - 7)/3
+        at.DamageType = DamageTypes.Physical
+        character.Controller.AddBonusOriginal(at)
+    if (level &gt;= 11):
+        at = BonusFactory.GetByName("AtutBonus", source)
+        at.AtutName = "Potężniejszy szał"
+        character.Controller.AddBonusOriginal(at)
+    if (level &gt;= 14):
+        at = BonusFactory.GetByName("AtutBonus", source)
+        at.AtutName = "Niezłomna wola"
+        character.Controller.AddBonusOriginal(at)
+    if (level &gt;= 20):
+        at = BonusFactory.GetByName("AtutBonus", source)
+        at.AtutName = "Mężny szał"
+        character.Controller.AddBonusOriginal(at)
+    return</Content>
+      <ScriptContext>Class</ScriptContext>
+    </Script>
+  </Elements>
+</RepositoryOfScript>

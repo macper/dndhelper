@@ -1,0 +1,358 @@
+2014-10-21 09:12:35,633 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-10-21 09:12:35,660 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-10-21 09:12:35,665 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-10-21 09:12:35,669 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-10-21 09:12:35,673 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-10-21 09:12:35,689 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-10-21 09:12:35,693 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-10-21 09:12:35,696 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-10-21 09:12:35,701 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-10-21 09:12:35,707 INFO  AppFacade - Rejestracja typów
+2014-10-21 09:12:35,712 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-10-21 09:12:35,716 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-10-21 09:12:35,720 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-10-21 09:12:35,730 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-10-21 09:12:35,735 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-10-21 09:12:35,745 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-10-21 09:12:35,749 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-10-21 09:12:35,753 INFO  AppFacade - Black List:
+2014-10-21 09:12:35,756 INFO  AppFacade - Typy zarejestrowano
+2014-10-21 09:12:35,762 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-10-21 09:12:35,776 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-10-21 09:12:36,085 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-10-21 09:13:23,079 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-10-21 09:13:23,102 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-10-21 09:13:23,107 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-10-21 09:13:23,110 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-10-21 09:13:23,114 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-10-21 09:13:23,128 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-10-21 09:13:23,132 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-10-21 09:13:23,136 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-10-21 09:13:23,139 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-10-21 09:13:23,145 INFO  AppFacade - Rejestracja typów
+2014-10-21 09:13:23,149 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-10-21 09:13:23,153 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-10-21 09:13:23,156 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-10-21 09:13:23,163 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-10-21 09:13:23,169 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-10-21 09:13:23,176 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-10-21 09:13:23,180 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-10-21 09:13:23,183 INFO  AppFacade - Black List:
+2014-10-21 09:13:23,187 INFO  AppFacade - Typy zarejestrowano
+2014-10-21 09:13:23,192 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-10-21 09:13:23,203 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-10-21 09:13:23,465 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-10-21 09:14:24,641 DEBUG UpdateClient - Otrzymano 9 informacji o repozytoriach
+2014-10-21 09:14:24,648 INFO  UpdateClient - Repozytorium: AppSetting (v. 0) wymaga uaktualnienia do 4669
+2014-10-21 09:14:24,665 INFO  UpdateClient - Repozytorium: AtutDefinition (v. 0) wymaga uaktualnienia do 121
+2014-10-21 09:14:24,673 INFO  UpdateClient - Repozytorium: CharacterGroup (v. 0) wymaga uaktualnienia do 14021
+2014-10-21 09:14:24,678 INFO  UpdateClient - Repozytorium: ClassDefinition (v. 0) wymaga uaktualnienia do 21
+2014-10-21 09:14:24,682 INFO  UpdateClient - Repozytorium: EffectDefinition (v. 0) wymaga uaktualnienia do 92
+2014-10-21 09:14:24,687 INFO  UpdateClient - Repozytorium: ItemDefinition (v. 0) wymaga uaktualnienia do 388
+2014-10-21 09:14:24,692 INFO  UpdateClient - Repozytorium: RaceDefinition (v. 0) wymaga uaktualnienia do 13
+2014-10-21 09:14:24,697 INFO  UpdateClient - Repozytorium: SkillDefinition (v. 0) wymaga uaktualnienia do 25
+2014-10-21 09:14:24,702 INFO  UpdateClient - Repozytorium: SpellDefinition (v. 0) wymaga uaktualnienia do 33
+2014-10-21 09:14:30,899 ERROR UpdateClient - The maximum message size quota for incoming messages (80485760) has been exceeded. To increase the quota, use the MaxReceivedMessageSize property on the appropriate binding element.
+System.ServiceModel.CommunicationException: The maximum message size quota for incoming messages (80485760) has been exceeded. To increase the quota, use the MaxReceivedMessageSize property on the appropriate binding element. ---> System.ServiceModel.QuotaExceededException: The maximum message size quota for incoming messages (80485760) has been exceeded. To increase the quota, use the MaxReceivedMessageSize property on the appropriate binding element.
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpInput.ThrowMaxReceivedMessageSizeExceeded()
+   at System.ServiceModel.Channels.HttpInput.ReadBufferedMessage(Stream inputStream)
+   at System.ServiceModel.Channels.HttpInput.ParseIncomingMessage(HttpRequestMessage httpRequestMessage, Exception& requestException)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at DnDHelper.UpdateServiceAPI.IUpdateService.GetRepositories(DownloadRepositoryRequest request)
+   at DnDHelper.GUI.WPF.UpdateServiceProxy.GetRepositories(DownloadRepositoryRequest request) in d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.GUI.WPF\UpdateServiceProxy.cs:line 19
+   at DnDHelper.Domain.UpdateClient.DownloadUpdates() in d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.Domain\UpdateClient.cs:line 23
+2014-10-21 09:14:30,921 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: AppSetting
+2014-10-21 09:14:34,033 INFO  AdvancedQueueManager - Zapisano repozytorium: AppSetting
+2014-10-21 09:14:45,077 DEBUG UpdateClient - Otrzymano 9 informacji o repozytoriach
+2014-10-21 09:14:45,091 INFO  UpdateClient - Repozytorium: AppSetting (v. 1) wymaga uaktualnienia do 4669
+2014-10-21 09:14:45,102 INFO  UpdateClient - Repozytorium: AtutDefinition (v. 0) wymaga uaktualnienia do 121
+2014-10-21 09:14:45,108 INFO  UpdateClient - Repozytorium: CharacterGroup (v. 0) wymaga uaktualnienia do 14021
+2014-10-21 09:14:45,113 INFO  UpdateClient - Repozytorium: ClassDefinition (v. 0) wymaga uaktualnienia do 21
+2014-10-21 09:14:45,121 INFO  UpdateClient - Repozytorium: EffectDefinition (v. 0) wymaga uaktualnienia do 92
+2014-10-21 09:14:45,130 INFO  UpdateClient - Repozytorium: ItemDefinition (v. 0) wymaga uaktualnienia do 388
+2014-10-21 09:14:45,134 INFO  UpdateClient - Repozytorium: RaceDefinition (v. 0) wymaga uaktualnienia do 13
+2014-10-21 09:14:45,139 INFO  UpdateClient - Repozytorium: SkillDefinition (v. 0) wymaga uaktualnienia do 25
+2014-10-21 09:14:45,143 INFO  UpdateClient - Repozytorium: SpellDefinition (v. 0) wymaga uaktualnienia do 33
+2014-10-21 09:14:47,529 ERROR UpdateClient - The maximum message size quota for incoming messages (80485760) has been exceeded. To increase the quota, use the MaxReceivedMessageSize property on the appropriate binding element.
+System.ServiceModel.CommunicationException: The maximum message size quota for incoming messages (80485760) has been exceeded. To increase the quota, use the MaxReceivedMessageSize property on the appropriate binding element. ---> System.ServiceModel.QuotaExceededException: The maximum message size quota for incoming messages (80485760) has been exceeded. To increase the quota, use the MaxReceivedMessageSize property on the appropriate binding element.
+   --- End of inner exception stack trace ---
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpInput.ThrowMaxReceivedMessageSizeExceeded()
+   at System.ServiceModel.Channels.HttpInput.ReadBufferedMessage(Stream inputStream)
+   at System.ServiceModel.Channels.HttpInput.ParseIncomingMessage(HttpRequestMessage httpRequestMessage, Exception& requestException)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at DnDHelper.UpdateServiceAPI.IUpdateService.GetRepositories(DownloadRepositoryRequest request)
+   at DnDHelper.GUI.WPF.UpdateServiceProxy.GetRepositories(DownloadRepositoryRequest request) in d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.GUI.WPF\UpdateServiceProxy.cs:line 19
+   at DnDHelper.Domain.UpdateClient.DownloadUpdates() in d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.Domain\UpdateClient.cs:line 23
+2014-10-21 09:14:47,540 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: AppSetting
+2014-10-21 09:14:49,131 INFO  AdvancedQueueManager - Zapisano repozytorium: AppSetting
+2014-10-21 09:16:24,810 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-10-21 09:16:24,830 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-10-21 09:16:24,834 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-10-21 09:16:24,849 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-10-21 09:16:24,854 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-10-21 09:16:24,857 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-10-21 09:16:24,861 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-10-21 09:16:24,865 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-10-21 09:16:24,869 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-10-21 09:16:24,875 INFO  AppFacade - Rejestracja typów
+2014-10-21 09:16:24,879 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-10-21 09:16:24,883 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-10-21 09:16:24,887 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-10-21 09:16:24,895 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-10-21 09:16:24,900 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-10-21 09:16:24,906 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-10-21 09:16:24,910 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-10-21 09:16:24,914 INFO  AppFacade - Black List:
+2014-10-21 09:16:24,921 INFO  AppFacade - Typy zarejestrowano
+2014-10-21 09:16:24,926 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-10-21 09:16:24,934 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-10-21 09:16:25,187 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-10-21 09:16:36,334 DEBUG UpdateClient - Otrzymano 9 informacji o repozytoriach
+2014-10-21 09:16:36,343 INFO  UpdateClient - Repozytorium: AppSetting (v. 2) wymaga uaktualnienia do 4669
+2014-10-21 09:16:36,353 INFO  UpdateClient - Repozytorium: AtutDefinition (v. 0) wymaga uaktualnienia do 121
+2014-10-21 09:16:36,365 INFO  UpdateClient - Repozytorium: CharacterGroup (v. 0) wymaga uaktualnienia do 14021
+2014-10-21 09:16:36,375 INFO  UpdateClient - Repozytorium: ClassDefinition (v. 0) wymaga uaktualnienia do 21
+2014-10-21 09:16:36,379 INFO  UpdateClient - Repozytorium: EffectDefinition (v. 0) wymaga uaktualnienia do 92
+2014-10-21 09:16:36,384 INFO  UpdateClient - Repozytorium: ItemDefinition (v. 0) wymaga uaktualnienia do 388
+2014-10-21 09:16:36,388 INFO  UpdateClient - Repozytorium: RaceDefinition (v. 0) wymaga uaktualnienia do 13
+2014-10-21 09:16:36,392 INFO  UpdateClient - Repozytorium: SkillDefinition (v. 0) wymaga uaktualnienia do 25
+2014-10-21 09:16:36,396 INFO  UpdateClient - Repozytorium: SpellDefinition (v. 0) wymaga uaktualnienia do 33
+2014-10-21 09:17:19,490 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: AppSetting
+2014-10-21 09:17:19,495 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:19,593 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: RaceDefinition
+2014-10-21 09:17:19,597 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:19,662 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: ClassDefinition
+2014-10-21 09:17:19,666 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:19,774 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: EffectDefinition
+2014-10-21 09:17:19,782 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:19,850 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: SpellDefinition
+2014-10-21 09:17:19,854 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:19,916 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: SkillDefinition
+2014-10-21 09:17:19,921 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:19,981 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: AtutDefinition
+2014-10-21 09:17:19,985 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,094 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: ItemDefinition
+2014-10-21 09:17:20,103 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:20,314 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: CharacterGroup
+2014-10-21 09:17:20,319 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,324 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,363 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,368 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:20,409 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,418 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:20,465 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,470 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:20,475 INFO  AdvancedQueueManager - Zapisano repozytorium: AppSetting
+2014-10-21 09:17:20,482 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:20,487 INFO  AdvancedQueueManager - Zapisano repozytorium: RaceDefinition
+2014-10-21 09:17:20,494 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:20,502 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:20,511 INFO  AdvancedQueueManager - Zapisano repozytorium: ClassDefinition
+2014-10-21 09:17:20,525 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,542 INFO  AdvancedQueueManager - Zapisano repozytorium: EffectDefinition
+2014-10-21 09:17:20,548 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:20,559 INFO  AdvancedQueueManager - Zapisano repozytorium: SpellDefinition
+2014-10-21 09:17:20,573 INFO  AdvancedQueueManager - Zapisano repozytorium: SkillDefinition
+2014-10-21 09:17:20,586 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,591 INFO  AdvancedQueueManager - Zapisano repozytorium: AtutDefinition
+2014-10-21 09:17:20,601 INFO  AdvancedQueueManager - Zapisano repozytorium: ItemDefinition
+2014-10-21 09:17:20,615 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,620 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:20,625 INFO  AdvancedQueueManager - Zapisano repozytorium: CharacterGroup
+2014-10-21 09:17:20,636 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:20,645 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:20,650 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:20,655 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,663 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:20,700 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: CharacterGroup
+2014-10-21 09:17:20,705 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,710 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: AppSetting
+2014-10-21 09:17:20,715 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:20,722 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: EffectDefinition
+2014-10-21 09:17:20,726 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:20,732 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: AtutDefinition
+2014-10-21 09:17:20,737 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,745 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: ItemDefinition
+2014-10-21 09:17:20,750 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:20,776 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,782 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,788 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,794 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:20,800 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: RaceDefinition
+2014-10-21 09:17:20,805 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:20,811 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: ClassDefinition
+2014-10-21 09:17:20,816 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:20,822 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:20,833 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: SpellDefinition
+2014-10-21 09:17:20,838 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:20,843 DEBUG AdvancedQueueManager - Zakolejkowano do zapisania: SkillDefinition
+2014-10-21 09:17:20,848 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:20,854 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,862 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:20,881 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,904 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,910 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:20,915 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:20,921 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:20,927 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:20,934 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:20,940 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:20,949 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:20,958 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:20,980 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:20,987 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,008 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,018 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,028 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:21,033 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:21,039 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,047 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:21,052 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:21,058 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:21,065 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,088 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,094 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,101 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,108 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:21,115 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,142 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,148 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,153 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:21,159 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:21,164 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,172 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:21,177 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:21,182 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:21,192 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,215 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,220 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,226 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:21,232 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:21,237 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,253 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:21,269 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:21,279 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:21,287 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,314 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,320 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,331 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,355 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,361 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,367 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,375 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,404 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,410 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,416 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,439 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,446 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,475 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,480 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,488 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,513 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,523 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,528 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,553 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,558 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,564 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:21,570 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:21,580 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,587 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:21,592 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:21,598 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:21,608 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,637 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,642 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,648 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,656 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,682 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,687 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,697 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,705 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,730 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,736 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:21,742 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:21,755 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,781 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,788 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,794 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,803 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,833 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,839 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,847 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,882 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:21,892 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,897 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:21,904 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:21,910 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:21,919 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:21,925 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:21,933 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:21,944 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,953 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:21,959 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:21,968 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:22,005 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,011 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:22,019 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:22,025 INFO  UpdateClient - Zaktualizowano repozytorium: ClassDefinition
+2014-10-21 09:17:22,031 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:22,039 INFO  UpdateClient - Zaktualizowano repozytorium: SpellDefinition
+2014-10-21 09:17:22,045 INFO  UpdateClient - Zaktualizowano repozytorium: SkillDefinition
+2014-10-21 09:17:22,051 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:22,062 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:22,093 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,130 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,137 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:22,167 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,173 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:22,209 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,218 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:22,255 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,261 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:22,270 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:22,300 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,307 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:22,355 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,360 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:22,366 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:22,404 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,410 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:22,417 INFO  UpdateClient - Zaktualizowano repozytorium: RaceDefinition
+2014-10-21 09:17:22,423 INFO  UpdateClient - Zaktualizowano repozytorium: EffectDefinition
+2014-10-21 09:17:22,429 INFO  UpdateClient - Zaktualizowano repozytorium: AtutDefinition
+2014-10-21 09:17:22,439 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:22,481 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,487 INFO  UpdateClient - Zaktualizowano repozytorium: AppSetting
+2014-10-21 09:17:22,496 INFO  UpdateClient - Zaktualizowano repozytorium: ItemDefinition
+2014-10-21 09:17:22,539 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:22,584 INFO  UpdateClient - Zaktualizowano repozytorium: CharacterGroup
+2014-10-21 09:17:25,704 INFO  AdvancedQueueManager - Zapisano repozytorium: CharacterGroup
+2014-10-21 09:17:25,781 INFO  AdvancedQueueManager - Zapisano repozytorium: AppSetting
+2014-10-21 09:17:25,788 INFO  AdvancedQueueManager - Zapisano repozytorium: EffectDefinition
+2014-10-21 09:17:25,797 INFO  AdvancedQueueManager - Zapisano repozytorium: AtutDefinition
+2014-10-21 09:17:25,805 INFO  AdvancedQueueManager - Zapisano repozytorium: ItemDefinition
+2014-10-21 09:17:25,816 INFO  AdvancedQueueManager - Zapisano repozytorium: RaceDefinition
+2014-10-21 09:17:25,825 INFO  AdvancedQueueManager - Zapisano repozytorium: ClassDefinition
+2014-10-21 09:17:25,836 INFO  AdvancedQueueManager - Zapisano repozytorium: SpellDefinition
+2014-10-21 09:17:25,845 INFO  AdvancedQueueManager - Zapisano repozytorium: SkillDefinition

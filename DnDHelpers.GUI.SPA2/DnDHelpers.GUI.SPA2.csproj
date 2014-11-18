@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A265625-70C5-44BD-813F-924F1C39C2C5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DnDHelpers.GUI.SPA2</RootNamespace>
+    <AssemblyName>DnDHelpers.GUI.SPA2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MacAuthService.Contracts">
+      <HintPath>..\Externals\MacAuthService.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.3.9.71\lib\net35\ServiceStack.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\packages\ServiceStack.Common.3.9.70\lib\net35\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\packages\ServiceStack.Common.3.9.70\lib\net35\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.9.70\lib\net35\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer">
+      <HintPath>..\packages\ServiceStack.OrmLite.SqlServer.3.9.70\lib\net35\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\packages\ServiceStack.Redis.3.9.70\lib\net35\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface, Version=3.9.71.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\ServiceStack.3.9.71\lib\net35\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\packages\ServiceStack.Text.3.9.70\lib\net35\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Scripts\angular-cookies.js" />
+    <Content Include="Content\Scripts\angular-resource.js" />
+    <Content Include="Content\Scripts\angular-route.js" />
+    <Content Include="Content\Scripts\App\controllers\briefsController.js" />
+    <Content Include="Content\Scripts\App\controllers\spellController.js" />
+    <Content Include="Content\Scripts\App\controllers\itemController.js" />
+    <Content Include="Content\Scripts\App\controllers\spellsController.js" />
+    <Content Include="Content\Scripts\App\controllers\loginController.js" />
+    <Content Include="Content\Scripts\App\filters\formatHP.js" />
+    <Content Include="Content\Scripts\App\services\authService.js" />
+    <Content Include="Content\Scripts\App\services\base64.js" />
+    <Content Include="Content\Scripts\App\services\briefsService.js" />
+    <Content Include="Content\Scripts\App\services\dictionaryService.js" />
+    <Content Include="Content\Scripts\App\services\spellsService.js" />
+    <Content Include="Content\Templates\Bonus\ACBonus.html" />
+    <Content Include="Content\Templates\Bonus\AppendEffectBonus.html" />
+    <Content Include="Content\Templates\Bonus\AttackBonus.html" />
+    <Content Include="Content\Templates\Bonus\AtutBonus.html" />
+    <Content Include="Content\Templates\Bonus\DamageBonus.html" />
+    <Content Include="Content\Templates\Bonus\HPBonus.html" />
+    <Content Include="Content\Templates\Bonus\InitiativeBonus.html" />
+    <Content Include="Content\Templates\Bonus\MainSkillBonus.html" />
+    <Content Include="Content\Templates\Bonus\MaxDexterityBonus.html" />
+    <Content Include="Content\Templates\Bonus\NumberOfAttacksBonus.html" />
+    <Content Include="Content\Templates\Bonus\OverallBonus.html" />
+    <Content Include="Content\Templates\Bonus\PanaltyBonus.html" />
+    <Content Include="Content\Templates\Bonus\RangeBonus.html" />
+    <Content Include="Content\Templates\Bonus\ResistanceBonus.html" />
+    <Content Include="Content\Templates\Bonus\SecondarySkillBonus.html" />
+    <Content Include="Content\Templates\Bonus\SpeedBonus.html" />
+    <Content Include="Content\Templates\Bonus\ThrowBonus.html" />
+    <Content Include="Content\Templates\briefs.html" />
+    <Content Include="Content\Templates\spell.html" />
+    <Content Include="Content\Templates\item.html" />
+    <Content Include="Content\Templates\spells.html" />
+    <Content Include="Content\Templates\login.html" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\dnd helper spa.pubxml" />
+    <None Include="Properties\PublishProfiles\FileSystem.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Scripts\angular.min.js" />
+    <Content Include="Content\Scripts\App\app.js" />
+    <Content Include="Content\Scripts\App\controllers\homeController.js" />
+    <Content Include="Content\Scripts\App\controllers\itemsController.js" />
+    <Content Include="Content\Scripts\App\controllers\updatesController.js" />
+    <Content Include="Content\Scripts\App\directives\navbar.js" />
+    <Content Include="Content\Scripts\App\services\itemsService.js" />
+    <Content Include="Content\Scripts\App\services\updatesService.js" />
+    <Content Include="Content\Scripts\bootstrap.min.js" />
+    <Content Include="Content\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Content\Styles\bootstrap.min.css" />
+    <Content Include="Content\Styles\Site.css" />
+    <Content Include="Content\Templates\directives\navbar.html" />
+    <Content Include="Content\Templates\home.html" />
+    <Content Include="Content\Templates\items.html" />
+    <Content Include="Content\Templates\updates.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Index.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\BriefsService.cs" />
+    <Compile Include="API\DictionaryService.cs" />
+    <Compile Include="API\DTOFactory.cs" />
+    <Compile Include="API\DTO\ACTypesRequest.cs" />
+    <Compile Include="API\DTO\AtutesRequest.cs" />
+    <Compile Include="API\DTO\BonusInfo.cs" />
+    <Compile Include="API\DTO\BonusPrototypesRequest.cs" />
+    <Compile Include="API\DTO\CopyItemRequest.cs" />
+    <Compile Include="API\DTO\DamageParseRequest.cs" />
+    <Compile Include="API\DTO\DamageTypesRequest.cs" />
+    <Compile Include="API\DTO\DictionaryItem.cs" />
+    <Compile Include="API\DTO\EffectsRequest.cs" />
+    <Compile Include="API\DTO\GetUpdatesRequest.cs" />
+    <Compile Include="API\DTO\ItemDetailsRequest.cs" />
+    <Compile Include="API\DTO\ItemDetailsResponse.cs" />
+    <Compile Include="API\DTO\ItemInfo.cs" />
+    <Compile Include="API\DTO\ItemPrototype.cs" />
+    <Compile Include="API\DTO\ItemPrototypesRequest.cs" />
+    <Compile Include="API\DTO\ItemsRequest.cs" />
+    <Compile Include="API\DTO\ItemTypeInfo.cs" />
+    <Compile Include="API\DTO\ItemTypesRequest.cs" />
+    <Compile Include="API\DTO\MainSkillsRequest.cs" />
+    <Compile Include="API\DTO\Spells\SpellRangesRequest.cs" />
+    <Compile Include="API\DTO\Spells\SpellDetails.cs" />
+    <Compile Include="API\DTO\Spells\SpellDetailsRequest.cs" />
+    <Compile Include="API\DTO\Spells\SpellSchoolsRequest.cs" />
+    <Compile Include="API\DTO\Spells\SpellsInfoResponse.cs" />
+    <Compile Include="API\DTO\Spells\SpellsInfoRequest.cs" />
+    <Compile Include="API\DTO\Spells\SpellTypesRequest.cs" />
+    <Compile Include="API\DTO\SyncUpdatesRequest.cs" />
+    <Compile Include="API\DTO\RepositoryInfo.cs" />
+    <Compile Include="API\DTO\SkillsRequest.cs" />
+    <Compile Include="API\DTO\SyncInfoRequest.cs" />
+    <Compile Include="API\DTO\SyncInfoResponse.cs" />
+    <Compile Include="API\DTO\SyncUpdatesResponse.cs" />
+    <Compile Include="API\DTO\UpdateInfoResult.cs" />
+    <Compile Include="API\DTO\UpdateInfoSimple.cs" />
+    <Compile Include="API\EnumDictionaryEntry.cs" />
+    <Compile Include="API\GetUpdatesService.cs" />
+    <Compile Include="API\ItemsService.cs" />
+    <Compile Include="API\Logic\WebPathProvider.cs" />
+    <Compile Include="API\PostUpdatesService.cs" />
+    <Compile Include="API\SpellsService.cs" />
+    <Compile Include="API\UpdateInfoService.cs" />
+    <Compile Include="Auth\MacAuthProvider.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DnDHelper.BriefService\DnDHelper.BriefService.csproj">
+      <Project>{cde594de-c95f-45e4-bc58-fe3662d8fbda}</Project>
+      <Name>DnDHelper.BriefService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.Domain\DnDHelper.Domain.csproj">
+      <Project>{0dcbac2a-b866-46c2-842b-a42b051b75f4}</Project>
+      <Name>DnDHelper.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.Infrastructure\DnDHelper.Infrastructure.csproj">
+      <Project>{e241425a-aa53-45d2-a2b2-539cd0730636}</Project>
+      <Name>DnDHelper.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.UpdateServiceAPI\DnDHelper.UpdateServiceAPI.csproj">
+      <Project>{720ebf98-c452-44da-885c-1cd30c10b6f6}</Project>
+      <Name>DnDHelper.UpdateServiceAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25494</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25494/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

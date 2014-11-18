@@ -1,0 +1,105 @@
+2014-11-06 12:14:01,899 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-11-06 12:14:02,091 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-11-06 12:14:02,233 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-11-06 12:14:02,431 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-11-06 12:14:02,598 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-11-06 12:14:02,747 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-11-06 12:14:02,900 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-11-06 12:14:03,085 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-11-06 12:14:03,231 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-11-06 12:14:03,587 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Character
+2014-11-06 12:14:03,591 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Experience
+2014-11-06 12:14:03,746 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Script
+2014-11-06 12:14:03,750 INFO  AppFacade - Rejestracja typów
+2014-11-06 12:14:03,755 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-11-06 12:14:03,758 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-11-06 12:14:03,766 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-11-06 12:14:03,777 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-11-06 12:14:03,811 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-11-06 12:14:03,823 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-11-06 12:14:03,828 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-11-06 12:14:03,831 INFO  AppFacade - Typy zarejestrowano
+2014-11-06 12:14:03,836 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-11-06 12:14:03,846 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-11-06 12:14:03,892 INFO  ChangeTracker - All changes saved
+2014-11-06 12:14:04,141 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-11-06 13:08:28,772 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-11-06 13:08:28,964 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-11-06 13:08:29,139 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-11-06 13:08:29,334 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-11-06 13:08:29,490 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-11-06 13:08:29,634 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-11-06 13:08:29,769 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-11-06 13:08:29,957 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-11-06 13:08:30,102 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-11-06 13:08:30,447 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Character
+2014-11-06 13:08:30,451 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Experience
+2014-11-06 13:08:30,588 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Script
+2014-11-06 13:08:30,593 INFO  AppFacade - Rejestracja typów
+2014-11-06 13:08:30,597 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-11-06 13:08:30,600 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-11-06 13:08:30,604 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-11-06 13:08:30,609 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-11-06 13:08:30,642 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-11-06 13:08:30,652 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-11-06 13:08:30,658 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-11-06 13:08:30,662 INFO  AppFacade - Typy zarejestrowano
+2014-11-06 13:08:30,667 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-11-06 13:08:30,676 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-11-06 13:08:30,695 INFO  ChangeTracker - All changes saved
+2014-11-06 13:08:30,963 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-11-06 13:10:27,562 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-11-06 13:10:27,760 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-11-06 13:10:27,923 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-11-06 13:10:28,144 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-11-06 13:10:28,303 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-11-06 13:10:28,451 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-11-06 13:10:28,585 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-11-06 13:10:28,780 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-11-06 13:10:28,931 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-11-06 13:10:29,295 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Character
+2014-11-06 13:10:29,299 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Experience
+2014-11-06 13:10:29,436 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Script
+2014-11-06 13:10:29,441 INFO  AppFacade - Rejestracja typów
+2014-11-06 13:10:29,446 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-11-06 13:10:29,449 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-11-06 13:10:29,453 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-11-06 13:10:29,458 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-11-06 13:10:29,495 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-11-06 13:10:29,529 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-11-06 13:10:29,533 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-11-06 13:10:29,537 INFO  AppFacade - Typy zarejestrowano
+2014-11-06 13:10:29,542 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-11-06 13:10:29,553 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-11-06 13:10:38,357 INFO  ChangeTracker - All changes saved
+2014-11-06 13:10:38,812 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-11-06 13:15:42,242 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-11-06 13:15:42,421 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-11-06 13:15:42,583 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-11-06 13:15:42,766 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-11-06 13:15:42,918 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-11-06 13:15:43,072 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-11-06 13:15:43,201 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-11-06 13:15:43,406 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-11-06 13:15:43,556 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-11-06 13:15:43,908 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Character
+2014-11-06 13:15:43,911 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Experience
+2014-11-06 13:15:44,063 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Script
+2014-11-06 13:15:44,068 INFO  AppFacade - Rejestracja typów
+2014-11-06 13:15:44,072 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-11-06 13:15:44,076 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-11-06 13:15:44,080 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-11-06 13:15:44,085 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-11-06 13:15:44,119 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-11-06 13:15:44,131 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-11-06 13:15:44,135 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-11-06 13:15:44,139 INFO  AppFacade - Typy zarejestrowano
+2014-11-06 13:15:44,144 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-11-06 13:15:44,153 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-11-06 13:15:44,175 INFO  ChangeTracker - All changes saved
+2014-11-06 13:15:44,452 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor
+2014-11-06 13:16:46,077 ERROR CharacterCalculator - Script not found!
+System.ApplicationException: Script not found!
+   at DnDHelper.Domain.PythonEngine.DnDHelper.Domain.IPythonEngine.GetMethod[T](ScriptContext scriptContext, String name) in d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.Domain\PythonEngine.cs:line 53
+   at DnDHelper.Domain.CharacterCalculator.GetAtutesBonuses(Character character) in d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.Domain\CharacterCalculator.cs:line 222
+   at DnDHelper.Domain.CharacterCalculator.Calculate(Character character) in d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.Domain\CharacterCalculator.cs:line 56

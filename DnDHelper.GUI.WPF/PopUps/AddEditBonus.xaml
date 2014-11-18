@@ -1,0 +1,137 @@
+﻿<Window x:Class="DnDHelper.GUI.WPF.PopUps.AddEditBonus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dnd="clr-namespace:DnDHelper.Domain;assembly=DnDHelper.Domain"
+        xmlns:bn="clr-namespace:DnDHelper.Domain.Bonuses;assembly=DnDHelper.Domain"
+        Title="Edycja bonusa" Height="430" Width="450" WindowStartupLocation="CenterScreen" 
+        xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Controls" xmlns:WPF="clr-namespace:DnDHelper.GUI.WPF" Name="bonusWindow">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type bn:MainSkillBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,8,0,0"  Text="Cecha:" VerticalAlignment="Top" />
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="67,6,0,0"  VerticalAlignment="Top" Width="152" SelectedValue="{Binding Attribute}" DisplayMemberPath="Name" SelectedValuePath="Value" ItemsSource="{Binding Source={x:Static dnd:EnumsDictionary.MainSkills}}" />
+                <TextBlock Height="23" HorizontalAlignment="Left" Margin="10,37,0,0"  Text="Wartość:" VerticalAlignment="Top" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="67,33,0,0" Value="{Binding Value, Mode=TwoWay}" VerticalAlignment="Top" Width="152" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:ACBonus}">
+            <Grid  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Typ pancerza:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0" VerticalAlignment="Top" />
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="95,8,0,0" ItemsSource="{Binding Source={x:Static dnd:EnumsDictionary.ACTypes}}" SelectedValue="{Binding ACType}" DisplayMemberPath="Name" SelectedValuePath="Value" VerticalAlignment="Top" Width="153" />
+                <Label Content="Wartość:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" VerticalAlignment="Top" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="95,37,0,0" Value="{Binding Value,Mode=TwoWay}" VerticalAlignment="Top" Width="153" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:AppendEffectBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Efekt:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0"  VerticalAlignment="Top" />
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="53,7,0,0" ItemsSource="{Binding Path=DataContext.Effects, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" SelectedValue="{Binding EffectName}" DisplayMemberPath="Name" SelectedValuePath="Name" VerticalAlignment="Top" Width="195" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:AttackBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Premia do ataku:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0"  VerticalAlignment="Top" />
+                <my:AdditiveControl HorizontalAlignment="Left" Margin="111,6,0,0" Value="{Binding Value, Mode=TwoWay}"  VerticalAlignment="Top" Width="145" />
+                <Label Content="Atak wręcz:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" Name="label2" VerticalAlignment="Top" />
+                <CheckBox Content="Tak" Height="16" HorizontalAlignment="Left" Margin="111,46,0,0" IsChecked="{Binding Melee, Mode=TwoWay}" VerticalAlignment="Top" Width="145" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:AtutBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Atut:" Height="28" HorizontalAlignment="Left" Margin="6,6,0,0"  VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Right" Margin="0,38,6,0" Text="{Binding AdditionalInfo}" VerticalAlignment="Top" Width="143" />
+                <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,7,6,0" VerticalAlignment="Top" Width="143" SelectedValue="{Binding AtutName}" ItemsSource="{Binding Path=DataContext.Atutes, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" DisplayMemberPath="Name" SelectedValuePath="Name" />
+                <Label Content="Dodatkowe info:" Height="28" HorizontalAlignment="Left" Margin="6,38,0,0" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:DamageBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <my:DamageEditor x:Name="damageEditor" HorizontalAlignment="Left" DataContext="{Binding Path=Amount, Converter={StaticResource DamageToModelConverter}}" VerticalAlignment="Top"  />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:HPBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Premia do życia:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="102,7,0,0" VerticalAlignment="Top" Width="154" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:InitiativeBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Premia do inicjatywy:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="132,6,0,0" Width="124" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:MaxDexterityBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Max. premia za zręczność:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="158,7,0,0" Width="98" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:PanaltyBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Kara do testów:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="102,7,0,0" Width="154" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:RangeBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Zasięg (m):" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="102,7,0,0" Width="154" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:ResistanceBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Typ obrażeń:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="95,8,0,0" ItemsSource="{Binding Source={x:Static dnd:EnumsDictionary.DamageTypes}}" SelectedValue="{Binding DamageType}" DisplayMemberPath="Name" SelectedValuePath="Value" VerticalAlignment="Top" Width="153" />
+                <Label Content="Redukcja:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" Name="label3" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="95,40,0,0" Text="{Binding Value}" VerticalAlignment="Top" Width="153" />
+                <Label Content="Przełamanie:" Height="28" HorizontalAlignment="Left" Margin="5,74,0,0" Name="label4" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="95,74,0,0" Text="{Binding OverrideValue}" VerticalAlignment="Top" Width="153" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:SecondarySkillBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Umiejętność:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <ComboBox Height="23" HorizontalAlignment="Left" Margin="95,8,0,0" ItemsSource="{Binding Path=DataContext.Skills, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}" SelectedValue="{Binding SkillName}" DisplayMemberPath="Name" SelectedValuePath="Name" VerticalAlignment="Top" Width="153" />
+                <Label Content="Bonus:" Height="28" HorizontalAlignment="Left" Margin="6,40,0,0" Name="label3" VerticalAlignment="Top" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="95,40,0,0" Text="{Binding Value}" VerticalAlignment="Top" Width="153" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:SpeedBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Szybkość (m/turę):" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="119,7,0,0" Width="137" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:ThrowBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Refleks:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=BonusType.ReflexThrow, Mode=TwoWay}" HorizontalAlignment="Left" Margin="98,7,0,0"  VerticalAlignment="Top" Width="80" />
+                <Label Content="Wola:" Height="28" HorizontalAlignment="Left" Margin="6,37,0,0" Name="label3" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=BonusType.WillThrow, Mode=TwoWay}" HorizontalAlignment="Left" Margin="98,38,0,0"  VerticalAlignment="Top" Width="80" />
+                <Label Content="Wytrwałość:" Height="28" HorizontalAlignment="Left" Margin="6,68,0,0" Name="label4" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=BonusType.EnduranceThrow,Mode=TwoWay}" HorizontalAlignment="Left" Margin="98,69,0,0"  VerticalAlignment="Top" Width="80" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:OverallBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Premia do rzutów:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="119,6,0,0" Width="154" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type bn:NumberOfAttacksBonus}">
+            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Label Content="Premia do liczby ataków:" Height="28" HorizontalAlignment="Left" Margin="5,5,0,0" Name="label2" VerticalAlignment="Top" />
+                <my:AdditiveControl Value="{Binding Path=Value, Mode=TwoWay}" HorizontalAlignment="Left" Margin="152,6,0,0" Width="104" VerticalAlignment="Top" />
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Label Content="Typ:" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="65,15,0,0" SelectedValue="{Binding BonusName}" ItemsSource="{Binding Source={x:Static dnd:EnumsDictionary.BonusTypes}}" DisplayMemberPath="Name" SelectedValuePath="Value" VerticalAlignment="Top" Width="201" />
+        <ContentControl Name="Content" Content="{Binding Bonus}" Height="300" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top" Width="400" Padding="5">
+            
+        </ContentControl>
+        <Button Content="OK" Command="{Binding Commit}" Height="25" HorizontalAlignment="Left" Margin="335,354,0,0"  VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+    </Grid>
+</Window>

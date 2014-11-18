@@ -1,0 +1,83 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Controls="clr-namespace:DnDHelper.GUI.WPF.Controls" xmlns:Domain="clr-namespace:DnDHelper.Domain;assembly=DnDHelper.Domain" x:Class="DnDHelper.GUI.WPF.Panels.Repos.Classes" 
+             mc:Ignorable="d" Background="White" Height="660" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <GroupBox Header="Klasy" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="468" Width="280">
+            <ListBox ItemsSource="{Binding Classes}" DisplayMemberPath="Name" SelectedValue="{Binding SelectedClass}" HorizontalAlignment="Left" Height="446" VerticalAlignment="Top" Width="268"/>
+        </GroupBox>
+        <Button Content="Dodaj" Command="{Binding AddClass}" HorizontalAlignment="Left" Margin="215,483,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+        <Button Content="Usuń" Command="{Binding RemoveClass}" HorizontalAlignment="Left" Margin="135,483,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+
+        <Grid Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" DataContext="{Binding SelectedClassViewModel}">
+            <Label Content="Nazwa:" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="77,14,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="155"/>
+            <Label Content="PW:" HorizontalAlignment="Left" Margin="263,11,0,0" VerticalAlignment="Top"/>
+            <Controls:AdditiveControl Value="{Binding PW, Mode=TwoWay}" HorizontalAlignment="Left" Margin="385,14,0,0" VerticalAlignment="Top" Width="85"/>
+            <Label Content="Atak:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+            <ComboBox ItemsSource="{Binding AttackSkillRates}" DisplayMemberPath="Name" SelectedValue="{Binding AttackSkill}" SelectedValuePath="Value" HorizontalAlignment="Left" Margin="77,42,0,0" VerticalAlignment="Top" Width="155"/>
+            <Label Content="Pkt.umiejętności" HorizontalAlignment="Left" Margin="263,42,0,0" VerticalAlignment="Top"/>
+            <Controls:AdditiveControl Value="{Binding SkillPoints, Mode=TwoWay}" HorizontalAlignment="Left" Margin="385,44,0,0" VerticalAlignment="Top" Width="85"/>
+            <GroupBox Header="Wysokie rzuty obronne" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" Height="54" Width="460">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,0,0">
+                    <CheckBox Content="Wola" Margin="0,0,10,0" IsChecked="{Binding HighWillThrow}"/>
+                    <CheckBox Content="Refleks" Margin="0,0,10,0" IsChecked="{Binding HighReflexThrow}"/>
+                    <CheckBox Content="Wytrwałość" IsChecked="{Binding HighEnduranceThrow}" />
+                </StackPanel>
+            </GroupBox>
+            <Label Content="Skrypt:" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top"/>
+            <ComboBox ItemsSource="{Binding Scripts}" SelectedValue="{Binding Script}" DisplayMemberPath="Name" SelectedValuePath="Name" HorizontalAlignment="Left" Margin="115,128,0,0" VerticalAlignment="Top" Width="158"/>
+            <Button Content="Edytuj" Command="{Binding EditScript}" HorizontalAlignment="Left" Margin="278,128,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+            <GroupBox Header="Dostępne czary" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" Height="227" Width="460">
+                <Grid>
+                    <Label Content="Poziom postaci:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-0.211,-0.038"/>
+                    <ComboBox SelectedValue="{Binding SelectedSpellCastingLevel}" ItemsSource="{Binding SpellCastingLevels}" HorizontalAlignment="Left" Margin="98,4,0,0" VerticalAlignment="Top" Width="159"/>
+                    <ListView ItemsSource="{Binding SpellCastings}" HorizontalAlignment="Left" Height="135" Margin="10,32,0,0" VerticalAlignment="Top" Width="428">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="5">
+                                    <TextBlock VerticalAlignment="Center">Typ:</TextBlock>
+                                    <ComboBox Height="23" ItemsSource="{Binding Source={x:Static Domain:EnumsDictionary.SpellTypes}}" SelectedValue="{Binding Type}" DisplayMemberPath="Name" SelectedValuePath="Value"  Width="85" Margin="2,0,0,0"/>
+                                    <TextBlock VerticalAlignment="Center" Margin="2,0,0,0">Poziom:</TextBlock>
+                                    <Controls:AdditiveControl Width="53" Value="{Binding Level, Mode=TwoWay}" />
+                                    <TextBlock VerticalAlignment="Center" Margin="2,0,0,0">Ile:</TextBlock>
+                                    <Controls:AdditiveControl Width="53" Value="{Binding Count, Mode=TwoWay}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button Content="Dodaj" Command="{Binding AddSpellCasting}" HorizontalAlignment="Left" Margin="362,173,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+                    <Button Content="Dodaj" Command="{Binding AddSpellCastingLevel}" HorizontalAlignment="Left" Margin="262,2,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+
+                </Grid>
+            </GroupBox>
+            <Button Content="Zapisz" Command="{Binding Commit}" HorizontalAlignment="Left" Margin="395,624,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+            <GroupBox Header="Preferencje dla zdolności" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" Height="232" Width="460">
+                <Grid>
+                    <ListView ItemsSource="{Binding SkillsPreference}" HorizontalAlignment="Left" Height="180" VerticalAlignment="Top" Width="448">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="1">
+                                    <TextBlock Width="200" VerticalAlignment="Center" Text="{Binding Name}"></TextBlock>
+                                    <Controls:AdditiveControl Width="90" Value="{Binding Wage, Mode=TwoWay}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Label Content="{Binding SkillPreferenceCountAlreadySet}" FontWeight="Bold" HorizontalAlignment="Left" Margin="400,183,0,0" VerticalAlignment="Top"/>
+                    <Button Content="Odswież" Command="{Binding RefreshSkillPreference}" HorizontalAlignment="Left" Margin="303,182,0,0" VerticalAlignment="Top" Width="75" Template="{DynamicResource buttonInfo}"/>
+                </Grid>
+                
+            </GroupBox>
+
+        </Grid>
+
+    </Grid>
+</UserControl>

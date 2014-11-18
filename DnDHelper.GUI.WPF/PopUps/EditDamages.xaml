@@ -1,0 +1,32 @@
+﻿<Window x:Class="DnDHelper.GUI.WPF.PopUps.EditDamages"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dnd="clr-namespace:DnDHelper.Domain;assembly=DnDHelper.Domain"
+        Title="Edytor obrażeń" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="230" />
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ItemsSource="{Binding Damage.Elements}" SelectedValue="{Binding SelectedElement, UpdateSourceTrigger=PropertyChanged}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Height="30" HorizontalAlignment="Stretch">
+                        <TextBlock Margin="5" VerticalAlignment="Center">Kostka:</TextBlock>
+                        <ComboBox Name="TestCombo" Margin="2" VerticalAlignment="Center" Width="50" Height="23" ItemsSource="{Binding Source={x:Static dnd:EnumsDictionary.BonesTypes}}" DisplayMemberPath="Name" SelectedValuePath="Value" SelectedValue="{Binding MaxValue, Mode=TwoWay}"></ComboBox>
+                        <TextBlock Margin="5" VerticalAlignment="Center">Ile:</TextBlock>
+                        <TextBox Margin="2" Height="23" Width="40" VerticalAlignment="Center" Text="{Binding Count, Mode=TwoWay}"/>
+                        <TextBlock VerticalAlignment="Center" Margin="5">Typ:</TextBlock>
+                        <ComboBox Width="120" Height="23" Margin="2" ItemsSource="{Binding Source={x:Static dnd:EnumsDictionary.DamageTypes}}" DisplayMemberPath="Name" SelectedValuePath="Value" SelectedValue="{Binding DamageType, Mode=TwoWay}"></ComboBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>    
+        </ListBox>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Stretch" HorizontalAlignment="Right" Margin="0,0,5,0">
+            <Button Command="{Binding Add}" Content="Dodaj" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Template="{StaticResource buttonInfo}" />
+            <Button Command="{Binding Remove}" Content="Usuń" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Template="{StaticResource buttonInfo}" Margin="5,0,0,0" />
+            <Button Command="{Binding Commit}" Content="OK" Height="26" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75" Template="{StaticResource buttonInfo}" Margin="5,0,0,0" />
+        </StackPanel>
+        
+    </Grid>
+</Window>

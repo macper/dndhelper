@@ -1,0 +1,130 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfCharacterGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>16263</Version>
+  <Scripts />
+  <Elements>
+    <CharacterGroup Name="Potwory 1 (nieumarli)">
+      <Id>61c682f2-1f13-4d63-b937-5eb60f3d0df6</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Humanoidy">
+      <Id>5aa112b5-4129-432f-b8f8-96061d491f2c</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Potwory 2 (duże humanoidy)">
+      <Id>ac99c3bc-34c0-4e24-97fd-f0fd7168bc6f</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Potwory 3 (Bestie)">
+      <Id>2fc0c23e-9d45-484e-af52-934cbcce3c1c</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Zwierzęta">
+      <Id>5c01b74c-f8ff-4202-83b2-9e4b3f56da2d</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Rośliny">
+      <Id>d4ba8c57-07c8-4f99-a6e9-e68cd5a0e54e</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Żywiołaki">
+      <Id>24f5cd92-e1ec-4c19-8d71-1a036fe1d23b</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Legendarni bohaterowie">
+      <Id>c0974b34-0437-41c0-aacb-073c2ad0cd2f</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Drowy">
+      <Id>d37ea3c6-81e5-4150-ab5a-02da940324e9</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Konstrukty">
+      <Id>3d7f31a5-b426-4349-95bd-5db924559f4a</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Yuan-Ti">
+      <Id>d82ec6c0-1ae9-4d1e-bf17-9d8eaf789421</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Ilithidzi">
+      <Id>302ef876-853b-4f9a-853b-6ddc0eba4a41</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Śluzy">
+      <Id>6f53d8a1-9cf8-4942-9b99-97660acc9762</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Pająki">
+      <Id>8f05a3b4-d0d9-49f5-ba5f-149e5af7e774</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Neverwinter">
+      <Id>e78f013c-5159-49f6-91d2-fff9f30dbc52</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Demony">
+      <Id>aa1328c1-fbd5-45fb-9e92-16cdd89bf974</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Potwory 4 (Likantropy)">
+      <Id>9ab4c31e-7a0e-4081-a09d-3daafad5b712</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Giganci">
+      <Id>30aeed24-e649-48b1-bc6e-cfaf8de091b9</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="PG 18">
+      <Id>ecdc6935-d197-4f89-94af-364676d17847</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Robactwo">
+      <Id>b97d915e-f855-4c3d-a7e7-93342e9303ac</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="_Drużyna">
+      <Id>eeb82c6f-2f77-491d-8908-b6b1f1d8d2ca</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="_Szablon_Wojownik">
+      <Id>0081ae40-2045-419c-bffd-92fb3fb428c0</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="_Szablon_Mag">
+      <Id>eed69b3e-1d6d-4862-845c-f0d691a5ce95</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Potwory 5 (Przybysze)">
+      <Id>680a2e8c-d1fc-4749-bb85-a01cb01db0a8</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Potwory 6 (Diabły)">
+      <Id>40a3470a-7b8d-4a82-a32f-a6a27b442438</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Potwory 7 (Hydry)">
+      <Id>c68a4594-2d17-4c91-8e99-730d04bc7d41</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="PG 19">
+      <Id>edb9c747-fae7-46b1-8418-cd286167f714</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="_Zabici">
+      <Id>10262e51-dd43-485a-a9cc-2ebb8fbbd996</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Drużyna Alana Griffina">
+      <Id>93994683-edb9-47eb-b4d1-0977a884a13f</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Oddział zamknięty Tyra">
+      <Id>8af50a56-cb4b-4e83-92ca-94fbb4f7ee9a</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Bandyci">
+      <Id>b1618012-5195-41d4-a5b8-931291741169</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="PG20">
+      <Id>b8e8cbcd-6b4f-40f9-92c4-2d007436d72b</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="_Szablon_Barbarzynca">
+      <Id>845dab14-f302-43fb-aa67-fbb6e8bcb35a</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Waterdeep - pg1">
+      <Id>f2e02262-88a0-49fd-951c-564f072e2441</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="_Szablon_Zlodziej">
+      <Id>01520cfa-7ed7-4928-a2cf-a28dae29abbe</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Waterdeep - straż">
+      <Id>15a042dd-eba8-4f91-a592-2b1bcc283bcc</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Waterdeep - plemię Czarnego Dzika">
+      <Id>5600d610-a822-462c-8059-adf03ec5728a</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Waterdeep - plemię Byka">
+      <Id>b38c5ec5-da3b-4957-b8a3-9705bb36717a</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="Waterdeep - zawodnicy">
+      <Id>6f4fc784-9fb9-41c1-a2cd-b81c044d7705</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="__Drużyna">
+      <Id>6fb397ab-3f4f-4574-97d3-c3c854f9dfb7</Id>
+    </CharacterGroup>
+    <CharacterGroup Name="BPG1">
+      <Id>cf884ce1-d4f2-4822-bf23-dac610f1ba2c</Id>
+    </CharacterGroup>
+  </Elements>
+</RepositoryOfCharacterGroup>

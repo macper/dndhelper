@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.TechPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="424" d:DesignWidth="785" Background="Wheat">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <RichTextBox Name="LogEditor" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.Column="0" BorderThickness="1" IsReadOnly="True"></RichTextBox>
+        <StackPanel Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="0,0,0,0">
+            <Label Content="Ostatnia synchronizacja:" Grid.Column="1" Height="28" HorizontalAlignment="Left" Name="label1" />
+            <TextBlock FontWeight="Bold" Text="{Binding LastSyncTime, StringFormat= f}" HorizontalAlignment="Center" Margin="0,0,0,5"></TextBlock>
+            <Button Command="{Binding Synchronize}" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Synchronizuj" Template="{StaticResource buttonInfo}" Margin="55,0,55,5" />
+            <ListView Height="300" Name="listView1" Width="172" Margin="6,10,7,0" ItemsSource="{Binding Repositories}">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Repozytorium" Width="100" />
+                        <GridViewColumn DisplayMemberBinding="{Binding EntityChanges.Count}" Header="Ile Zmian" Width="60" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Command="{Binding Refresh}" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Odswież" Template="{StaticResource buttonInfo}" Margin="5,5,8,0" />
+                <Button Command="{Binding Populate}" HorizontalAlignment="Right" VerticalAlignment="Center" Content="Inicjalizuj" Template="{StaticResource buttonInfo}" Margin="5,5,8,0" />
+            </StackPanel>
+            
+        </StackPanel>
+
+    </Grid>
+</UserControl>

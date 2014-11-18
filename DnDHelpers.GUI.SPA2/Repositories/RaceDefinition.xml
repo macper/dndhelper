@@ -1,0 +1,300 @@
+﻿<?xml version="1.0"?>
+<RepositoryOfRaceDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Scripts />
+  <Elements>
+    <RaceDefinition Name="Ork">
+      <Id>d6050926-d2cf-47f1-8c10-00d7b25ec0a0</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Niedźwiedź">
+      <Id>43774df9-b60b-4494-aa3a-01034b4dfa42</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Małe zwierze">
+      <Id>d5615c50-261e-41c2-a373-018f534102a7</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Bestia">
+      <Id>6128d62f-4209-4b9a-9479-0ec1cda452b8</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Duże Zwierzę">
+      <Id>34d00919-c7f8-4cfd-b59a-1602c7a785b4</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Demon">
+      <Id>c5188bb5-164d-463e-a62d-1ddb54e0db67</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Dugear">
+      <Id>e1a04a0b-0943-44a7-95a4-28c22d4031dd</Id>
+      <BaseSpeed>6</BaseSpeed>
+      <Bonuses>
+        <BaseBonus xsi:type="AtutBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">0</Value>
+          <AtutName>Widzenie w ciemnościach</AtutName>
+        </BaseBonus>
+      </Bonuses>
+    </RaceDefinition>
+    <RaceDefinition Name="Bestia (duża)">
+      <Id>619e261a-e53f-4fe4-8617-34d78a729013</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Średnia bestia">
+      <Id>19ebdef9-468c-4c68-8687-34fe1556f59e</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Wampir">
+      <Id>4439e2db-f25e-4e16-9e34-37cabcec3961</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Likantrop">
+      <Id>dd6186b5-d8ce-431d-9667-4f15fe74826a</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Drow">
+      <Id>1f6f3a03-8b25-4ca1-9567-570262158fd2</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Niziołek">
+      <Id>4956fc65-e72f-4dbe-b745-57a3ebdb1eef</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Roślina">
+      <Id>199fc769-7003-4dc6-ad94-5f395c92b86e</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Duch">
+      <Id>b9f69c52-2bdc-49fb-a3f2-61b97cc2414c</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Zwierz">
+      <Id>8afa1f14-9a40-4a51-95d2-670ef5bc6413</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Duża Bestia">
+      <Id>a8011aca-6f76-49d5-9431-6a52d088d9b9</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Robal">
+      <Id>2833fbeb-bc75-4de6-bb57-6cae72bd476b</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Gnoll">
+      <Id>164a2ac8-c34d-40e4-aa8f-75ac3b374174</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Półelf">
+      <Id>526a0377-1dc7-4b72-b45e-7686acd5c533</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Goblin">
+      <Id>dbc3f3ea-819c-42d2-b2d8-78ef11e487b7</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Konstrukt">
+      <Id>ce26b84d-328a-4cb3-bdc0-7b6c2a9b289b</Id>
+      <BaseSpeed>9</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Gnom">
+      <Id>671dd276-8409-4b81-9f24-807ec2d02c0c</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Niedzwiedz">
+      <Id>837b495d-f890-4453-89e2-8094b67588fe</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Yuan-Ti">
+      <Id>396e718a-8c57-4e38-aba4-8397cd74b408</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Ilithid">
+      <Id>a237efbe-db15-49e4-8b38-8513677bb6b6</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Półogr">
+      <Id>f7fb2477-ebb5-4de0-84b6-8b082ff32bf8</Id>
+      <BaseSpeed>9</BaseSpeed>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">3</Value>
+          <Attribute>Strength</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">2</Value>
+          <Attribute>Constitution</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+          <Attribute>Dexterity</Attribute>
+        </BaseBonus>
+      </Bonuses>
+    </RaceDefinition>
+    <RaceDefinition Name="Potwór">
+      <Id>2d3dab27-e904-4630-9ef4-8ba62160f09b</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Nieumarły">
+      <Id>8591bc08-3c1f-40b4-9b4a-90c02f635a33</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Wilk">
+      <Id>1d3abe57-8c80-44f4-bb4a-9474a07ffe34</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Kuo-Toa">
+      <Id>66613904-5746-45ec-9fec-998b92276b19</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Ogr">
+      <Id>a93f9e54-f845-4f87-bb28-99e262fd9bd9</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Krasnolud">
+      <Id>3403f775-5da1-40c9-abde-a01c42f77d6a</Id>
+      <BaseSpeed>6</BaseSpeed>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">2</Value>
+          <Attribute>Constitution</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+          <Attribute>Charisma</Attribute>
+        </BaseBonus>
+      </Bonuses>
+    </RaceDefinition>
+    <RaceDefinition Name="Duża bestia">
+      <Id>0da30f00-ff9a-40b1-b5b4-a06381d165fc</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Troll">
+      <Id>035c76c3-ce41-4344-b7e3-a570cc15ce1e</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Wąż">
+      <Id>eb090bbd-a4b7-4f0e-9cc0-a609318c308e</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Pająk">
+      <Id>0dcd455c-f81e-4c7e-b34b-aedb87badd77</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Elf">
+      <Id>43c044bc-26e1-4247-8062-bebff214620f</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Kobold">
+      <Id>9c79f1ed-6c18-4e79-90e1-c5ec9a455bde</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Człowiek">
+      <Id>8ff3efd4-8c9b-4120-bcb7-c849ef76b2a8</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Zwierzę">
+      <Id>dd9b9dcb-9a1b-436c-a22c-cb1b4771b785</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Żywiołak">
+      <Id>14eb7eaf-fc8d-44d1-b0e4-ce0928a69dfe</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Golem">
+      <Id>fe046ae0-69f1-44cf-8988-d533123c64f5</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Magiczna bestia">
+      <Id>9093373a-c663-42d2-b39b-d6de7553ddfd</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Gigant">
+      <Id>5c64813d-80d7-4aa9-acf7-d887a15cee18</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Półork">
+      <Id>3b0aaa5b-abcc-4cf9-b820-df9896f5d324</Id>
+      <BaseSpeed>12</BaseSpeed>
+      <Bonuses>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">2</Value>
+          <Attribute>Strength</Attribute>
+        </BaseBonus>
+        <BaseBonus xsi:type="MainSkillBonus">
+          <Source xmlns="DnDHelper.Domain.Bonuses">Rasa</Source>
+          <Value xmlns="DnDHelper.Domain.Bonuses">-2</Value>
+          <Attribute>Charisma</Attribute>
+        </BaseBonus>
+      </Bonuses>
+    </RaceDefinition>
+    <RaceDefinition Name="Śluz">
+      <Id>cd329232-14bf-43b0-af24-dfc181783da8</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Robak">
+      <Id>26c9db3b-784f-4813-b4e7-e18c6f34e404</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition>
+      <Id>4dbe9e34-dcc4-4539-8f3f-ef98e296b22d</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+    <RaceDefinition Name="Przybysz">
+      <Id>6e54f65c-b09c-4d47-99c9-f5e6b3d8ca8b</Id>
+      <BaseSpeed>0</BaseSpeed>
+      <Bonuses />
+    </RaceDefinition>
+  </Elements>
+</RepositoryOfRaceDefinition>

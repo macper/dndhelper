@@ -1,0 +1,22 @@
+﻿<fieldset title="Logowanie">
+    <form class="form-horizontal" role="form">
+        <div class="alert alert-danger" ng-show="showError">Nieprawidłowa nazwa użytkownika lub hasło</div>
+        <div class="form-group">
+            <label for="inputUsername" class="col-sm-2 control-label">Użytkownik</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputUsername" placeholder="Nazwa użytkownika..." ng-model="username">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-sm-2 control-label">Hasło</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Hasło..." ng-model="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default" ng-click="submit()">Login</button>
+            </div>
+        </div>
+    </form>
+</fieldset>

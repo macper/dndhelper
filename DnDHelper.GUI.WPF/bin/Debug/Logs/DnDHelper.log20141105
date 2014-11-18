@@ -1,0 +1,27 @@
+2014-11-05 10:11:17,891 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AppSetting
+2014-11-05 10:11:18,096 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.RaceDefinition
+2014-11-05 10:11:18,258 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ClassDefinition
+2014-11-05 10:11:18,451 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.EffectDefinition
+2014-11-05 10:11:18,629 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SpellDefinition
+2014-11-05 10:11:18,783 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.SkillDefinition
+2014-11-05 10:11:18,937 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.AtutDefinition
+2014-11-05 10:11:19,119 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.ItemDefinition
+2014-11-05 10:11:19,267 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.CharacterGroup
+2014-11-05 10:11:19,572 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Character
+2014-11-05 10:11:19,575 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Experience
+2014-11-05 10:11:19,742 INFO  RepositorySet - Zarejestrowano i wczytano repozytorium: DnDHelper.Domain.Script
+2014-11-05 10:11:19,747 INFO  AppFacade - Rejestracja typów
+2014-11-05 10:11:19,751 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.AppFacade
+2014-11-05 10:11:19,755 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IAppStateController
+2014-11-05 10:11:19,759 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.RepositorySet
+2014-11-05 10:11:19,768 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IQueueManager
+2014-11-05 10:11:19,808 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.ICharacterCalculator
+2014-11-05 10:11:19,821 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IGameTimer
+2014-11-05 10:11:19,825 INFO  AppFacade - Zarejestrowano: DnDHelper.Domain.IUpdateClient
+2014-11-05 10:11:19,829 INFO  AppFacade - Typy zarejestrowano
+2014-11-05 10:11:19,834 INFO  GameTimer - SubscribeOnTurnChange : AppFacade.SubscribeEvents
+2014-11-05 10:11:19,843 INFO  GameTimer - SubscribeOnTurnChange : GeneralViewModel
+2014-11-05 10:11:19,877 ERROR MainWindow - Items with the same name: Bombardowanie : Bombardowanie
+2014-11-05 10:11:19,881 ERROR MainWindow - Items with the same name: Bombardowanie : Bombardowanie
+2014-11-05 10:11:19,897 INFO  ChangeTracker - All changes saved
+2014-11-05 10:11:20,140 INFO  GameTimer - SubscribeOnTurnChange : Battle.ctor

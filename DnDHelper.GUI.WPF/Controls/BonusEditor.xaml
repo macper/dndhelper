@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Controls.BonusEditor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:dnd="clr-namespace:DnDHelper.Domain.Bonuses;assembly=DnDHelper.Domain"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="500">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type dnd:BaseBonus}">
+            <Border BorderThickness="1" BorderBrush="#FF293B23">
+                <StackPanel Name="row" Orientation="Horizontal" HorizontalAlignment="Stretch" Height="30" Opacity="0.7">
+                    <TextBlock Text="{Binding Name}" FontSize="14" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,0,0" />
+                    <TextBlock Text="{Binding Description}" FontSize="14" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0" />
+                </StackPanel>
+            </Border>
+            <DataTemplate.Triggers>
+                <DataTrigger Binding="{Binding IsPositive}" Value="True">
+                    <Setter TargetName="row" Property="Background" Value="LightGreen" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding IsPositive}" Value="False">
+                    <Setter TargetName="row" Property="Background" Value="#FFE2ABAB" />
+                </DataTrigger>
+            </DataTemplate.Triggers>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <GroupBox Header="Bonusy:"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="3*" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <ListBox ItemsSource="{Binding Bonuses}" SelectedValue="{Binding SelectedBonus}" HorizontalContentAlignment="Stretch">
+                </ListBox>
+                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                    <Button Content="Dodaj" Command="{Binding AddBonus}" Height="26" Width="75" Margin="5" Template="{StaticResource buttonInfo}" />
+                    <Button Content="Edytuj" Command="{Binding EditBonus}" Height="26" Width="75" Margin="5" Template="{StaticResource buttonInfo}" />
+                    <Button Content="Usuń" Command="{Binding RemoveBonus}" Height="26" Width="75" Margin="5" Template="{StaticResource buttonInfo}" />
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</UserControl>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ChangeTracker xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LastSync>635502910891124101</LastSync>
+  <RepositoryChanges>
+    <RepositoryChange>
+      <Name>SpellDefinition</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="bb437ed6-9ce3-432a-86a0-694aeb79db47" TimeStamp="635500155964592743" />
+        <EntityChange IsUpdateInsert="true" Id="227d16ed-35b6-47bf-a682-a9152ac4e31b" TimeStamp="635500161962282271" />
+        <EntityChange IsUpdateInsert="true" Id="80fe46a1-876c-41f8-a69f-5daeba4f4b59" TimeStamp="635500163805825425" />
+      </EntityChanges>
+    </RepositoryChange>
+    <RepositoryChange>
+      <Name>ItemDefinition</Name>
+      <EntityChanges>
+        <EntityChange IsUpdateInsert="true" Id="d76d3699-bc71-4263-8bd2-78aff60b4c56" TimeStamp="635500164453267668" />
+        <EntityChange IsUpdateInsert="true" Id="f38ee699-2373-4427-899a-426b6e8a6a7a" TimeStamp="635500165548828240" />
+      </EntityChanges>
+    </RepositoryChange>
+  </RepositoryChanges>
+</ChangeTracker>

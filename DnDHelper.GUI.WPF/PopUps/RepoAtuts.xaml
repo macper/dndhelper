@@ -1,0 +1,8 @@
+﻿<Window x:Class="DnDHelper.GUI.WPF.PopUps.RepoAtuts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Atuty" Height="635" Width="821" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Panels.Repos" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <my:Atutes HorizontalAlignment="Left" x:Name="atutes1" VerticalAlignment="Top" />
+    </Grid>
+</Window>

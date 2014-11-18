@@ -1,0 +1,46 @@
+﻿<div class="nav-bar" title="Drużyna"></div>
+<div class="alert alert-warning" ng-show="showWarning">
+    Nie otrzymano żadnych informacji o postaciach. Upewnij się że główna aplikacja jest uruchomiona.
+</div>
+<div class="alert alert-danger" ng-show="showError">
+    Błąd połączenia z usługą BriefService.
+</div>
+<div style="margin: 8px">
+    <label class="radio-inline">
+        <input type="radio" value="true" ng-model="briefMode" />Drużyna
+    </label>
+    <label class="radio-inline">
+        <input type="radio" value="false" ng-model="briefMode" />Wrogowie
+    </label>
+        
+</div>
+<div ng-show="briefMode">
+    <div ng-repeat="brief in briefs" class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><span class="glyphicon glyphicon-user"></span>&nbsp;{{brief.Name}}</h4>
+        </div>
+        <div class="panel-body" id="{{brief.Id}}">
+            <p class="text-info">
+                <span ng-class="getHpClass(brief)"><span class="glyphicon glyphicon-plus-sign" style="margin-right:5px"></span><strong>{{brief.CurrentHP}} / {{brief.MaxHP}}</strong></span>
+                <span style="margin-left:20px">KP: <strong>{{brief.CurrentAC}}</strong></span>
+            </p>
+            <ul>
+                <li ng-repeat="effect in brief.Effects">
+                    {{effect.Name}} - {{effect.Remaining}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div ng-hide="briefMode">
+    <div ng-repeat="enemy in enemies" class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title"><span class="glyphicon glyphicon-user"></span>&nbsp;{{enemy.Name}}</h4>
+        </div>
+        <div class="panel-body" id="{{enemy.Name}}">
+            <p class="text-info">
+                <span ng-class="getHpClass2(enemy)"><span class="glyphicon glyphicon-plus-sign" style="margin-right:5px"></span><strong>{{enemy.Health}}</strong></span>
+            </p>
+        </div>
+    </div>
+</div>

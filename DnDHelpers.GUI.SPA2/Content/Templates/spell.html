@@ -1,0 +1,100 @@
+﻿<div class="nav-bar" title="Przedmiot" returnurl="/items"></div>
+<div style="margin-top: 30px">
+    <div ng-show="showMessage" ng-class="alertClass">{{message}}</div>
+    <div ng-show="viewMode">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <td>Nazwa</td>
+                <td>{{spell.Name}}</td>
+            </tr>
+            <tr>
+                <td>Szkoła</td>
+                <td>{{spell.School.Name}}</td>
+            </tr>
+            <tr>
+                <td>Poziom</td>
+                <td>{{spell.Level}}</td>
+            </tr>
+            <tr>
+                <td>Typ</td>
+                <td>
+                    <ul ng-repeat="type in spell.Type">
+                        <li>{{type.Name}}</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Zasięg:</td>
+                <td>{{spell.Range.Name}}</td>
+            </tr>
+            <tr>
+                <td>Opis:</td>
+                <td>
+                    <pre>{{spell.Description}}</pre>
+                </td>
+            </tr>
+        </table>
+        <p>
+            <button class="btn btn-default" ng-click="edit()">Edytuj</button>
+        </p>
+    </div>
+    <div ng-hide="viewMode">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="name" class="col-sm-2 control-label">Nazwa</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="name" ng-model="spell.Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="level" class="col-sm-2 control-label">Poziom</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="level" ng-options="l for l in levels" ng-model="spell.Level"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="school" class="col-sm-2 control-label">Szkoła</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="school" ng-options="c.Name for c in schools" ng-model="spell.School"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="type" class="col-sm-2 control-label">Typ</label>
+                <div class="col-sm-10 row">
+                    <div class="col-sm-4">
+                        <p>Wszystkie</p>
+                        <p>
+                            <select class="form-control" ng-options="c.Name for c in types" size="6" ng-model="selectTypeLeftList"></select></p>
+                        <p>
+                            <button class="btn btn-default" ng-click="selectType()">Wybierz</button></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>Wybrane</p>
+                        <p>
+                            <select class="form-control" size="6" id="type" ng-options="c.Name for c in spell.Type" ng-model="selectTypeRightList"></select></p>
+                        <p>
+                            <button class="btn btn-default" ng-click="unselectType()">Usuń</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="range" class="col-sm-2 control-label">Zasięg</label>
+                <div class="col-sm-10">
+                    <select class="form-control" id="range" ng-options="c.Name for c in ranges" ng-model="spell.Range"></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="desc" class="col-sm-2 control-label">Opis</label>
+                <div class="col-sm-10">
+                    <textarea  rows="10" class="form-control" id="desc" ng-model="spell.Description"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-danger" ng-click="delete()">Usuń</button>
+                    <button class="btn btn-primary" ng-click="submit()">Zapisz</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

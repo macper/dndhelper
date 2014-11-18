@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0DCBAC2A-B866-46C2-842B-A42B051B75F4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DnDHelper.Domain</RootNamespace>
+    <AssemblyName>DnDHelper.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.3\lib\Net40\IronPython.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic">
+      <HintPath>..\packages\IronPython.2.7.3\lib\Net40\Microsoft.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\IronPython.2.7.3\lib\Net40\Microsoft.Scripting.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AC.cs" />
+    <Compile Include="AdvancedQueueManager.cs" />
+    <Compile Include="AppFacade.cs" />
+    <Compile Include="AppSetting.cs" />
+    <Compile Include="AppSettingDefaultValueProvider.cs" />
+    <Compile Include="Attack.cs" />
+    <Compile Include="AttackInfo.cs" />
+    <Compile Include="AttackSkill.cs" />
+    <Compile Include="AttackViewModel.cs" />
+    <Compile Include="Atut.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="BaseEntityDefinition.cs" />
+    <Compile Include="BaseEntityItem.cs" />
+    <Compile Include="Battle.cs" />
+    <Compile Include="BattleCharacter.cs" />
+    <Compile Include="Bonuses\AppendEffectBonus.cs" />
+    <Compile Include="Bonuses\MaxDexterityBonus.cs" />
+    <Compile Include="Bonuses\NumberOfAttacksBonus.cs" />
+    <Compile Include="Bonuses\OverallBonus.cs" />
+    <Compile Include="Bonuses\PanaltyBonus.cs" />
+    <Compile Include="Bonuses\RangeBonus.cs" />
+    <Compile Include="Bonuses\ResistanceBonus.cs" />
+    <Compile Include="Bonuses\SpeedBonus.cs" />
+    <Compile Include="Bonuses\WeaponBonus.cs" />
+    <Compile Include="BriefServiceQueueManager.cs" />
+    <Compile Include="BriefUpdate.cs" />
+    <Compile Include="ChangeTracker.cs" />
+    <Compile Include="CharacterBrief.cs" />
+    <Compile Include="CharacterController.cs" />
+    <Compile Include="CharacterEventArgs.cs" />
+    <Compile Include="CustomAttack.cs" />
+    <Compile Include="DamageBone.cs" />
+    <Compile Include="Bonuses\ACBonus.cs" />
+    <Compile Include="Bonuses\AttackBonus.cs" />
+    <Compile Include="Bonuses\AtutBonus.cs" />
+    <Compile Include="Bonuses\BaseBonus.cs" />
+    <Compile Include="Bonuses\BonusFactory.cs" />
+    <Compile Include="Bonuses\CommonSources.cs" />
+    <Compile Include="Bonuses\DamageBonus.cs" />
+    <Compile Include="Bonuses\HPBonus.cs" />
+    <Compile Include="Bonuses\InitiativeBonus.cs" />
+    <Compile Include="Bonuses\MainSkillBonus.cs" />
+    <Compile Include="Bonuses\SecondarySkillBonus.cs" />
+    <Compile Include="Bonuses\ThrowBonus.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="CharacterCalculator.cs" />
+    <Compile Include="CharacterGroup.cs" />
+    <Compile Include="Class.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="Damage.cs" />
+    <Compile Include="DamageTypes.cs" />
+    <Compile Include="DarkTemplar.cs" />
+    <Compile Include="DescriptionsDictionary.cs" />
+    <Compile Include="Effect.cs" />
+    <Compile Include="EnemyBrief.cs" />
+    <Compile Include="EnumDictionary.cs" />
+    <Compile Include="EnumsDictionary.cs" />
+    <Compile Include="EquipItem.cs" />
+    <Compile Include="Experience.cs" />
+    <Compile Include="GameTimer.cs" />
+    <Compile Include="IAppStateController.cs" />
+    <Compile Include="IBriefService.cs" />
+    <Compile Include="ICharacterCalculator.cs" />
+    <Compile Include="ICharacterController.cs" />
+    <Compile Include="ICustomSerializable.cs" />
+    <Compile Include="IDefaultEntityProvider.cs" />
+    <Compile Include="IEntitySerializer.cs" />
+    <Compile Include="IGameTimer.cs" />
+    <Compile Include="IGenericFilePathProvider.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="IPythonEngine.cs" />
+    <Compile Include="IQueueManager.cs" />
+    <Compile Include="IRepositorySerializer.cs" />
+    <Compile Include="IRepositoryStorage.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="ItemPosition.cs" />
+    <Compile Include="IUpdateClient.cs" />
+    <Compile Include="KilledCreature.cs" />
+    <Compile Include="Log4NetLogger.cs" />
+    <Compile Include="MethodHelpers.cs" />
+    <Compile Include="OperationResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PythonEngine.cs" />
+    <Compile Include="SimpleQueueManager.cs" />
+    <Compile Include="Race.cs" />
+    <Compile Include="Repository.cs" />
+    <Compile Include="RepositorySet.cs" />
+    <Compile Include="Rules.cs" />
+    <Compile Include="Script.cs" />
+    <Compile Include="ServiceContainer.cs" />
+    <Compile Include="Setting.cs" />
+    <Compile Include="Skill.cs" />
+    <Compile Include="SkillPointsLeft.cs" />
+    <Compile Include="SkillPreference.cs" />
+    <Compile Include="Spell.cs" />
+    <Compile Include="Stats.cs" />
+    <Compile Include="Throw.cs" />
+    <Compile Include="TypeOfChange.cs" />
+    <Compile Include="UpdateClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DnDHelper.UpdateServiceAPI\DnDHelper.UpdateServiceAPI.csproj">
+      <Project>{720EBF98-C452-44DA-885C-1CD30C10B6F6}</Project>
+      <Name>DnDHelper.UpdateServiceAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

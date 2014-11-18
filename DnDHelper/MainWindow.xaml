@@ -1,0 +1,207 @@
+﻿<Window x:Class="DnDHelper.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="D&amp;D Helper" Height="800" Width="1200" Loaded="Window_Loaded" Closing="Window_Closing" xmlns:my="clr-namespace:DnDHelper.WPF" KeyDown="grid1_KeyDown" IsEnabled="True">
+    
+    <Grid Width="1180">
+        <DockPanel HorizontalAlignment="Stretch" Margin="0,0,0,0" Name="dockPanel1" VerticalAlignment="Stretch" UseLayoutRounding="True" LastChildFill="False">
+            <Menu DockPanel.Dock="Top" IsMainMenu="True" IsEnabled="True">
+                <MenuItem Header="Aplikacja">
+                    <MenuItem Header="Zapisz" Click="ZapiszButton_Click" />
+                    <MenuItem Header="Wyślij wersje" Click="WyslijWersje_Click" />
+                    <MenuItem Header="Pobierz wersje" Click="PobierzWersje_Click" />
+                    <MenuItem Header="Czary" Click="Czary_Click" />
+                    <MenuItem Header="Przedmioty" Click="Przedmioty_Click" />
+                    <MenuItem Header="Wyjdź" />
+                </MenuItem>
+            </Menu>
+            <TabControl Name="tabControl1" UseLayoutRounding="False" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" Width="1180" IsEnabled="True">
+                <TabItem Header="Ogólne" Name="tabItem1">
+                    <Grid x:Name="myGrid" Width="Auto" Margin="0,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="18.887" />
+                            <RowDefinition Height="630.153" />
+                            <RowDefinition Height="59*" />
+                        </Grid.RowDefinitions>
+                        <Label HorizontalAlignment="Right" Margin="0,8.885,925.691,0" Name="label1" VerticalAlignment="Top" FontFamily="Arial" FontSize="24" Width="238.309" Content="2010-01-01 12:00:00" Grid.Row="1" />
+                        <Button Content="Dzień +" Height="23" HorizontalAlignment="Left" Margin="250.309,13.885,0,0" Name="button1" VerticalAlignment="Top" Width="60" Click="button1_Click" Grid.Row="1" />
+                        <Button Content="Godzina +" Height="23" HorizontalAlignment="Left" Margin="316.309,13.885,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" Grid.Row="1" />
+                        <Button Content="Godzina -" Height="23" HorizontalAlignment="Right" Margin="0,13.885,698.691,0" Name="button3" VerticalAlignment="Top" Width="75" Click="button3_Click" Grid.Row="1" />
+                        <Label Content="XP:" Height="28" HorizontalAlignment="Left" Margin="919.008,12.405,0,0" Name="label12" VerticalAlignment="Top" Grid.Row="1" />
+                        <TextBox Height="23" Text="{Binding Path=XP}" HorizontalAlignment="Left" Margin="951.405,13.405,0,0" Name="textBox2" VerticalAlignment="Top" Width="176.667" Grid.Row="1" />
+                        <Button Content="+" Height="23" HorizontalAlignment="Right" Margin="0,13.633,9.817,0" Name="button17" VerticalAlignment="Top" Width="26.111" Click="button17_Click" Grid.Row="1" />
+                        <Label Content="Notatki:" Height="28" HorizontalAlignment="Left" Margin="18.413,38.847,0,0" Name="label13" VerticalAlignment="Top" Grid.Row="1" />
+                        <TextBox Height="551.306" Text="{Binding Path=Notes}" HorizontalAlignment="Left" Margin="18.413,62.847,0,0" Name="textBox5" VerticalAlignment="Top" Width="523.587" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap" Grid.Row="1" />
+                        <Button Content="Minuta +" Height="23" HorizontalAlignment="Left" Margin="477.309,13.885,0,0" Name="button24" VerticalAlignment="Top" Width="75" Grid.Row="1" Click="button24_Click" />
+                        <Button Content="Runda +" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="558.309,13.885,0,0" Name="button25" VerticalAlignment="Top" Width="75" Click="button25_Click" />
+                        <TextBox Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="639.309,13.885,0,0" Name="textBox8" VerticalAlignment="Top" Width="54" Text="00:00:00" />
+                        <Button Content="+" Grid.Row="1" Height="23" HorizontalAlignment="Right" Margin="0,15.113,446.691,0" Name="button26" VerticalAlignment="Top" Width="25" Click="button26_Click" />
+                        <GroupBox Grid.Row="1" Header="Kalendarz" Height="567.748" HorizontalAlignment="Left" Margin="552.309,46.405,0,0" Name="groupBox2" VerticalAlignment="Top" Width="607.874">
+                            <Grid>
+                                <ListView Height="497.788" HorizontalAlignment="Left" Margin="6,41,0,0" Name="listView3" VerticalAlignment="Top" Width="583.874" Grid.Column="1" Grid.Row="1">
+                                    <ListView.ContextMenu>
+                                        <ContextMenu>
+                                            <MenuItem Header="Usuń" Click="DeleteEntry_Click" />
+                                        </ContextMenu>
+                                    </ListView.ContextMenu>
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Header="Czas" Width="150" DisplayMemberBinding="{Binding Path=Time, StringFormat=yyyy-MM-dd HH:mm:ss}"  />
+                                            <GridViewColumn Header="Nazwa" Width="380" DisplayMemberBinding="{Binding Path=Name}" />
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="111.123,8,0,0" Name="textBox9" VerticalAlignment="Top" Width="158" Text="" />
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="364.91,8,0,0" Name="textBox10" VerticalAlignment="Top" Width="67" Text="01:00:00" />
+                                <Button Content="Dodaj" Height="23" HorizontalAlignment="Left" Margin="459.175,8,0,0" Name="button27" VerticalAlignment="Top" Width="75" Click="button27_Click" />
+                                <CheckBox Content="Data:" Height="16" HorizontalAlignment="Left" Margin="60.83,11,0,0" Name="checkBox1" VerticalAlignment="Top" />
+                                <CheckBox Content="Interwal:" Height="16" HorizontalAlignment="Left" Margin="290.49,11,0,0" Name="checkBox2" VerticalAlignment="Top" />
+                            </Grid>
+                        </GroupBox>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Walka">
+                    <Grid ShowGridLines="True" x:Name="ContentWalka" Height="668" Width="1180">
+                        <Grid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Header="Nowa bitwa" Click="NewBattle_Click" />
+                                <MenuItem Header="Rozpocznij" Click="BattleBegin_Click" />
+                            </ContextMenu>
+                        </Grid.ContextMenu>
+                        <my:CharacterDetails Height="652" x:Name="characterDetails2" Margin="421,5,-5,11" />
+                        <Label Content="Tura:" Height="35" HorizontalAlignment="Left" Margin="6,6,0,0" Name="label4" VerticalAlignment="Top" FontSize="18" Width="48.933" />
+                        <Label Content="{Binding Path=Turn, Mode=TwoWay}" Height="28" HorizontalAlignment="Left" Margin="60.933,6,0,0" Name="label5" VerticalAlignment="Top" FontSize="18" />
+                        <ListView Height="323" HorizontalAlignment="Left" Margin="6,48,0,0" Name="listView1" VerticalAlignment="Top" Width="417" FontSize="14" FontFamily="Arial" Foreground="#FF101010" SelectionChanged="listView1_SelectionChanged" KeyDown="listView1_KeyDown">
+                            <ListView.Resources>
+                                <ControlTemplate x:Key="ItemSelected" TargetType="{x:Type ListViewItem}">
+                                    <StackPanel Background="LightBlue">
+                                        <GridViewRowPresenter Content="{TemplateBinding Content}" Columns="{TemplateBinding GridView.ColumnCollection}" />
+                                    </StackPanel>
+                                </ControlTemplate>
+                                <ControlTemplate x:Key="ItemNotSelected" TargetType="{x:Type ListViewItem}">
+                                    <StackPanel Background="White">
+                                        <GridViewRowPresenter Content="{TemplateBinding Content}" Columns="{TemplateBinding GridView.ColumnCollection}" />
+                                    </StackPanel>
+                                </ControlTemplate>
+                                <ControlTemplate x:Key="ItemKilled" TargetType="{x:Type ListViewItem}">
+                                    <StackPanel Background="DarkSalmon">
+                                        <GridViewRowPresenter Content="{TemplateBinding Content}" Columns="{TemplateBinding GridView.ColumnCollection}" />
+                                    </StackPanel>
+                                </ControlTemplate>
+                            </ListView.Resources>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Path=IsActiveMember}" Value="True">
+                                            <Setter Property="Template" Value="{StaticResource ItemSelected}" />
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Path=IsAlive}" Value="False">
+                                            <Setter Property="Template" Value="{StaticResource ItemKilled}" />
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                            <ListView.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Dodaj uczestnika" Click="AddMember_Click" />
+                                    <MenuItem Header="Usuń uczestnika" Click="RemoveMember_Click" />
+                                    <MenuItem Header="Odswież" Click="RefreshMembers_Click" />
+                                    <MenuItem Header="Atakuj" Click="AttackMember_Click" />
+                                    <MenuItem Header="Atak dowolny" Click="AttackCustom_Click" />
+                                    <MenuItem Header="Atak okazyjny" Click="AttackOpportunity_Click" />
+                                    <MenuItem Header="Zadaj obrażenia" Click="DoDamage_Click" />
+                                </ContextMenu>
+                            </ListView.ContextMenu>
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Nazwa" Width="150" DisplayMemberBinding="{Binding Path=Name}" />
+                                    <GridViewColumn Header="Szczegóły" Width="320" DisplayMemberBinding="{Binding Path=Description}" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <Label Content="Logi" Height="28" HorizontalAlignment="Left" Margin="6,363,0,0" Name="label6" VerticalAlignment="Top" />
+                        <ListView Height="237.643" HorizontalAlignment="Left" Margin="6,384.357,0,0" Name="listView2" VerticalAlignment="Top" Width="417">
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="Tura" Width="30" />
+                                    <GridViewColumn Header="Wiadomość" Width="440" />
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                        <Button Content="Next" Height="23" HorizontalAlignment="Left" Margin="348,13.953,0,0" Name="button9" VerticalAlignment="Top" Width="75" Click="button9_Click" />
+                        <Button Content="Nowa" Height="23" HorizontalAlignment="Left" Margin="268,13.953,0,0" Name="button10" VerticalAlignment="Top" Width="75" Click="button10_Click" />
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Obiekty">
+                    <Grid Width="1180">
+                        <Label Content="Grupy:" Height="28" Name="label2" Margin="5,3.5,1116,676.54" />
+                        <ListBox Height="269.724" Name="listBox1" Margin="6,28.796,783,409.519" DataContext="{Binding}" SelectionChanged="listBox1_SelectionChanged" />
+                        <TextBox Height="23" Name="textBox1" Margin="6,271.362,1019,347.362" />
+                        <Button Content="Nowa" Height="23" Name="button4" Width="75" Margin="0,304,942,381.04" Click="button4_Click" HorizontalAlignment="Right" />
+                        <Button Content="Usuń" Height="23" Name="button5" Width="75" Margin="322,304,0,0" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalAlignment="Top" Click="button5_Click" />
+                        <Button Content="Zapisz" Height="23" HorizontalAlignment="Left" Margin="243,304,0,0" Name="button6" VerticalAlignment="Top" Width="75" Click="button6_Click" />
+                        <Label Content="Członkowie:" Height="28" Margin="5,335,1262,345.04" Name="label3" />
+                        <ListBox Height="270" HorizontalAlignment="Left" Margin="6,335,0,0" Name="listBox2" VerticalAlignment="Top" Width="391" SelectionChanged="listBox2_SelectionChanged" />
+                        <Button Content="Nowy" Height="23" HorizontalAlignment="Left" Margin="86,608.862,0,0" Name="button7" VerticalAlignment="Top" Width="75" Click="button7_Click_1" />
+                        <Button Content="Usuń" Height="23" HorizontalAlignment="Right" Margin="0,608.862,1184,0" Name="button8" VerticalAlignment="Top" Width="75" Click="button8_Click" />
+                        <my:CharacterDetails Height="652" x:Name="characterDetails1" Margin="403,3.5,13,52.54" />
+                        <Button Content="Kopiuj" Height="23" HorizontalAlignment="Left" Margin="5,608.862,0,0" Name="button16" VerticalAlignment="Top" Width="75" Click="button16_Click" />
+                        <Button Content="Przenieś" Height="23" HorizontalAlignment="Left" Margin="167,608.862,0,0" Name="button18" VerticalAlignment="Top" Width="75" Click="button18_Click_1" />
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Mapy">
+                    <Grid>
+                        <Button Content="Nowa" Height="23" Name="button11" Width="75" Margin="5.5,5.02,1033.5,621.02" Click="button11_Click" />
+                        <Button Content="Wczytaj" Height="23" Margin="86.5,5.02,952.5,621.02" Name="button12" Width="75" Click="button12_Click" />
+                        <Button Content="Zapisz" Height="23" Margin="167.5,5.02,871.5,621.02" Name="button13" Width="75" Click="button13_Click" />
+                        <ScrollViewer Height="604.111" HorizontalAlignment="Left" Margin="5.5,34.02,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="688.889" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                            <Grid Height="Auto" Name="grid1" Width="Auto" MouseMove="grid1_MouseMove" MouseDown="grid1_MouseUp" KeyDown="grid1_KeyDown"></Grid>
+                        </ScrollViewer>
+                        <Slider Height="23" HorizontalAlignment="Left" Margin="248.5,5.02,0,0" Name="slider1" VerticalAlignment="Top" Width="100" Value="4" Minimum="1" ValueChanged="slider1_ValueChanged" />
+                        <Label Content="Typ:" Height="28" HorizontalAlignment="Left" Margin="700.389,34.02,0,0" Name="label7" VerticalAlignment="Top" />
+                        <ComboBox Height="23" HorizontalAlignment="Left" Margin="749.247,34.02,0,0" Name="comboBox1" VerticalAlignment="Top" Width="120" SelectionChanged="comboBox1_SelectionChanged" />
+                        <Label Content="Kolor:" Height="28" HorizontalAlignment="Left" Margin="700.389,68.02,0,0" Name="label8" VerticalAlignment="Top" />
+                        <Button Content="Wybierz" Height="23" HorizontalAlignment="Right" Margin="0,67.5,163.753,0" Name="button14" VerticalAlignment="Top" Width="75" Click="button14_Click" />
+                        <GroupBox Header="Akcja:" Height="47.778" HorizontalAlignment="Left" Margin="700.389,102.02,0,0" Name="groupBox1" VerticalAlignment="Top" Width="360.753">
+                            <Grid>
+                                <RadioButton Content="Dodaj\Usuń" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="radioButton1" VerticalAlignment="Top" />
+                                <RadioButton Content="Wybierz" Height="16" HorizontalAlignment="Left" Margin="101.111,6,0,0" Name="radioButton2" VerticalAlignment="Top" />
+                            </Grid>
+                        </GroupBox>
+                        <Label Content="Nazwa:" Height="28" Margin="706.389,150.798,359.721,0" Name="label9" VerticalAlignment="Top" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="749.247,155.798,0,0" Name="textBox3" VerticalAlignment="Top" Width="305.895" />
+                        <Label Content="Opis:" Height="28" Margin="706.389,179.798,359.721,0" Name="label10" VerticalAlignment="Top" />
+                        <TextBox Height="107.444" HorizontalAlignment="Left" Margin="749.247,184.798,0,0" Name="textBox4" VerticalAlignment="Top" Width="305.895" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap" />
+                        <Label Content="Pozycja" Height="28" HorizontalAlignment="Left" Margin="354.5,5.02,0,0" Name="label11" VerticalAlignment="Top" />
+                        <Rectangle Height="23" HorizontalAlignment="Left" Margin="749.247,67.5,0,0" Name="rectangle1" Stroke="Black" VerticalAlignment="Top" Width="120" />
+                        <Button Content="Zapisz" Height="23" HorizontalAlignment="Left" Margin="980.142,298.242,0,0" Name="button15" VerticalAlignment="Top" Width="75" Click="button15_Click" />
+                        <ListBox Height="307.532" HorizontalAlignment="Left" Margin="749.247,330.599,0,0" Name="listBox3" VerticalAlignment="Top" Width="305.895" SelectionChanged="listBox3_SelectionChanged">
+                            <ListBox.ContextMenu>
+                                <ContextMenu>
+                                    <MenuItem Header="Usuń" Click="UsunTextBlockClick" />
+                                </ContextMenu>
+                            </ListBox.ContextMenu>
+                        </ListBox>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Dźwięki">
+                    <Grid>
+                        <ListBox Height="369" HorizontalAlignment="Left" Margin="7,8.723,0,0" Name="listBox4" VerticalAlignment="Top" Width="399" SelectionChanged="listBox4_SelectionChanged" />
+                        <Button Content="Play" Height="23" HorizontalAlignment="Left" Margin="7,383.723,0,0" Name="button_18" VerticalAlignment="Top" Width="75" Click="button18_Click" />
+                        <Button Content="Pause" Height="23" HorizontalAlignment="Left" Margin="88,383.723,0,0" Name="button19" VerticalAlignment="Top" Width="75" Click="button19_Click" />
+                        <Button Content="Stop" Height="23" HorizontalAlignment="Left" Margin="169,383.723,0,0" Name="button20" VerticalAlignment="Top" Width="75" Click="button20_Click" />
+                        <Button Content="Dodaj" Height="23" HorizontalAlignment="Left" Margin="412,85.723,0,0" Name="button21" VerticalAlignment="Top" Width="75" Click="button21_Click" />
+                        <Button Content="Usuń" Height="23" HorizontalAlignment="Left" Margin="493,85.723,0,0" Name="button22" VerticalAlignment="Top" Width="75" Click="button22_Click" />
+                        <Label Content="Nazwa:" Height="28" HorizontalAlignment="Left" Margin="412,8.723,0,0" Name="label14" VerticalAlignment="Top" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="463.83,10.723,0,0" Name="textBox6" VerticalAlignment="Top" Width="182" />
+                        <Label Content="Ścieżka:" Height="28" HorizontalAlignment="Left" Margin="412,37.723,0,0" Name="label15" VerticalAlignment="Top" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="463.83,39.723,0,0" Name="textBox7" VerticalAlignment="Top" Width="182" />
+                        <Button Content="..." Height="23" HorizontalAlignment="Left" Margin="651.83,39.723,0,0" Name="button23" VerticalAlignment="Top" Width="75" Click="button23_Click" />
+                        <MediaElement Height="120" HorizontalAlignment="Left" Margin="412,257.723,0,0" Name="mediaElement1" VerticalAlignment="Top" Width="160" />
+                    </Grid>
+                </TabItem>
+            </TabControl>
+        </DockPanel>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\DnDHelper.UpdateService.dll
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\DnDHelper.UpdateService.pdb
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\DnDHelper.UpdateServiceAPI.dll
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\EntityFramework.dll
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\DnDHelper.UpdateServiceAPI.pdb
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\EntityFramework.xml
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\obj\Debug\DnDHelper.UpdateService.csprojResolveAssemblyReference.cache
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\obj\Debug\DnDHelper.UpdateService.dll
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\obj\Debug\DnDHelper.UpdateService.pdb
+D:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\EntityFramework.SqlServer.dll
+D:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateService\bin\EntityFramework.SqlServer.xml

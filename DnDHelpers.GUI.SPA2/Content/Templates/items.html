@@ -1,0 +1,40 @@
+﻿<div class="nav-bar" title="Przedmioty"></div>
+<div class="container" ng-init="init()">
+    <p>
+        Szukaj: <input class="form-control" type="search" placeholder="Nazwa..." ng-model="itemName" ng-keyup="nameChanged()" />
+        Typ:
+        <select class="form-control" ng-model="selectedItemType" ng-options="c.Description for c in itemTypes" ng-change="typeChanged()"></select>
+    </p>
+    <p>
+        <button class="btn btn-primary" ng-click="add()">Dodaj nowy</button>
+    </p>
+    
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Nazwa
+                </th>
+                <td>
+                    Typ
+                </td>
+                <td>
+                    Cena
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in items" ng-click="selectItem(item)">
+                <td>
+                    {{item.Name}}
+                </td>
+                <td>
+                    {{item.Type}}
+                </td>
+                <td>
+                    {{item.Price}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.ReposPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="60" />
+        </Grid.ColumnDefinitions>
+        <ContentControl Name="ContentPanel"/>
+        <StackPanel Grid.Column="1" Background="#FF2B722B">
+            <Button Width="60" Height="60" Command="{Binding Path=ChangePanel}" CommandParameter="Items">ITEMS</Button>
+            <Button Width="60" Height="60" Command="{Binding Path=ChangePanel}" CommandParameter="Spells">SPELLS</Button>
+            <Button Width="60" Height="60" Command="{Binding Path=ChangePanel}" CommandParameter="Effects">EFFECTS</Button>
+            <Button Width="60" Height="60" Command="{Binding Path=ChangePanel}" CommandParameter="Skills">SKILLS</Button>
+            <Button Width="60" Height="60" Command="{Binding Path=ChangePanel}" CommandParameter="Atutes">ATUTES</Button>
+            <Button Width="60" Height="60" Command="{Binding Path=ChangePanel}" CommandParameter="Races">RACES</Button>
+            <Button Width="60" Height="60" Command="{Binding Path=ChangePanel}" CommandParameter="Classes">CLASSES</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

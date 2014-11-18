@@ -1,0 +1,43 @@
+﻿<div class="nav-bar" title="Czary"></div>
+<div class="container" ng-init="init()">
+    <p>
+        Szukaj: <input class="form-control" type="search" placeholder="Nazwa..." ng-model="name" ng-keyup="nameChanged()" />
+        Typ:
+        <select class="form-control" ng-model="type" ng-options="c.Name for c in spellTypes" ng-change="typeChanged()"></select>
+        Poziom:
+        <select class="form-control" ng-model="level" ng-options="l for l in levels" ng-change="getSpells()"></select>
+    </p>
+    <p>
+        <button class="btn btn-primary" ng-click="add()">Dodaj nowy</button>
+    </p>
+    
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    Poziom
+                </th>
+                <th>
+                    Nazwa
+                </th>
+                <th>
+                    Typ
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="spell in spells" ng-click="selectSpell(spell)">
+                <td>
+                    {{spell.Level}}
+                </td>
+                <td>
+                    {{spell.Name}}
+                </td>
+                <td>
+                    {{spell.Type}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

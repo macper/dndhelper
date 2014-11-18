@@ -1,0 +1,216 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Panels.CharacterTabStats"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="640" d:DesignWidth="800" xmlns:my="clr-namespace:DnDHelper.GUI.WPF.Controls">
+    <Border Margin="2" BorderThickness="1" BorderBrush="DarkGreen">
+        <Grid Height="620" Width="800" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="500" />
+            </Grid.RowDefinitions>
+            <Grid Height="100" Margin="1,2,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" KeyboardNavigation.TabNavigation="Local" Grid.RowSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="260*" />
+                    <ColumnDefinition Width="300*" />
+                    <ColumnDefinition Width="300*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Template="{StaticResource label}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,5,0,0">Nazwa:</Label>
+                <TextBox   Template="{StaticResource textBox}" Text="{Binding Path=Name}" Margin="68,5,4,65" KeyboardNavigation.TabIndex="1" Width="150" />
+                <Label Grid.Column="1" Template="{StaticResource label}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="2,5,0,0">Rasa:</Label>
+                <ComboBox Template="{StaticResource combo}" Grid.Column="1" Width="150"  ItemsSource="{Binding Path=Races}" DisplayMemberPath="Name" SelectedValue="{Binding Path=Race}" Margin="111,5,0,65" KeyboardNavigation.TabIndex="3"  />
+                <Label Grid.Column="2" Template="{StaticResource label}" Margin="5,5,140,70">Klasa:</Label>
+                <CheckBox Grid.Column="2" FontSize="14" BorderBrush="DarkGreen" Name="MultiClass" Content="Wiele" Height="18"  HorizontalAlignment="Left"  IsChecked="{Binding Path=IsMultiClass, Mode=OneWay}" Margin="55,12,0,70"  />
+                <ComboBox Template="{StaticResource combo}" Grid.Column="2" Width="150"  Visibility="{Binding Path=IsChecked, ElementName=MultiClass, Converter={StaticResource BooleanToInverseVisibilityConverter}}" ItemsSource="{Binding Path=Classes}" DisplayMemberPath="Name" SelectedValue="{Binding Path=Class}"  Margin="111,5,0,65" />
+                <Label Template="{StaticResource label}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,45,0,0">Poziom:</Label>
+                <Label Grid.Column="1" Template="{StaticResource label}" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="2,45,0,0">Doświadczenie:</Label>
+                <my:AdditiveControl Visibility="{Binding Path=IsChecked, ElementName=MultiClass, Converter={StaticResource BooleanToInverseVisibilityConverter}}" Value="{Binding Path=Level, Mode=TwoWay}"  HorizontalAlignment="Left" Margin="67,46,0,0" x:Name="additiveControl1" VerticalAlignment="Top" Height="31" Width="160" />
+                <TextBox Template="{StaticResource textBox}" Visibility="{Binding Path=IsChecked, ElementName=MultiClass, Converter={StaticResource BooleanToVisibilityConverter}}"  Margin="75,46,10,26" Text="{Binding Path=Level}" IsReadOnly="True" />
+                <my:AdditiveControl Value="{Binding Path=Experience, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Left" Margin="111,49,0,0" x:Name="additiveControl2" VerticalAlignment="Top" Width="148" />
+                <ListBox Visibility="{Binding Path=IsChecked, ElementName=MultiClass, Converter={StaticResource BooleanToVisibilityConverter}}" Grid.Column="2" Height="64" HorizontalAlignment="Left" Margin="111,36,0,0" ItemsSource="{Binding Path=CharacterClasses}" SelectedValue="{Binding Path=CurrentClass}" VerticalAlignment="Top" Width="150" />
+                <Button Visibility="{Binding Path=IsChecked, ElementName=MultiClass, Converter={StaticResource BooleanToVisibilityConverter}}" Content="Dodaj" Command="{Binding Path=AddClass}"  Grid.Column="2" HorizontalAlignment="Left" Margin="22,39,0,0" Name="button1" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+                <Button Visibility="{Binding Path=IsChecked, ElementName=MultiClass, Converter={StaticResource BooleanToVisibilityConverter}}" Content="Usuń" Command="{Binding Path=RemoveClass}" Grid.Column="2"  HorizontalAlignment="Left" Margin="22,68,0,0" Name="button2" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+            </Grid>
+            <Label Content="Policz wg, rasy i klasy:" Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="532,2,0,0"  VerticalAlignment="Center" />
+            <Button Command="{Binding Path=CalculateInitial}" Content="Policz" Grid.Row="1"  HorizontalAlignment="Left" Margin="664,3,0,1" Name="button3" VerticalAlignment="Center" Width="75" Template="{StaticResource buttonInfo}" />
+            
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30*" />
+                    <RowDefinition Height="12*"/>
+                </Grid.RowDefinitions>
+                <Border Margin="5" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderThickness="1" BorderBrush="Black">
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFE8FFE8">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="40" />
+                            <RowDefinition Height="22*" />
+                        </Grid.RowDefinitions>
+                        <TextBlock  HorizontalAlignment="Center" Text="CECHY GŁÓWNE" VerticalAlignment="Top" FontSize="16" FontWeight="Bold" Margin="0,5" />
+                        
+                        <TextBlock HorizontalAlignment="Left" Margin="150,43,0,0" Name="textBlock1" Text="Bazowe" VerticalAlignment="Top" FontStyle="Italic" FontSize="11" />
+                        <TextBlock FontSize="11" FontStyle="Italic" HorizontalAlignment="Left" Margin="234,43,0,0" Name="textBlock2" Text="Bieżące" VerticalAlignment="Top" />
+                        
+                        <!-- SIŁA -->
+                        <Label  Grid.Row="1" Content="Siła:"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="5,0,0,0" />
+                        <TextBox Grid.Row="1" Text="{Binding Path=BaseStrength}" Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="87" TextAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center" Margin="115,0,0,0" />
+                        <Label Grid.Row="1" Content="{Binding Path=CurrentStrength}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FF232383" Margin="230,0,0,0" />
+                        <Label Grid.Row="1" Content="{Binding Path=StrengthBonus}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FFC42B4C" Margin="290,0,0,0" />
+                        <my:BonusHelper Bonuses="{Binding Path=StrengthBonuses, Mode=OneWay}"  Grid.Row="1" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="345,0,0,0" />
+
+                        <!-- ZRĘCZNOŚĆ -->
+                        <Label  Grid.Row="2" Content="Zręczność:"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="5,0,0,0" />
+                        <Label Grid.Row="2" Content="{Binding Path=DexterityBonus}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FFC42B4C" Margin="290,0,0,0" />
+                        <TextBox Grid.Row="2" Text="{Binding Path=BaseDexterity}" Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="87" TextAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center" Margin="115,0,0,0" />
+                        <Label Grid.Row="2" Content="{Binding Path=CurrentDexterity}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FF232383" Margin="230,0,0,0" />
+                        <my:BonusHelper Bonuses="{Binding Path=DexterityBonuses}" Grid.Row="2" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="345,0,0,0" />
+
+                        <!-- KONDYCJA -->
+                        <Label  Grid.Row="3" Content="Kondycja:"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="5,0,0,0" />
+                        <TextBox Grid.Row="3" Text="{Binding Path=BaseConstitution}" Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="87" TextAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center" Margin="115,0,0,0" />
+                        <Label Grid.Row="3" Content="{Binding Path=CurrentConstitution}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FF232383" Margin="230,0,0,0" />
+                        <Label Grid.Row="3" Content="{Binding Path=ConstitutionBonus}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FFC42B4C" Margin="290,0,0,0" />
+                        <my:BonusHelper Bonuses="{Binding Path=ConstitutionBonuses}" Grid.Row="3" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="345,0,0,0" />
+
+                        <!-- INTELIGENCJA -->
+                        <Label  Grid.Row="4" Content="Inteligencja:"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="5,0,0,0" />
+                        <TextBox Grid.Row="4" Text="{Binding Path=BaseIntelligence}" Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="87" TextAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center" Margin="115,0,0,0" />
+                        <Label Grid.Row="4" Content="{Binding Path=CurrentIntelligence}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FF232383" Margin="230,0,0,0" />
+                        <Label Grid.Row="4" Content="{Binding Path=IntelligenceBonus}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FFC42B4C" Margin="290,0,0,0" />
+                        <my:BonusHelper Bonuses="{Binding Path=IntelligenceBonuses}" Grid.Row="4" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="345,0,0,0" />
+
+                        <!-- MĄDROŚC -->
+                        <Label  Grid.Row="5" Content="Mądrość:"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="5,0,0,0" />
+                        <TextBox Grid.Row="5" Text="{Binding Path=BaseWisdom}" Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="87" TextAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center" Margin="115,0,0,0" />
+                        <Label Grid.Row="5" Content="{Binding Path=CurrentWisdom}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FF232383" Margin="230,0,0,0" />
+                        <Label Grid.Row="5" Content="{Binding Path=WisdomBonus}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FFC42B4C" Margin="290,0,0,0" />
+                        <my:BonusHelper Bonuses="{Binding Path=WisdomBonuses}" Grid.Row="5" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="345,0,0,0" />
+
+                        <!-- CHARYZMA -->
+                        <Label  Grid.Row="6" Content="Charyzma:"  HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="18" FontWeight="Bold" Margin="5,0,0,0" />
+                        <TextBox Grid.Row="6" Text="{Binding Path=BaseCharisma}" Height="23" HorizontalAlignment="Left" VerticalAlignment="Center" Width="87" TextAlignment="Center" FontWeight="Bold" VerticalContentAlignment="Center" Margin="115,0,0,0" />
+                        <Label Grid.Row="6" Content="{Binding Path=CurrentCharisma}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FF232383" Margin="230,0,0,0" />
+                        <Label Grid.Row="6" Content="{Binding Path=CharismaBonus}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" FontWeight="Bold" Foreground="#FFC42B4C" Margin="290,0,0,0" />
+                        <my:BonusHelper Bonuses="{Binding Path=CharismaBonuses}" Grid.Row="6" HorizontalAlignment="Left"  VerticalAlignment="Center" Margin="345,0,0,0" />
+                        
+                        <TextBlock FontSize="11" FontStyle="Italic" HorizontalAlignment="Left" Margin="295,42,0,0" Name="textBlock3" Text="Bonus" VerticalAlignment="Top" />
+                        <Label Content="Pozostałe punkty:" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="65,0,0,2" VerticalAlignment="Center" Height="36" Grid.Row="7" />
+                        <my:AdditiveControl Value="{Binding Path=AvailableMainSkillPoints, Mode=TwoWay}" Grid.Row="7" HorizontalAlignment="Left" Margin="233,8,0,0" x:Name="additiveControl3" VerticalAlignment="Top" Width="138" />
+                    </Grid>
+                </Border>
+
+                <!-- RZUTY -->
+                <Border Margin="5" Grid.Row="1"  VerticalAlignment="Top" BorderThickness="1" BorderBrush="Black">
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="#FFF2E3CA" Height="120">
+                        <Label FontWeight="Bold" HorizontalAlignment="Left" FontSize="16" Margin="5,0,0,64" Width="68">RZUTY</Label>
+                        <TextBlock FontSize="11" FontStyle="Italic" HorizontalAlignment="Left" Margin="139,10,0,0" Name="textBlock4" Text="Bazowe" VerticalAlignment="Top" />
+                        <TextBlock FontSize="11" FontStyle="Italic" HorizontalAlignment="Left" Margin="223,10,0,0" Name="textBlock5" Text="Bieżące" VerticalAlignment="Top" />
+                        <!-- WOLA -->
+                        <Label Content="Wola:" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" Margin="61,0,0,57" VerticalAlignment="Bottom" Height="35" Width="53" />
+                        <TextBox FontWeight="Bold" Height="22" HorizontalAlignment="Left" Margin="115,28,0,64" Text="{Binding Path=BaseWillThrow}" TextAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="87" />
+                        <Label Content="{Binding Path=CurrentWillThrow}" FontSize="18" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="219,23,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="38" />
+                        <my:BonusHelper Bonuses="{Binding Path=WillThrowBonuses}" HorizontalAlignment="Right" Margin="0,24,74,61" VerticalAlignment="Center" Height="29" Width="29" />
+                        <!-- Refleks -->
+                        <Label Content="Refleks:" FontSize="16" FontWeight="Bold" Height="35" HorizontalAlignment="Left" Margin="46,50,0,29" VerticalAlignment="Center" Width="68" />
+                        <TextBox FontWeight="Bold" Height="22" HorizontalAlignment="Left" Margin="115,56,0,36" Text="{Binding Path=BaseReflexThrow}" TextAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="87" />
+                        <Label Content="{Binding Path=CurrentReflexThrow}" FontSize="18" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="219,51,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="38" />
+                        <my:BonusHelper Bonuses="{Binding Path=ReflexThrowBonuses}" Height="29" HorizontalAlignment="Right" Margin="0,52,74,33" VerticalAlignment="Center" Width="29" />
+                        <!-- Wytrwałość -->
+                        <Label Content="Wytrwałość:" FontSize="16" FontWeight="Bold" Height="35" HorizontalAlignment="Left" Margin="11,78,0,1" VerticalAlignment="Center" Width="103" />
+                        <TextBox FontWeight="Bold" Height="22" HorizontalAlignment="Left" Margin="115,84,0,8" Text="{Binding Path=BaseEnduranceThrow}" TextAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="87" />
+                        <Label Content="{Binding Path=CurrentEnduranceThrow}" FontSize="18" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="219,79,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="38" />
+                        <my:BonusHelper Bonuses="{Binding Path=EnduranceThrowBonuses}" Height="29" HorizontalAlignment="Right" Margin="0,80,74,5" VerticalAlignment="Center" Width="29" />
+                    </Grid>
+                </Border>
+                
+                <!-- Wyliczalne !-->
+                <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="0,5,5,5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="#FFDEF5FF">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1.2*"></RowDefinition>
+                            <RowDefinition Height="1.4*"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="4*" />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Text="WYLICZALNE" VerticalAlignment="Top" Width="106" Height="22" Margin="5" />
+                        <TextBlock FontSize="11" FontStyle="Italic" HorizontalAlignment="Center" Margin="0" Text="Bazowe" VerticalAlignment="Bottom" />
+                        <TextBlock FontSize="11" FontStyle="Italic" HorizontalAlignment="Right" Margin="70,0" Text="Bieżące" VerticalAlignment="Bottom" />
+                        <Label Grid.Row="1" Content="Życie:" FontSize="18" FontWeight="Bold" HorizontalAlignment="Left" Margin="5,0" VerticalAlignment="Top" Height="32" />
+                        <TextBox FontWeight="Bold" Height="25" HorizontalAlignment="Left" Margin="130,2" Text="{Binding Path=BaseHP}" TextAlignment="Center" VerticalAlignment="Top" Width="48" Template="{StaticResource textBox}" Grid.Row="1" />
+                        <Label FontSize="18" Height="32" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" Margin="200,45,0,27" VerticalAlignment="Center"  Content="{Binding Path=CurrentHP}" Grid.RowSpan="2" />
+                        <Label Content="/" FontSize="18" FontWeight="Bold" Height="32" HorizontalAlignment="Left" Margin="181,45,0,0" VerticalAlignment="Top" Width="19" Grid.RowSpan="2" />
+                        <my:AdditiveControl Grid.Row="1" HorizontalAlignment="Right" Margin="0,0,10,2" Value="{Binding Path=Life, Mode=TwoWay}" VerticalAlignment="Bottom" Width="174" />
+                        <CheckBox Content=">HP" Height="16" HorizontalAlignment="Left" Margin="221,33,0,0" VerticalAlignment="Top" Width="48" IsChecked="{Binding Path=AllowLifeOverflow, Mode=TwoWay}" Grid.Row="1" />
+                        
+                        <my:BonusHelper Grid.Row="1" Grid.Column="1" Bonuses="{Binding Path=HPBonuses, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Label Grid.Row="2" Content="KP:" FontSize="18" FontWeight="Bold" Height="32" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center" />
+                        <Label Grid.Row="2" Content="{Binding Path=AC}" FontSize="18" Height="32" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left"  Margin="190,0,0,0" VerticalAlignment="Center"  />
+                        <my:BonusHelper Grid.Row="2" Grid.Column="1" Bonuses="{Binding Path=ACBonuses, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <Button Grid.Row="2" Content="Zmień" Height="27" HorizontalAlignment="Left" Margin="103,6,0,7" Name="button4" VerticalAlignment="Center" Width="75" Template="{StaticResource buttonInfo}" Command="{Binding Path=ChangeAC}" />
+                        <Label Grid.Row="3" Content="Atak (wręcz):" FontSize="18" FontWeight="Bold" Height="32" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="3" FontWeight="Bold" Height="25" HorizontalAlignment="Left" Margin="130,0" Text="{Binding Path=BaseAttackMelee}" TextAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="48" Template="{StaticResource textBox}" />
+                        <Label Grid.Row="3" Content="{Binding Path=CurrentAttackMelee}" FontSize="18" Height="32" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" Margin="190,0,0,0" VerticalAlignment="Center" />
+                        <my:BonusHelper Grid.Row="3" Grid.Column="1" Bonuses="{Binding Path=AttackMeleeBonuses, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" Width="28" />
+                        <Label Grid.Row="4" Content="Atak (dyst.):" FontSize="18" FontWeight="Bold" Height="32" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center" />
+                        <TextBox HorizontalAlignment="Left" Width="48" Grid.Row="4" FontWeight="Bold" Height="25" Margin="130,0" Text="{Binding Path=BaseAttackRange}" TextAlignment="Center" VerticalAlignment="Center" Template="{StaticResource textBox}" />
+                        <Label Grid.Row="4" Content="{Binding Path=CurrentAttackRange}" FontSize="18" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" Margin="190,0,0,0" VerticalAlignment="Center" Height="32" />
+                        <my:BonusHelper Grid.Row="4" Grid.Column="1" Bonuses="{Binding Path=AttackRangeBonuses, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+                        <Label Grid.Row="5" Content="Ile ataków:" FontSize="18" FontWeight="Bold" Height="32" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="5" FontWeight="Bold" Height="25" HorizontalAlignment="Left" Margin="130,0" Text="{Binding Path=BaseAttacksCount}" VerticalAlignment="Center" TextAlignment="Center" VerticalContentAlignment="Center" Width="48" Template="{StaticResource textBox}" />
+                        <Label Grid.Row="5" Content="{Binding Path=CurrentAttacksCount}" FontSize="18" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left"  Margin="190,0,0,0" Height="32" VerticalAlignment="Center" />
+                        <my:BonusHelper Grid.Row="5" Grid.Column="1" Bonuses="{Binding Path=AttacksCountBonuses, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        
+                        <Label Grid.Row="6" Content="Inicjatywa:" FontSize="18" FontWeight="Bold" Height="32" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="6" FontWeight="Bold" Height="25" HorizontalAlignment="Left" Margin="130,0,0,0" Text="{Binding Path=BaseInitiative}" TextAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="48" Template="{StaticResource textBox}" />
+                        <Label Grid.Row="6" Content="{Binding Path=CurrentInitiative}" FontSize="18" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="190,0,0,0" VerticalAlignment="Center" />
+                        <my:BonusHelper Grid.Row="6" Grid.Column="1" Bonuses="{Binding Path=InitiativeBonuses, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        
+                        <Label Grid.Row="7" Content="Szybkość:" FontSize="18" FontWeight="Bold" Height="32" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center" />
+                        <TextBox Grid.Row="7" FontWeight="Bold" Height="25" HorizontalAlignment="Left" Margin="130,0,0,0" Text="{Binding Path=BaseSpeed}" TextAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Width="48" Template="{StaticResource textBox}" />
+                        <Label Grid.Row="7" Content="{Binding Path=CurrentSpeed}" FontSize="18" FontWeight="Bold" Foreground="#FF232383" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Margin="190,0,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center"  />
+                        <my:BonusHelper Grid.Row="7" Grid.Column="1" Bonuses="{Binding Path=SpeedBonuses, Mode=OneWay}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Grid>
+                </Border>
+                <Border Grid.Column="1" Grid.Row="1" BorderThickness="1" BorderBrush="Black" Margin="0,5,5,5" VerticalAlignment="Top">
+                    <Grid Background="#FFE8CACA" VerticalAlignment="Top" Height="120">
+                        <TextBlock FontSize="16" FontWeight="Bold" Height="22" HorizontalAlignment="Center" Text="ATAKI" VerticalAlignment="Top" />
+                        <ListBox Height="93" ItemsSource="{Binding Attacks}" SelectedValue="{Binding SelectedAttack}" HorizontalAlignment="Left" Margin="6,23,0,0" Name="listBox1" VerticalAlignment="Top" Width="298" BorderBrush="#FF003200" />
+                        <Button Content="Nowy" Command="{Binding AddAttack}" Height="26" HorizontalAlignment="Left" Margin="311,23,0,0" VerticalAlignment="Top" Width="75" Template="{StaticResource buttonInfo}" />
+                        <Button Content="Usuń" Command="{Binding RemoveAttack}" Height="26" HorizontalAlignment="Left" Margin="311,55,0,0" Template="{StaticResource buttonInfo}" VerticalAlignment="Top" Width="75" />
+                        <Button Content="Edytuj" Command="{Binding EditAttack}" Height="26" HorizontalAlignment="Left" Margin="311,87,0,0" Template="{StaticResource buttonInfo}" VerticalAlignment="Top" Width="75" />
+                    </Grid>
+                </Border>
+                
+            </Grid>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Visibility="{Binding BattleMode, Converter={StaticResource BooleanToVisibilityConverter}}">
+                <Label Content="Inicjatywa:" HorizontalAlignment="Left" Margin="13,1,0,0" Template="{StaticResource label}" VerticalAlignment="Top"/>
+                <my:AdditiveControl Value="{Binding BattleInitiative, Mode=TwoWay}" Width="88" />
+                <TextBlock FontSize="14" VerticalAlignment="Center" Margin="5">Całkowita:</TextBlock>
+                <Label Content="{Binding TotalInitiative}" Height="28" FontSize="14"  FontWeight="Bold" />
+            </StackPanel>
+            
+        </Grid>
+    </Border>
+    
+</UserControl>

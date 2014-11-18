@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05B23167-E30E-406E-B97C-4E7FA3B2F41F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DnDHelper.GUI.WPF</RootNamespace>
+    <AssemblyName>DnDHelper.GUI.WPF</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_dnd2.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.0\lib\net40-client\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Converters\BattleCharacterToBackgroundColorConverter.cs" />
+    <Compile Include="Converters\BonusesToEditorViewModelConverter.cs" />
+    <Compile Include="Converters\BooleanToInverseVisibilityConverter.cs" />
+    <Compile Include="Converters\BoolToColorConverter.cs" />
+    <Compile Include="CompositeLogger.cs" />
+    <Compile Include="Controls\AdditiveControl.xaml.cs">
+      <DependentUpon>AdditiveControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BonusEditor.xaml.cs">
+      <DependentUpon>BonusEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BonusHelper.xaml.cs">
+      <DependentUpon>BonusHelper.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DamageEditor.xaml.cs">
+      <DependentUpon>DamageEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\CharacterTabModelToControlConverter.cs" />
+    <Compile Include="Converters\DamageToModelConverter.cs" />
+    <Compile Include="Converters\DateConverter.cs" />
+    <Compile Include="Converters\DurationConverter.cs" />
+    <Compile Include="Converters\EffectsToStringConverter.cs" />
+    <Compile Include="FakeServices.cs" />
+    <Compile Include="GlobalCommands.cs" />
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="IAppAPI.cs" />
+    <Compile Include="Converters\IntValueToVisibilityConverter.cs" />
+    <Compile Include="Panels\Battle.xaml.cs">
+      <DependentUpon>Battle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterPanel.xaml.cs">
+      <DependentUpon>CharacterPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterTabBonuses.xaml.cs">
+      <DependentUpon>CharacterTabBonuses.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterTabEffects.xaml.cs">
+      <DependentUpon>CharacterTabEffects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterTabItems.xaml.cs">
+      <DependentUpon>CharacterTabItems.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterTabOthers.xaml.cs">
+      <DependentUpon>CharacterTabOthers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterTabSkills.xaml.cs">
+      <DependentUpon>CharacterTabSkills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterTabSpells.xaml.cs">
+      <DependentUpon>CharacterTabSpells.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\CharacterTabStats.xaml.cs">
+      <DependentUpon>CharacterTabStats.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\GeneralPanel.xaml.cs">
+      <DependentUpon>GeneralPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\GroupsPanel.xaml.cs">
+      <DependentUpon>GroupsPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ReposPanel.xaml.cs">
+      <DependentUpon>ReposPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Repos\Atutes.xaml.cs">
+      <DependentUpon>Atutes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Repos\Classes.xaml.cs">
+      <DependentUpon>Classes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Repos\Effects.xaml.cs">
+      <DependentUpon>Effects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Repos\Items.xaml.cs">
+      <DependentUpon>Items.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Repos\Races.xaml.cs">
+      <DependentUpon>Races.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Repos\Skills.xaml.cs">
+      <DependentUpon>Skills.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Repos\Spells.xaml.cs">
+      <DependentUpon>Spells.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TechPanel.xaml.cs">
+      <DependentUpon>TechPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddAttack.xaml.cs">
+      <DependentUpon>AddAttack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddBattleMember.xaml.cs">
+      <DependentUpon>AddBattleMember.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddClass.xaml.cs">
+      <DependentUpon>AddClass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddEditBonus.xaml.cs">
+      <DependentUpon>AddEditBonus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddExperience.xaml.cs">
+      <DependentUpon>AddExperience.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AddGroup.xaml.cs">
+      <DependentUpon>AddGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\AdditiveControl.xaml.cs">
+      <DependentUpon>AdditiveControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ChangeAC.xaml.cs">
+      <DependentUpon>ChangeAC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\CopyEffect.xaml.cs">
+      <DependentUpon>CopyEffect.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\EditDamages.xaml.cs">
+      <DependentUpon>EditDamages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\GetVariable.xaml.cs">
+      <DependentUpon>GetVariable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\GlobalEffects.xaml.cs">
+      <DependentUpon>GlobalEffects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\MoveCharacter.xaml.cs">
+      <DependentUpon>MoveCharacter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\MoveItem.xaml.cs">
+      <DependentUpon>MoveItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\RepoAtuts.xaml.cs">
+      <DependentUpon>RepoAtuts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\RepoEffects.xaml.cs">
+      <DependentUpon>RepoEffects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\RepoItems.xaml.cs">
+      <DependentUpon>RepoItems.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\RepoSpells.xaml.cs">
+      <DependentUpon>RepoSpells.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\ScriptEditor.xaml.cs">
+      <DependentUpon>ScriptEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpellDefinitionConverter.cs" />
+    <Compile Include="UpdateServiceProxy.cs" />
+    <Compile Include="ViewModelHandler.xaml.cs" />
+    <Compile Include="ViewModels\AddAttackViewModel.cs" />
+    <Compile Include="ViewModels\AddBattleMemberViewModel.cs" />
+    <Compile Include="ViewModels\AddBonusViewModel.cs" />
+    <Compile Include="ViewModels\AddClassViewModel.cs" />
+    <Compile Include="ViewModels\AddExperienceViewModel.cs" />
+    <Compile Include="ViewModels\AddGroupViewModel.cs" />
+    <Compile Include="ViewModels\BattleViewModel.cs" />
+    <Compile Include="ViewModels\BonusEditorViewModel.cs" />
+    <Compile Include="ViewModels\BonusPreviewViewModel.cs" />
+    <Compile Include="ViewModels\ChangeACModel.cs" />
+    <Compile Include="ViewModels\CharacterTabBaseModel.cs" />
+    <Compile Include="ViewModels\CharacterTabBonusesModel.cs" />
+    <Compile Include="ViewModels\CharacterTabEffectsModel.cs" />
+    <Compile Include="ViewModels\CharacterTabItemsModel.cs" />
+    <Compile Include="ViewModels\CharacterTabOthersModel.cs" />
+    <Compile Include="ViewModels\CharacterTabSkillsModel.cs" />
+    <Compile Include="ViewModels\CharacterTabSpellsModel.cs" />
+    <Compile Include="ViewModels\CharacterTabStatsModel.cs" />
+    <Compile Include="ViewModels\CharacterViewModel.cs" />
+    <Compile Include="ViewModels\Command.cs" />
+    <Compile Include="ViewModels\ConfirmationViewModel.cs" />
+    <Compile Include="ViewModels\CopyEffectViewModel.cs" />
+    <Compile Include="ViewModels\DamageBoneModel.cs" />
+    <Compile Include="ViewModels\DamageEditorViewModel.cs" />
+    <Compile Include="ViewModels\EffectDefinitionViewModel.cs" />
+    <Compile Include="ViewModels\EffectViewModel.cs" />
+    <Compile Include="ViewModels\GeneralViewModel.cs" />
+    <Compile Include="ViewModels\GlobalEffectsViewModel.cs" />
+    <Compile Include="ViewModels\GroupsViewModel.cs" />
+    <Compile Include="ViewModels\ItemDefinitionViewModel.cs" />
+    <Compile Include="ViewModels\MoveItemViewModel.cs" />
+    <Compile Include="ViewModels\RepoAtutesViewModel.cs" />
+    <Compile Include="ViewModels\ClassViewModel.cs" />
+    <Compile Include="ViewModels\RepoClassesViewModel.cs" />
+    <Compile Include="ViewModels\RepoEffectsViewModel.cs" />
+    <Compile Include="ViewModels\RepoItemsViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\MoveCharacterViewModel.cs" />
+    <Compile Include="ViewModels\RemoveCharacterViewModel.cs" />
+    <Compile Include="ViewModels\RemoveGroupViewModel.cs" />
+    <Compile Include="ViewModels\RepoRacesViewModel.cs" />
+    <Compile Include="ViewModels\RepoSkillsViewModel.cs" />
+    <Compile Include="ViewModels\RepoSpellsViewModel.cs" />
+    <Compile Include="ViewModels\ReposViewModel.cs" />
+    <Compile Include="ViewModels\ScriptEditorViewModel.cs" />
+    <Compile Include="ViewModels\SkillViewModel.cs" />
+    <Compile Include="ViewModels\SpellDefinitionViewModel.cs" />
+    <Compile Include="ViewModels\SpellTypeModel.cs" />
+    <Compile Include="ViewModels\TechViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Page Include="Controls\AdditiveControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BonusEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\BonusHelper.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DamageEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Panels\Battle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterTabBonuses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterTabEffects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterTabItems.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterTabOthers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterTabSkills.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterTabSpells.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\CharacterTabStats.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\GeneralPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\GroupsPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\ReposPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Repos\Atutes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Repos\Classes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Repos\Effects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Repos\Items.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Repos\Races.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Repos\Skills.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Repos\Spells.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\TechPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\AddAttack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\AddBattleMember.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\AddClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\AddEditBonus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\AddExperience.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\AddGroup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\AdditiveControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\ChangeAC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\CopyEffect.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\EditDamages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\GetVariable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\GlobalEffects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\MoveCharacter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\MoveItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\RepoAtuts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\RepoEffects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\RepoItems.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\RepoSpells.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PopUps\ScriptEditor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DnDHelper.UpdateServiceAPI.DownloadRepositoryResponse.datasource" />
+    <None Include="Properties\DataSources\DnDHelper.UpdateServiceAPI.GetRepositoryInfoResponse.datasource" />
+    <None Include="Properties\DataSources\DnDHelper.UpdateServiceAPI.OperationResponse.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DnDHelper.Domain\DnDHelper.Domain.csproj">
+      <Project>{0DCBAC2A-B866-46C2-842B-A42B051B75F4}</Project>
+      <Name>DnDHelper.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.Infrastructure\DnDHelper.Infrastructure.csproj">
+      <Project>{e241425a-aa53-45d2-a2b2-539cd0730636}</Project>
+      <Name>DnDHelper.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DnDHelper.UpdateServiceAPI\DnDHelper.UpdateServiceAPI.csproj">
+      <Project>{720EBF98-C452-44DA-885C-1CD30C10B6F6}</Project>
+      <Name>DnDHelper.UpdateServiceAPI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo_dnd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo_dnd2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

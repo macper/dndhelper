@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="DnDHelper.GUI.WPF.Controls.AdditiveControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="25" d:DesignWidth="150" Name="my">
+    <Grid Height="25">
+        <TextBox Template="{StaticResource textBox}" Text="{Binding ElementName=my, Path=Value}" Name="textBox1" VerticalAlignment="Top" Margin="0,0,0,0">
+        </TextBox>
+        <Button Background="DarkGreen" HorizontalAlignment="Right" Padding="-12,-14,-12,-12" Foreground="White" Height="15" Width="15" Margin="0,0,21,0" Click="AddClick" MouseRightButtonDown="MultiAddClick">+</Button>
+        <Button Background="DarkGreen" HorizontalAlignment="Right" Padding="-12,-14,-12,-12" Height="15" Width="15" Foreground="White"  Margin="0,0,4,0" Click="SubtractiveClick" MouseRightButtonDown="MultiSubtractiveClick">-</Button>
+    </Grid>
+</UserControl>

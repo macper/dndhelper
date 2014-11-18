@@ -1,0 +1,27 @@
+﻿<div class="nav-bar" title="Updates"></div>
+<div ng-hide="hideAll">
+    <h3>Zmienione repozytoria</h3>
+    <p>Ostatnia synchronizacja: <b>{{syncInfo.LastSyncTime}}</b></p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Repozytorium</th>
+                <th>ID</th>
+                <th>Typ zmiany</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="change in syncInfo.Changes">
+                <td>{{change.RepoName}}</td>
+                <td>{{change.Id}}</td>
+                <td>{{change.ChangeType}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button ng-click="Sync()" class="btn btn-default">Synchronizuj</button>
+    </div>
+</div>
+<div ng-show="messageVisible" ng-class="messageType">
+    {{messageText}}
+</div>

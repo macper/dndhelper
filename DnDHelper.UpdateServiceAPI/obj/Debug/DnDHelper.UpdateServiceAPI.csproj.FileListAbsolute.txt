@@ -1,0 +1,5 @@
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateServiceAPI\bin\Debug\DnDHelper.UpdateServiceAPI.dll
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateServiceAPI\bin\Debug\DnDHelper.UpdateServiceAPI.pdb
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateServiceAPI\obj\Debug\DnDHelper.UpdateServiceAPI.csprojResolveAssemblyReference.cache
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateServiceAPI\obj\Debug\DnDHelper.UpdateServiceAPI.dll
+d:\Users\mperszewski\Documents\Mac\SVN\DnD\trunk\DnDHelper.UpdateServiceAPI\obj\Debug\DnDHelper.UpdateServiceAPI.pdb
