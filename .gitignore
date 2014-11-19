@@ -1,0 +1,4 @@
+# git ignore file
+packages\.
+packages\AutoMapper.2.2.1*
+MacDnD.v11.suo
